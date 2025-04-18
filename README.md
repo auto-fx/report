@@ -468,18 +468,31 @@ En esta sección se incluirán términos comúnmente utilizados alrededor de tod
 **GLOSARIO:**
 
 **1. AutoFX(AutoFX):**	Nombre oficial de la aplicación que permite previsualizar modificaciones de vehículos mediante Realidad Aumentada.
+
 **2. Augmented Reality (Realidad Aumentada):** Tecnología que superpone elementos digitales sobre la imagen del mundo real captada por la cámara del dispositivo móvil.
+
 **3. AR Filter (Filtro de Realidad Aumentada):** Efecto visual aplicado en tiempo real sobre el vehículo, que simula cambios estéticos o funcionales (colores, accesorios, etc.).
+
 **4. Visual Customization (Personalización visual):** Proceso digital en el que se aplican modificaciones estéticas al vehículo, visibles a través de la cámara del dispositivo.
+
 **5. User (Usuario):** Persona que utiliza la aplicación para personalizar visualmente su vehículo.
+
 **6. Real-Time View (Vista en tiempo real):** Visualización en directo del vehículo a través de la cámara, con filtros aplicados al instante.
+
 **7. Rendering (Renderizado):**	Proceso de generación gráfica de los efectos aplicados al auto para mostrarlos con realismo en RA.
+
 **8. Virtual Accessory (Accesorio virtual):** Elemento agregado al vehículo de forma digital, como rines, alerones, faldones, etc.
+
 **9. Visual Configurator	(Configurador visual)** Módulo de la app que permite al usuario seleccionar y aplicar filtros RA al vehículo.
+
 **10. Visual Comparison (Comparación visual):** Funcionalidad que permite al usuario comparar el aspecto original del auto con la versión modificada.
+
 **11. Visual Decision-Making (Toma de decisiones visual):**	Proceso de elección de personalizaciones basado en la previsualización en RA.
+
 **12. Snapshot (Captura de imagen):** Imagen generada por el usuario dentro de la app que muestra el resultado de una personalización aplicada.
+
 **13. Filter Catalog (Catálogo de filtros)** Colección organizada de todos los filtros RA disponibles en la aplicación.
+
 **14. Vehicle Compatibility (Compatibilidad vehicular)** Capacidad del filtro o accesorio digital de adaptarse correctamente al modelo del vehículo detectado.
 
 # Capítulo III: Requirements Specification
