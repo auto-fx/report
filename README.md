@@ -466,6 +466,7 @@ Para realizar los componentes elaboramos las preguntas para obtener información
 ## 2.4. Ubiquitous Language
 En esta sección se incluirán términos comúnmente utilizados alrededor de todo el desarrollo del proyecto para eliminar ambigüedades
 **GLOSARIO:**
+
 **1. AutoFX(AutoFX):**	Nombre oficial de la aplicación que permite previsualizar modificaciones de vehículos mediante Realidad Aumentada.
 **2. Augmented Reality (Realidad Aumentada):** Tecnología que superpone elementos digitales sobre la imagen del mundo real captada por la cámara del dispositivo móvil.
 **3. AR Filter (Filtro de Realidad Aumentada):** Efecto visual aplicado en tiempo real sobre el vehículo, que simula cambios estéticos o funcionales (colores, accesorios, etc.).
