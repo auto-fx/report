@@ -581,14 +581,10 @@ En esta sección se incluirán términos comúnmente utilizados alrededor de tod
   </tr>
   <!--Epic 2-->
   <tr>
-    <th rowspan="3"> EP02 </th>
-    <th rowspan="3"> Uso de la cámara </th>
+    <th rowspan="2"> EP02 </th>
+    <th rowspan="2"> Uso de la cámara </th>
     <td> US08 </td>
     <td> Permisos para uso de la cámara </td>
-  </tr>
-  <tr>
-    <td>TS-US08</td>
-    <td>Solicitar permisos para el uso de la cámara</td>
   </tr>
   <tr>
     <td> US09 </td>
@@ -865,6 +861,63 @@ En esta sección se incluirán términos comúnmente utilizados alrededor de tod
         <p> Entonces aparecerá un mensaje, indicando que actualmente la aplicación web está en mantenimiento </p>
     </td>
     <td>EP01</td>
+  </tr>
+  <!--EPIC 2-->
+  <tr>
+    <td colspan="5">
+      <h5 style="text-align: center">EPIC 2: Uso de la cámara</h5>
+        <p>
+          Como persona que quiere personalizar su auto, quiero utilizar la cámara de mi celular dentro de la aplicación para que pueda visualizar los filtros en mi auto
+        </p>
+    </td>
+  </tr>
+  <tr>
+    <th>EP02 / US08</th>
+    <th>Permisos para uso de la cámara</th>
+    <td>
+      <p> Como persona que quiere personalizar su auto </p>
+      <p> Quiero que la aplicación me solicite permisos para usar la cámara </p>
+      <p> Para asegurarme que solo se está utilizando cuando yo lo considero conveniente </p>
+    </td>
+    <td>
+      <h5>Escenario 1: Permisos para la primera cámara en el primer uso</h5>
+        <p>Dado que el usuario se encuentra en su página de inicio de sesión</p>
+        <p>Y es su primera vez utilizando la aplicación</p>
+        <p>Cuando el usuario inicie sesión</p>
+        <p>Entonces aparecerá un diálogo, indicando que es necesario acceder a la cámara para utilizar de todas las funcionalidades de la aplicación</p>
+      <h5>Escenario 2: Negación del uso de la cámara</h5>
+        <p>Dado que el usuario se encuentra en su página principal</p>
+         <p> Y que el usuario ha negado anteriormente el uso de la cámara en la aplicación </p>
+        <p>Cuando el usuario haga click en "Filtros"</p>
+        <p>Entonces aparecerá un diálogo, indicando que es necesario acceder a la cámara para utilizar los filtros</p>
+    </td>
+    <td>EP02</td>
+  </tr>
+  <tr>
+    <th>EP02 / US09</th>
+    <th>Tutorial de Uso</th>
+    <td>
+      <p> Como persona que quiere personalizar su auto </p>
+      <p> Quiero contar con un pequeño tutorial de uso </p>
+      <p> Para aprender cómo utilizar la aplicación </p>
+    </td>
+    <td>
+      <h5>Escenario 1: Ingreso al tutorial en el primer ingreso</h5>
+        <p>Dado que el usuario se encuentra en su página de inicio de sesión</p>
+        <p>Y es su primera vez utilizando la aplicación</p>
+        <p>Cuando el usuario inicie sesión</p>
+        <p>Y cierre el diálogo de confirmación de uso de cámara</p>
+        <p>Entonces aparecerá un segundo diálogo, preguntándole al usuario si desea ver el tutorial</p>
+      <h5>Escenario 2: Manera alternativa de ingresar al tutorial</h5>
+        <p>Dado que el usuario se encuentra en la página de "Filtros"</p>
+        <p>Cuando el usuario haga click en el botón "?"</p>
+        <p>Entonces aparecerá un diálogo, preguntándole al usuario si desea ver el tutorial</p>
+      <h5>Escenario 3: El tutorial</h5>
+        <p>Dado que el usuario se encuentra en la página de "Tutorial"</p>
+        <p>Cuando el usuario haga click en cualquiera de los videos o FAQ</p>
+        <p>Entonces aparecerá la información respectiva</p>
+    </td>
+    <td>EP02</td>
   </tr>
   <!--EPIC 6-->
   <tr>
