@@ -364,7 +364,7 @@ TBD
 ## 1.1 Startup Profile
 ### 1.1.1. Descripción de la Startup
 
-After Effects es una solución innovadora desarrollada por un equipo de estudiantes de la Carrera de Ingeniería de Software de la Universidad Peruana de Ciencias Aplicadas (UPC), con el objetivo de revolucionar la experiencia de personalización de vehículos. Nuestra propuesta nace desde un taller especializado en personalización automotriz, con la visión de integrar tecnología avanzada para mejorar el proceso de toma de decisiones de nuestros clientes.
+After Effects es una startup conformada por un equipo de estudiantes de la Carrera de Ingeniería de Software de la Universidad Peruana de Ciencias Aplicadas (UPC), con el objetivo de revolucionar la experiencia de personalización de vehículos. Nuestra propuesta nace desde un taller especializado en personalización automotriz, con la visión de integrar tecnología avanzada para mejorar el proceso de toma de decisiones de nuestros clientes.
 
 A través de nuestra aplicación móvil, AutoFX, buscamos ofrecer una experiencia única donde los usuarios puedan visualizar en tiempo real los cambios estéticos que desean realizar en sus vehículos, tales como el cambio de color, instalación de alerones, llantas deportivas, entre otros accesorios. Gracias al uso de filtros interactivos y tecnología de Realidad Aumentada (AR), los usuarios podrán apuntar la cámara de su celular hacia su auto y ver, de forma realista, cómo quedarían las modificaciones antes de realizarlas.
 
