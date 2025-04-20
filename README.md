@@ -310,8 +310,15 @@ TBD
 
 # Capítulo I: Introducción
 ## 1.1. Startup Profile
-
 ### 1.1.1. Descripción de la Startup
+After Effects es una startup conformada por un equipo de estudiantes de la Carrera de Ingeniería de Software de la Universidad Peruana de Ciencias Aplicadas (UPC), con el objetivo de revolucionar la experiencia de personalización de vehículos. Nuestra propuesta nace desde un taller especializado en personalización automotriz, con la visión de integrar tecnología avanzada para mejorar el proceso de toma de decisiones de nuestros clientes.
+
+A través de nuestra aplicación móvil, AutoFX, buscamos ofrecer una experiencia única donde los usuarios puedan visualizar en tiempo real los cambios estéticos que desean realizar en sus vehículos, tales como el cambio de color, instalación de alerones, llantas deportivas, entre otros accesorios. Gracias al uso de filtros interactivos y tecnología de Realidad Aumentada (AR), los usuarios podrán apuntar la cámara de su celular hacia su auto y ver, de forma realista, cómo quedarían las modificaciones antes de realizarlas.
+
+**- Misión:** Facilitar la personalización de automóviles a través de una plataforma intuitiva y tecnológica, que permita a los usuarios previsualizar sus cambios deseados con precisión y transparencia, mejorando la toma de decisiones y la experiencia general del cliente.
+
+**- Visión:** Ser referentes en el uso de tecnología de realidad aumentada aplicada a la industria automotriz, ofreciendo soluciones innovadoras y accesibles que transformen la manera en que las personas personalizan sus vehículos.
+
 ### 1.1.2. Perfiles de integrantes del equipo
 
 <table>
@@ -361,24 +368,13 @@ TBD
   </tr>
 </table>
 
-## 1.1 Startup Profile
-### 1.1.1. Descripción de la Startup
-
-After Effects es una startup conformada por un equipo de estudiantes de la Carrera de Ingeniería de Software de la Universidad Peruana de Ciencias Aplicadas (UPC), con el objetivo de revolucionar la experiencia de personalización de vehículos. Nuestra propuesta nace desde un taller especializado en personalización automotriz, con la visión de integrar tecnología avanzada para mejorar el proceso de toma de decisiones de nuestros clientes.
-
-A través de nuestra aplicación móvil, AutoFX, buscamos ofrecer una experiencia única donde los usuarios puedan visualizar en tiempo real los cambios estéticos que desean realizar en sus vehículos, tales como el cambio de color, instalación de alerones, llantas deportivas, entre otros accesorios. Gracias al uso de filtros interactivos y tecnología de Realidad Aumentada (AR), los usuarios podrán apuntar la cámara de su celular hacia su auto y ver, de forma realista, cómo quedarían las modificaciones antes de realizarlas.
-
-**- Misión:** Facilitar la personalización de automóviles a través de una plataforma intuitiva y tecnológica, que permita a los usuarios previsualizar sus cambios deseados con precisión y transparencia, mejorando la toma de decisiones y la experiencia general del cliente.
-
-**- Visión:** Ser referentes en el uso de tecnología de realidad aumentada aplicada a la industria automotriz, ofreciendo soluciones innovadoras y accesibles que transformen la manera en que las personas personalizan sus vehículos.
-
 ## 1.2. Solution Profile
 ### 1.2.1. Antecedentes y problemática
 En el panorama actual de la personalización automotriz, los consumidores enfrentan una importante barrera al momento de visualizar con claridad los cambios estéticos que desean aplicar a sus vehículos. La falta de herramientas accesibles que permitan previsualizar modificaciones como cambios de color, incorporación de alerones, faldones u otros accesorios estéticos, genera incertidumbre y dificultad en la toma de decisiones.
 
 Además, muchas decisiones de personalización se basan únicamente en fotografías, maquetas o recomendaciones de terceros, sin una representación visual precisa del resultado final sobre el propio automóvil del usuario. Esto puede llevar a resultados insatisfactorios, inversiones mal dirigidas y una experiencia negativa con el proceso de tuning.
 
-La ausencia de soluciones digitales que integren tecnologías emergentes, como la realidad aumentada, contribuye a una desconexión entre la expectativa del cliente y el resultado final. Esta problemática limita la creatividad del usuario, desalienta la exploración de nuevas opciones estéticas y reduce la confianza en el proceso de modificación de vehículos.
+La ausencia de soluciones digitales que integren métodos de previsualización de los cambios contribuye a una desconexión entre la expectativa del cliente y el resultado final. Esta problemática limita la creatividad del usuario, desalienta la exploración de nuevas opciones estéticas y reduce la confianza en el proceso de modificación de vehículos.
 
 #### 5W y 2H
 
@@ -395,10 +391,17 @@ La problemática se presenta tanto en contextos físicos como digitales. En tall
 Afecta principalmente a los consumidores aficionados al tuning o personalización automotriz, así como a propietarios de vehículos que desean realizar modificaciones estéticas. Este desafío impacta tanto a personas con experiencia como a novatos, quienes no pueden ver con claridad cómo lucirán los cambios deseados antes de invertir tiempo y dinero.
 
 ##### WHY (¿Por qué?)
-La causa del problema radica en la falta de soluciones tecnológicas accesibles que integren realidad aumentada como medio para personalizar visualmente un automóvil. La industria automotriz aún no ha adoptado de forma generalizada herramientas que permitan a los consumidores experimentar visualmente el resultado de sus elecciones.
+La causa del problema radica en la falta de soluciones tecnológicas que permitan al usuario previsualizar los cambios estéticos de su auto. Sin una manera de previsualizar cómo quedará el auto, el usuario nunca puede estar seguro si es que estará satisfecho o no con el resultado final, lo que lo puede llevar a sentirse frustado e incluso estafado
 
 ##### HOW (¿Cómo?)
-Los usuarios actualmente deben confiar en su imaginación, renders genéricos o catálogos con imágenes ilustrativas, que no se ajustan a la realidad de su propio vehículo. Esta experiencia poco personalizada hace que el proceso de decisión sea incierto y riesgoso, tanto desde el punto de vista estético como económico.
+Nuestros clientes podrán utilizar nuestra aplicación para eliminar la incertidumbre generada por el desconocimiento de cómo terminará su auto después de llevarlo al taller y personalizarlo. La aplicación le permitirá al usuario previsualizar, a través de filtros y realidad aumentada, los cambios que desee realizar a su auto en el futuro.
+
+Nuestros potenciales clientes pueden llegar a conocer nuestro producto a través de:
+- Publicidad en línea, 
+- Referencias de otros clientes,
+- Recomendaciones de colegas o amigos,
+- Búsquedas en internet,
+- Presencia en redes sociales mediante publicación de contenido propio
 
 ##### HOW MUCH (¿Cuánto?)
 El crecimiento del comercio electrónico en el sector automotriz ha venido acompañado de un preocupante incremento en las estafas digitales. Según datos publicados por Infobae en junio de 2023, se ha observado un aumento en las denuncias relacionadas con la compra de repuestos y accesorios de vehículos a través de plataformas digitales, especialmente redes sociales y sitios web no verificados. Se estima que el 4% de las personas afectadas por estafas cibernéticas perdieron más de S/ 5,000, siendo el sector automotor uno de los más impactados en Lima.
@@ -416,7 +419,7 @@ Estos datos evidencian la magnitud del problema y refuerzan la necesidad de solu
 ## 1.3. Segmentos objetivo
 En el contexto de nuestra propuesta innovadora, basada en el uso de Realidad Aumentada (RA) para la previsualización de modificaciones vehiculares en tiempo real, hemos identificado varios segmentos clave que se relacionan con el dominio del problema.
 
-***Clientes que desean visualizar cómo luciría su auto con modificaciones estéticas o funcionales***
+***Personas que desean personalizar su auto***
 - **Aspectos Demográficos:**
     - Sexo: Masculino y Femenino
     - Edad: 18 – 50 años
@@ -454,16 +457,15 @@ Para realizar los componentes elaboramos las preguntas para obtener información
     - ¿Cuál es tu estado civil?
 
 - **Preguntas Específicas y Complementarias**
-***Segmento objetivo: Personas interesadas en visualizar y personalizar sus autos con ayuda de tecnología***
-    1. ¿Alguna vez has personalizado tu vehículo o has considerado hacerlo? Cuéntanos tu experiencia o tus ideas.
-    2. ¿Qué es lo que más te atrae de personalizar tu auto?
-    3. ¿Qué tan importante es para ti visualizar previamente los cambios antes de aplicarlos a tu vehículo?
-    4. ¿Has utilizado antes alguna aplicación móvil o software para ver cómo se vería tu auto con ciertos accesorios o colores? ¿O quizás solo has visto fotos para animarte a personalizar tu auto?
-    5. ¿Qué dispositivo usas con mayor frecuencia para ver contenido sobre autos o buscar ideas (smartphone, tablet, laptop, etc.)?
-    6. ¿Qué redes sociales, plataformas o páginas web utilizas para inspirarte o informarte sobre modificaciones automotrices?
-    7. ¿Has tenido una mala experiencia al modificar tu auto, como resultados diferentes a lo esperado o mala asesoría? ¿Qué pasó?
-    8. ¿Qué marcas de autos te gustan más o cuáles has tenido?
-    10. Si existiera una app que te permitiera previsualizar cómo quedaría su auto después de ser personalizado ¿Estaría interesado?
+***Segmento objetivo: Personas que desean personalizar su auto***
+    1. ¿Alguna vez ha personalizado tu vehículo o has considerado hacerlo?
+    2. ¿Qué es lo que más le atrae de personalizar su vehículo?
+    3. Cuando ha ido a un taller a personalizar su auto, ¿Los mecánicos le han mostrado algún tipo de referencia visual, como fotos o prototipos, que le permitan conocer cómo quedará su auto?
+    4. ¿Ha tenido una mala experiencia al modificar tu auto?
+    5. ¿Qué marcas de autos son sus favoritas?
+    6. ¿Qué dispositivo usas con mayor frecuencia para ver contenido sobre autos o buscar ideas?
+    7. ¿Qué redes sociales, plataformas o páginas web utilizas para inspirarte o informarte sobre modificaciones automotrices?
+    8. Si existiera una app que te permitiera previsualizar cómo quedaría su auto después de ser personalizado ¿Estaría interesado?
 ### 2.2.2. Registro de entrevistas
 ### 2.2.3. Análisis de entrevistas
 
