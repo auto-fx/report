@@ -333,7 +333,7 @@ TBD
     </td>
     <td>
       <p>
-        Descripción básica de Piero
+        Soy estudiante de Ingeniería de Software. Mi carrera se basa en los conocimientos y técnicas científicas para crear un programa informático. Tengo experiencia con el trabajo en equipo, creación de proyectos y creación de programas básicos. Aportaré al equipo mi creatividad, compromiso de trabajo en equipo, puntualidad y responsabilidad. Además, las metas, sean grupales o individuales, son muy importantes para mí, porque permiten que nos esforcemos al máximo para lograrlas.
       </p>
     </td>
   </tr>
@@ -360,6 +360,17 @@ TBD
     </td>
   </tr>
 </table>
+
+## 1.1 Startup Profile
+### 1.1.1. Descripción de la Startup
+
+AutoFX es una solución innovadora desarrollada por un equipo de estudiantes de la Facultad de Ingeniería de la Universidad Peruana de Ciencias Aplicadas (UPC), con el objetivo de revolucionar la experiencia de personalización de vehículos. Nuestra propuesta nace desde un taller especializado en personalización automotriz, con la visión de integrar tecnología avanzada para mejorar el proceso de toma de decisiones de nuestros clientes.
+
+A través de nuestra aplicación móvil, AutoFX, buscamos ofrecer una experiencia única donde los usuarios puedan visualizar en tiempo real los cambios estéticos que desean realizar en sus vehículos, tales como el cambio de color, instalación de alerones, llantas deportivas, entre otros accesorios. Gracias al uso de filtros interactivos y tecnología de Realidad Aumentada (AR), los usuarios podrán apuntar la cámara de su celular hacia su auto y ver, de forma realista, cómo quedarían las modificaciones antes de realizarlas.
+
+**- Misión:** Facilitar la personalización de automóviles a través de una plataforma intuitiva y tecnológica, que permita a los usuarios previsualizar sus cambios deseados con precisión y transparencia, mejorando la toma de decisiones y la experiencia general del cliente.
+
+**- Visión:** Ser referentes en el uso de tecnología de realidad aumentada aplicada a la industria automotriz, ofreciendo soluciones innovadoras y accesibles que transformen la manera en que las personas personalizan sus vehículos.
 
 ## 1.2. Solution Profile
 ### 1.2.1. Antecedentes y problemática
@@ -457,10 +468,36 @@ Para realizar los componentes elaboramos las preguntas para obtener información
 ### 2.2.3. Análisis de entrevistas
 
 ## 2.3. Needfinding
-### 2.3.1. User Personas
+### 2.3.1. User Persona
+
+Para esta sección se presenta un personaje ficticio, uno de acuerdo al segmento objetivo. La información que se ha utilizado para elaborar el User persona se obtuvo de las entrevistas realizadas previamente a cada segmento objetivo. La intención de las entrevistas era conocer un poco más a las personas a las que la aplicación está dirigida. Entre la información de las entrevistas que fue utilizada tenemos demografía, metas, motivaciones, frustraciones, marcas relacionadas con el tema que envuelve a la aplicación, canales digitales que más utiliza, etc. Para la creación de esta sección se utilizó la plataforma UXPressia.
+
+<img src="img\Alejandro Salazar - User persona.png" alt="User persona">
+
 ### 2.3.2. User Task Matrix
-### 2.3.3. User Journey Mapping
+
+En esta sección se presenta el user task matrix, herramienta centrada en el segmento objetivo, que nos permitirá identificar las tareas y objetivos claves del usuario. Además, nos permitirá priorizar características y funcionalidades al momento de realizar el product backlog. Para la frecuencia se han considerado cinco opciones:nunca ,casi nunca, a veces, a menudo ,siempre; y para la importancia tres opciones: bajo, medio, alto
+
+
+| **Tarea del Usuario**                                         | **Frecuencia** | **Importancia** |
+|---------------------------------------------------------------|----------------|-----------------|
+| Visualizar cómo se vería una modificación en su auto          | A menudo       | Alto            |
+| Seleccionar una categoría de pieza (alerón, llanta, vinilo)   | A menudo       | Alto            |
+| Usar la cámara del celular para probar un accesorio en RA     | A veces        | Alto            |
+| Filtrar piezas por marca, modelo o color del auto             | A menudo       | Medio           |
+| Guardar o tomar captura de las previsualizaciones             | A veces        | Medio           |
+| Consultar precios aproximados de accesorios visualizados      | A veces        | Medio           |
+| Agendar una cita en el taller para instalación                | Casi nunca     | Bajo            |
+| Ver testimonios o ejemplos de otros usuarios                  | A veces        | Medio           |
+
+El User Task Matrix elaborado para la aplicación AutoFX identifica las tareas más relevantes para los usuarios interesados en personalizar visualmente sus vehículos. Se destaca que las funcionalidades más importantes y frecuentes incluyen la visualización de modificaciones en el auto, la selección de piezas y el uso de filtros por modelo, color o categoría. Además, aunque tareas como el uso de Realidad Aumentada (RA) y la captura de previsualizaciones no se realizan con tanta frecuencia, son consideradas de alta importancia por los usuarios, ya que permiten tomar decisiones informadas antes de realizar una modificación real.
+
 ### 2.3.4. Empathy Mapping
+
+En esta sección se presentarán los empathy mapping de acuerdo al user persona que se realizo. El empathy mapping será de utilidad debido a que podemos conocer a mayor detalle a nuestros clientes, lo que nos permite mejorar algunos aspectos de la aplicación.
+
+<img src="img\Alejandro Salazar - Empathy map.png" alt="Empathy Mapping">
+
 ### 2.3.5. As-is Scenario Mapping
 ![AS IS](img/as-is.png)
 
