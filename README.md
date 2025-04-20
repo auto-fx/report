@@ -919,6 +919,7 @@ En esta sección se incluirán términos comúnmente utilizados alrededor de tod
     </td>
     <td>EP02</td>
   </tr>
+  <!--EPIC 3-->
   <tr>
      <td colspan="5">
       <h5 style="text-align: center">EPIC 3: Detección de Autos</h5>
@@ -1128,6 +1129,265 @@ En esta sección se incluirán términos comúnmente utilizados alrededor de tod
         <p>Y el mensaje "Desenfoque del vehículo. Algoritmo de detección de vehículos se vuelve a ejecutar" es mostrado</p>
     </td>
     <td>EP03</td>
+  </tr>
+  <!--EPIC 4-->
+  <tr>
+    <td colspan="5">
+      <h5 style="text-align: center">EPIC 4: Implementación de Filtros</h5>
+        <p>
+          Como usuario, quiero poder agregar filtros a mi auto para conocer cómo terminaría si es que lo personalizo
+        </p>
+    </td>
+  </tr>
+  <tr>
+    <th>EP04 / US13</th>
+    <th>Agregado de filtro a un auto</th>
+    <td>
+      <p> Como persona que quiere personalizar su auto </p>
+      <p> Quiero que la aplicación me permita agregar filtros al auto </p>
+      <p> Para conocer cómo terminaría si es que lo personalizo </p>
+    </td>
+    <td>
+      <h5>Escenario 1: Agregar un filtro</h5>
+        <p>Dado que el usuario se encuentra en la página "Filtros"</p>
+        <p>Y el algoritmo ha detectado un auto</p>
+        <p>Cuando el usuario seleccione cualquiera de los filtros disponibles para su auto</p>
+        <p>Entonces en la pantalla se podrá ver el filtro aplicado</p>
+      <h5>Escenario 2: Agregar un filtro con cámara desenfocada</h5>
+        <p>Dado que el usuario se encuentra en la página "Filtros"</p>
+        <p>Y el algoritmo no ha detectado un auto</p>
+        <p>Cuando el usuario intente seleccionar un filtro</p>
+        <p>Entonces aparecerá un mensaje, indicando que primero se debe encontrar un auto para aplicar un filtro</p>
+      <h5>Escenario 3: Intercambiar un filtro</h5>
+        <p>Dado que el usuario se encuentra en la página "Filtros"</p>
+        <p>Y el algoritmo ha detectado un auto</p>
+        <p>Y el usuario ya ha seleccionado un filtro anteriormente en la misma sesión</p>
+        <p>Cuando el usuario seleccione cualquiera de los filtros disponibles para su auto</p>
+        <p>Entonces el nuevo filtro reemplazará al anterior</p>
+      <h5>Escenario 4: Quitar un filtro</h5>
+        <p>Dado que el usuario se encuentra en la página "Filtros"</p>
+        <p>Y el algoritmo ha detectado un auto</p>
+        <p>Y el usuario ya ha seleccionado un filtro anteriormente en la misma sesión</p>
+        <p>Cuando el usuario seleccione el botón "Quitar filtro"</p>
+        <p>Entonces se quitará el filtro seleccionado</p>
+    </td>
+    <td>EP04</td>
+  </tr>
+  <tr>
+    <th>EP04 / TS-US13</th>
+    <th>Agregar filtro a un auto</th>
+    <td>
+      <p> Como desarrollador </p>
+      <p> Quiero que la aplicación permita agregar filtros a los autos </p>
+      <p> Para que los usuario conozcan cómo terminarán sus autos después de la personalización </p>
+    </td>
+    <td>
+      <h5>Escenario 1: Agregar un filtro</h5>
+        <p>Dado que el usuario está disponible</p>
+        <p>Y el algoritmo de detección de vehículos ha detectado un auto utilizando la cámara delantera del dispositivo móvil del usuario</p>
+        <p>Cuando una solicitud POST sea enviada al dar click en cualquiera de los filtros de personalización disponibles</p>
+        <p>Entonces el algoritmo de aplicación de filtros agrega el filtro al auto</p>
+        <p>Y el mensaje "Filtro agregado al auto" es mostrado</p>
+      <h5>Escenario 2: Agregar un filtro con cámara desenfocada</h5>
+        <p>Dado que el usuario está disponible</p>
+        <p>Y el algoritmo de detección de vehículos no ha podido detectar un auto utilizando la cámara delantera del dispositivo móvil del usuario</p>
+        <p>Cuando una solicitud POST sea enviada al dar click en cualquiera de los filtros de personalización disponibles</p>
+        <p>Entonces el mensaje "Cámara desenfocada. No es posible agregar un filtro" es mostrado</p>
+      <h5>Escenario 3: Intercambiar un filtro</h5>
+        <p>Dado que el usuario está disponible</p>
+        <p>Y el algoritmo de detección de vehículos ha detectado un auto utilizando la cámara delantera del dispositivo móvil del usuario</p>
+        <p>Y el usuario ya ha seleccionado un filtro anteriormente en la misma sesión</p>
+        <p>Cuando una solicitud POST sea enviada al dar click en cualquiera de los filtros de personalización disponibles</p>
+        <p>Entonces el algoritmo de aplicación de filtros elimina el filtro actual</p>
+        <p>Y el algoritmo de aplicación de filtros agrega el filtro al auto</p>
+        <p>Y el mensaje "Filtro de auto anterior reemplazado por uno nuevo" es mostrado</p>
+      <h5>Escenario 4: Quitar un filtro</h5>
+        <p>Dado que el usuario está disponible</p>
+        <p>Y el algoritmo de detección de vehículos ha detectado un auto utilizando la cámara delantera del dispositivo móvil del usuario</p>
+        <p>Y el usuario ya ha seleccionado un filtro anteriormente en la misma sesión</p>
+        <p>Cuando una solicitud POST sea enviada al dar click "Quitar Filtro"</p>
+        <p>Entonces el algoritmo de aplicación de filtros elimina el filtro actual</p>
+        <p>Y el mensaje "Filtro de auto eliminado" es mostrado</p>
+    </td>
+    <td>EP04</td>
+  </tr>
+  <tr>
+    <th>EP04 / US14</th>
+    <th>Cambiado de color de un auto</th>
+    <td>
+      <p>Como persona que quiere personalizar su auto</p>
+      <p>Quiero poder cambiar el color del auto desde la aplicación</p>
+      <p>Para visualizar cómo se vería con otro color antes de hacerlo en la realidad</p>
+    </td>
+    <td>
+      <h5>Escenario 1: Cambiar el color del auto</h5>
+        <p>Dado que el usuario se encuentra en la página "Filtros"</p>
+        <p>Y el algoritmo ha detectado un auto</p>
+        <p>Cuando el usuario seleccione un color entre las opciones disponibles</p>
+        <p>Entonces el color del auto cambiará en la pantalla</p>
+      <h5>Escenario 2: Seleccionar color sin detección</h5>
+        <p>Dado que el usuario se encuentra en la página "Filtros"</p>
+        <p>Y el algoritmo no ha detectado un auto</p>
+        <p>Cuando el usuario intente seleccionar un color</p>
+        <p>Entonces se mostrará un mensaje, indicando que primero debe detectarse un auto</p>
+    </td>
+    <td>EP04</td>
+  </tr>
+  <tr>
+    <th>EP04 / TS-US14</th>
+    <th>Cambiar de color un auto</th>
+    <td>
+      <p>Como desarrollador</p>
+      <p>Quiero que la aplicación permita modificar el color del auto en tiempo real</p>
+      <p>Para que el usuario pueda ver cómo se vería su auto con diferentes colores</p>
+    </td>
+    <td>
+      <h5>Escenario 1: Cambiar el color del auto</h5>
+        <p>Dado que el usuario está disponible</p>
+        <p>Y que el algoritmo de detección de vehículos ha detectado un auto utilizando la cámara delantera del dispositivo móvil del usuario</p>
+        <p>Cuando una solicitud POST sea enviada al seleccionar un color</p>
+        <p>Entonces el algoritmo aplicará el nuevo color sobre el auto identificado</p>
+        <p>Y el mensaje "Color aplicado correctamente" será mostrado</p>
+      <h5>Escenario 2: Seleccionar color sin detección</h5>
+        <p>Dado que el usuario está disponible</p>
+        <p>Y que el algoritmo de detección de vehículos ha detectado un auto utilizando la cámara delantera del dispositivo móvil del usuario</p>
+        <p>Cuando una solicitud POST sea enviada al seleccionar un color</p>
+        <p>Entonces el mensaje "No se ha detectado ningún auto para aplicar el color" es mostrado</p>
+    </td>
+    <td>EP04</td>
+  </tr>
+
+  <tr>
+    <th>EP04 / US15</th>
+    <th>Agregado de accesorios externos</th>
+    <td>
+      <p>Como persona que quiere personalizar su auto</p>
+      <p>Quiero poder agregar accesorios visuales como alerones, vinilos o luces</p>
+      <p>Para evaluar cómo se vería mi auto con estos elementos</p>
+    </td>
+    <td>
+      <h5>Escenario 1: Agregar un accesorio</h5>
+        <p>Dado que el usuario se encuentra en la página "Filtros"</p>
+        <p>Y que el algoritmo ha detectado un auto</p>
+        <p>Cuando el usuario seleccione un filtro de accesorio externo</p>
+        <p>Entonces el accesorio será visible sobre la imagen del auto</p>
+      <h5>Escenario 2: Agregar accesorio sin auto detectado</h5>
+        <p>Dado que el usuario se encuentra en la página "Filtros"</p>
+        <p>Y que el algoritmo no ha detectado un auto</p>
+        <p>Cuando el usuario intente aplicar un accesorio</p>
+        <p>Entonces se mostrará un mensaje indicando que se debe detectar un auto primero</p>
+    </td>
+    <td>EP04</td>
+  </tr>
+  <tr>
+    <th>EP04 / TS-US15</th>
+    <th>Agregar accesorios externos</th>
+    <td>
+      <p>Como desarrollador</p>
+      <p>Quiero permitir que se rendericen accesorios personalizados sobre el auto detectado</p>
+      <p>Para que el usuario pueda visualizar una personalización más completa</p>
+    </td>
+    <td>
+      <h5>Escenario 1: Agregar un accesorio</h5>
+        <p>Dado que el usuario está disponible</p>
+        <p>Y que el algoritmo de detección de vehículos ha detectado un auto utilizando la cámara delantera del dispositivo móvil del usuario</p>
+        <p>Cuando una solicitud POST sea enviada al seleccionar un filtro de tipo accesorio (alerón, rueda, luces, antena, tubo de escape, calcomanías)</p>
+        <p>Entonces el algoritmo de aplicación de filtros agregará el accesorio al auto</p>
+        <p>Y el mensaje "Filtro de tipo accesorio agregado" es mostrado</p>
+      <h5>Escenario 2: Agregar accesorio sin auto detectado</h5>
+        <p>Dado que el usuario está disponible</p>
+        <p>Y que el algoritmo de detección de vehículos no ha detectado un auto utilizando la cámara delantera del dispositivo móvil del usuario</p>
+        <p>Cuando una solicitud POST sea enviada al seleccionar un filtro de tipo accesorio (alerón, rueda, luces, antena, tubo de escape, calcomanías)</p>
+        <p>Entonces el mensaje "Vehículo no detectado. Filtro no agregado" es mostrado</p>
+    </td>
+    <td>EP04</td>
+  </tr>
+  <!--EPIC 5-->
+  <tr>
+    <td colspan="5">
+      <h5 style="text-align: center">EPIC 5: Comparación y Guardado</h5>
+      <p>Como usuario, quiero comparar el estado original del auto con el personalizado y guardar el resultado si me gusta</p>
+    </td>
+  </tr>
+  <tr>
+    <th>EP05 / US16</th>
+    <th>Comparación de auto antes y después</th>
+    <td>
+      <p>Como persona interesada en personalizar su auto</p>
+      <p>Quiero poder comparar el auto original con la versión personalizada</p>
+      <p>Para decidir si me gusta el resultado final</p>
+    </td>
+    <td>
+      <h5>Escenario 1: Comparación visual</h5>
+        <p>Dado que el usuario se encuentra en la página de Filtros</p>
+        <p>Y el usuario ya aplicó al menos un filtro</p>
+        <p>Cuando el usuario presione el botón "Comparar"</p>
+        <p>Entonces se tomará una captura del auto con el filtro aplicado</p>
+        <p>Y se muestran lado a lado la imagen original y la personalizada</p>
+      <h5>Escenario 2: Comparación visual sin filtro aplicado</h5>
+        <p>Dado que el usuario se encuentra en la página de Filtros</p>
+        <p>Y el usuario no ha aplicado ningún filtro</p>
+        <p>Cuando el usuario presione el botón "Comparar"</p>
+        <p>Entonces aparecerá un mensaje, indicando que no se puede comparar sin haber seleccionado al menos 1 filtro</p>
+    </td>
+    <td>EP05</td>
+  </tr>
+  <tr>
+    <th>EP05 / TS-US16</th>
+    <th>Comparar un auto antes y después</th>
+    <td>
+      <p>Como desarrollador</p>
+      <p>Quiero que la aplicación permita mostrar la imagen original y la modificada</p>
+      <p>Para que el usuario pueda visualizar claramente las diferencias</p>
+    </td>
+    <td>
+      <h5>Escenario 1: Comparación visual</h5>
+        <p>Dado que el usuario está disponible</p>
+        <p>Y que el usuario ha aplicado al menos un filtro</p>
+        <p>Cuando una solicitud POST sea enviada al dar click en "Comparar"</p>
+        <p>Entonces el sistema toma una captura de la imagen con y sin filtro</p>
+        <p>Y el usuario es redirigido a la página "Comparación", en donde se muestran ambas imágenes, una al lado de la otra</p>
+        <p>Y el mensaje "Comparación completada" es mostrado</p>
+      <h5>Escenario 2: Comparación visual sin filtro aplicado</h5>
+        <p>Dado que el usuario está disponible</p>
+        <p>Y que el usuario no ha aplicado ningún filtro</p>
+        <p>Cuando una solicitud POST sea enviada al dar click en "Comparar"</p>
+        <p>Entonces el mensaje "Es necesario seleccionar un filtro para la comparación" es mostrado</p>
+    </td>
+    <td>EP05</td>
+  </tr>
+  <tr>
+    <th>EP05 / US17</th>
+    <th>Guardado de foto y filtros aplicados</th>
+    <td>
+      <p>Como persona interesada en guardar su personalización</p>
+      <p>Quiero poder guardar la foto del auto con los filtros aplicados</p>
+      <p>Para revisar o compartir mi diseño más tarde</p>
+    </td>
+    <td>
+      <h5>Escenario 1: Guardar diseño personalizado</h5>
+        <p>Dado que el usuario ha terminado de aplicar sus filtros</p>
+        <p>Cuando seleccione la opción "Guardar"</p>
+        <p>Entonces se guardará una imagen del auto con la personalización actual y los filtros aplicados</p>
+    </td>
+    <td>EP05</td>
+  </tr>
+  <tr>
+    <th>EP05 / TS-US17</th>
+    <th>Guardar foto y filtros aplicados</th>
+    <td>
+      <p>Como desarrollador</p>
+      <p>Quiero guardar una imagen renderizada con los filtros aplicados y sus metadatos</p>
+      <p>Para que el usuario pueda almacenarla localmente o en la nube</p>
+    </td>
+    <td>
+      <h5>Escenario 1: Guardar diseño personalizado</h5>
+        <p>Dado que el usuario ha finalizado su personalización</p>
+        <p>Cuando seleccione la opción "Guardar"</p>
+        <p>Entonces se generará una imagen renderizada</p>
+        <p>Y se almacenará junto con los filtros usados en el almacenamiento local</p>
+    </td>
+    <td>EP05</td>
   </tr>
   <!--EPIC 6-->
   <tr>
@@ -1430,6 +1690,11 @@ Se utilizó la aplicación Trello para el desarrollo del product backlog [Trello
 | 2 | US10 | Detección de tipo de auto | Como persona que quiere personalizar su auto quiero que la aplicación pueda detectar el tipo de auto que tengo para que pueda aplicar los filtros de manera más realista y consistente | 8 |
 | 3 | US11 | Detección de ángulo de toma de foto | Como persona que quiere personalizar su auto quiero que la aplicación detecte de qué ángulo estoy mostrando el carro para que pueda aplicar los filtros de manera más realista y consistente | 8 |
 | 4 | US12 | Detección en tiempo real del vehículo | Como persona que quiere personalizar su auto quiero que la aplicación detecte cuando mueva la cámara para que reajuste los filtros aplicados y que no se distorcionen | 8 |
+| 5 | US13 | Agregado de filtro a un auto | Como persona que quiere personalizar su auto quiero que la aplicación me permita agregar filtros al auto para conocer cómo terminaría si es que lo personalizo | 8 |
+| 6 | US14 | Cambiado de color de un auto | Como persona que quiere personalizar su auto quiero poder cambiar el color del auto desde la aplicación para visualizar cómo se vería con otro color antes de hacerlo en la realidad | 5 |
+| 7 | US15 | Agregado de accesorios externos | Como persona que quiere personalizar su auto quiero poder agregar accesorios visuales como alerones, vinilos o luces para evaluar cómo se vería mi auto con estos elementos | 5 |
+| 8 | US16 | Comparación de auto antes y después | Como persona interesada en personalizar su auto quiero poder comparar el auto original con la versión personalizada para decidir si me gusta el resultado final | 3 |
+| 9 | US16 | Guardado foto y filtros aplicados | Como persona interesada en guardar su personalización quiero poder guardar la foto del auto con los filtros aplicados para revisar o compartir mi diseño más tarde | 3 |
 | 10 | US09 | Tutorial de Uso | Como persona que quiere personalizar su auto quiero contar con un pequeño tutorial de uso para aprender cómo utilizar la aplicación | 3 |
 | 11 | US18 | Registro de usuarios | Como usuario de cualquiera de los segmentos objetivos sin una cuenta en el sistema quiero poder registrarme en la aplicación para acceder a todas sus funcionalidades | 3 |
 | 12 | US19 | Acceso de Usuarios | Como usuario de cualquiera de los segmentos objetivos sin una cuenta en el sistema quiero poder iniciar sesión en la aplicación utilizando mi dirección de correo electrónico y contraseña para acceder a mi cuenta y utilizar todas las funcionalidades de la aplicación | 3 |
