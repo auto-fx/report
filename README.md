@@ -594,7 +594,7 @@ En esta sección se incluirán términos comúnmente utilizados alrededor de tod
   <tr>
     <th rowspan="6"> EP03 </th>
     <th rowspan="6"> Detección de Autos </th>
-    <td> US010 </td>
+    <td> US10 </td>
     <td> Detección de tipo de auto </td>
   </tr>
   <tr>
@@ -919,7 +919,216 @@ En esta sección se incluirán términos comúnmente utilizados alrededor de tod
     </td>
     <td>EP02</td>
   </tr>
-
+  <tr>
+     <td colspan="5">
+      <h5 style="text-align: center">EPIC 3: Detección de Autos</h5>
+        <p>
+          Como usuario, quiero que la aplicación pueda detectar mi auto para poder aplicarle filtros
+        </p>
+    </td>
+  </tr>
+  <tr>
+    <th>EP03 / US10</th>
+    <th>Detección de tipo de auto</th>
+    <td>
+      <p> Como persona que quiere personalizar su auto </p>
+      <p> Quiero que la aplicación pueda detectar el tipo de auto que tengo </p>
+      <p> Para que pueda aplicar los filtros de manera más realista y consistente </p>
+    </td>
+    <td>
+      <h5>Escenario 1: Detección de tipo de carrocería de auto</h5>
+        <p>Dado que el usuario se encuentra en la página "Filtros"</p>
+        <p>Cuando el usuario dirija su cámara a su auto</p>
+        <p>Entonces la aplicación debe detectar el tipo de carrocería del auto (sedán, hatchback, camioneta, pickup)</p>
+        <p>Y en la pantalla aparecerá un mensaje, indicando el tipo de carrocería de auto detectado</p>
+      <h5>Escenario 2: Detección de carro marca y modelo</h5>
+        <p>Dado que el usuario se encuentra en la página "Filtros"</p>
+        <p>Cuando el usuario dirija su cámara a su auto</p>
+        <p>Entonces la aplicación debe detectar la marca y modelo del auto</p>
+        <p>Y en la pantalla aparecerá un mensaje, indicando que la marca y modelo de auto detectado</p>
+        <p>Y los filtros que aparezcan en pantalla se adecuarán a la carrocería, marca y modelo de auto detectado</p>
+      <h5>Escenario 3: Detección otro tipo de vehículo</h5>
+        <p>Dado que el usuario se encuentra en la página "Filtros"</p>
+        <p>Cuando el usuario dirija su cámara a algún otro tipo de vehículo cotidiano (vehículos no motorizados, motocicletas, buses, minivan) </p>
+        <p>Entonces aparecerá un mensaje, indicando que solo se puede aplicar filtros a vehículos con carrocería tipo sedán, hatchback, camioneta o pickup</p>
+      <h5>Escenario 4: Detección otros objetos</h5>
+        <p>Dado que el usuario se encuentra en la página "Filtros"</p>
+        <p>Cuando el usuario dirija su cámara a cualquier otro tipo de objeto</p>
+        <p>Entonces aparecerá un mensaje, indicando que el filtro solo funciona para vehículos</p>  
+    </td>
+    <td>EP03</td>
+  </tr>
+  <tr>
+    <th>EP04 / TS-US10</th>
+    <th>Detección de tipo de auto</th>
+    <td>
+      <p> Como desarrollador </p>
+      <p> Quiero que la aplicación tenga la capacidad de detectar correctamente los vehículos de las personas </p>
+      <p> Para asegurarme que puedan utilizar la aplicación y aplicar filtros sin problemas </p>
+    </td>
+    <td>
+      <h5>Escenario 1: Detección de vehículo</h5>
+        <p>Dado que el usuario está disponible</p>
+        <p>Cuando el algoritmo de detección de vehículos encuentre un auto utilizando la cámara delantera del dispositivo móvil del usuario</p>
+        <p>Y el auto se encuentre cerca (menos de 5 metros)</p>
+        <p>Entonces el algoritmo de detección de tipo de vehículos empezará a ejecutarse</p>
+        <p>Y el mensaje "Iniciando detección de tipo de carrocería vehículo" es mostrado</p>
+      <h5>Escenario 2: Detección de tipo de carrocería vehículo</h5>
+        <p>Dado que el usuario está disponible</p>
+        <p>Y el algoritmo de detección de tipo carrocería de vehículos se encuentra en ejecución</p>
+        <p>Cuando el algoritmo de detección de tipo de carrocería de vehículos haya concluido</p>
+        <p>Y haya identificado la carrocería del vehículo</p>
+        <p>Entonces el algoritmo de detección de marca y modelo empieza a ejecutarse</p>
+        <p>Y el mensaje "Vehículo tipo {tipo} encontrado./n Iniciando el algoritmo de detección de marca y modelo de vehículo" es mostrado</p>
+      <h5>Escenario 3: Detección de carro marca y modelo</h5>
+        <p>Dado que el usuario está disponible</p>
+        <p>Y el algoritmo de detección de detección de marca y modelo de vehículo se encuentra en ejecución</p>
+        <p>Cuando el algoritmo de detección de detección de marca y modelo de vehículo haya concluido</p>
+        <p>Y haya identificado la marca y modelo del vehículo</p>
+        <p>Entonces se muestran en pantalla los filtros relacionados con el tipo de carrocería, marca y modelo del vehículo encontrado</p>
+        <p>Y el mensaje "Vehículo tipo {tipo}, de marca {marca} y modelo {modelo} encontrado"</p>
+      <h5>Escenario 4: Detección otro tipo de vehículo</h5>
+        <p>Dado que el usuario está disponible</p>
+        <p>Cuando el algoritmo de detección de vehículos encuentre algún otro tipo de vehículo cotidiano (vehículos no motorizados, motocicletas, buses, minivan) utilizando la cámara delantera del dispositivo móvil del usuario </p>
+        <p>Entonces el mensaje "Tipo de vehículo no soportado por la plataforma" es mostrado</p>
+      <h5>Escenario 5: Detección otros objetos</h5>
+        <p>Dado que el usuario está disponible</p>
+        <p>Cuando el algoritmo de detección de vehículos encuentre algún otro tipo de objeto utilizando la cámara delantera del dispositivo móvil del usuario </p>
+        <p>Entonces el mensaje "El objeto no es un vehículo" es mostrado</p>
+    </td>
+    <td>EP03</td>
+  </tr>
+  <tr>
+    <th>EP03 / US11</th>
+    <th>Detección de ángulo de toma de foto</th>
+    <td>
+      <p> Como persona que quiere personalizar su auto </p>
+      <p> Quiero que la aplicación detecte de qué ángulo estoy mostrando el carro </p>
+      <p> Para que pueda aplicar los filtros de manera más realista y consistente </p>
+    </td>
+    <td>
+      <h5>Escenario 1: Foto anterior de auto</h5>
+        <p>Dado que el usuario se encuentra en la página "Filtros"</p>
+        <p>Cuando el usuario dirija su cámara a su auto</p>
+        <p>Y la cámara apunte a la parte anterior del auto (parte de adelante, donde está el capot y motor)</p>
+        <p>Entonces la aplicación debe sugerir filtros para la parte anterior del auto</p>
+      <h5>Escenario 2: Foto posterior de auto</h5>
+        <p>Dado que el usuario se encuentra en la página "Filtros"</p>
+        <p>Cuando el usuario dirija su cámara a su auto</p>
+        <p>Y la cámara apunte a la parte posterior del auto (parte de atrás, donde está la maletera)</p>
+        <p>Entonces la aplicación debe sugerir filtros para la parte posterior del auto</p>
+      <h5>Escenario 3: Foto frontal de auto</h5>
+        <p>Dado que el usuario se encuentra en la página "Filtros"</p>
+        <p>Cuando el usuario dirija su cámara a su auto</p>
+        <p>Y la cámara apunte a la parte frontal del auto (costados, donde están las puertas)</p>
+        <p>Entonces la aplicación debe sugerir únicamente filtros de personalizaciones no sobresalientes para el auto</p>
+      <h5>Escenario 4: Foto superior de auto</h5>
+        <p>Dado que el usuario se encuentra en la página "Filtros"</p>
+        <p>Cuando el usuario dirija su cámara a su auto</p>
+        <p>Y la cámara apunte a la parte superior del auto (parte de arriba, donde se encuenta el techo)</p>
+        <p>Entonces la aplicación debe sugerir únicamente filtros de colores, stickers y antenas para el auto</p>
+      <h5>Escenario 5: Foto interior de auto</h5>
+        <p>Dado que el usuario se encuentra en la página "Filtros"</p>
+        <p>Cuando el usuario dirija su cámara a su auto</p>
+        <p>Y la cámara apunte al interior del auto (adentro del auto, donde se encuentran los asientos, timón y demás objetos)</p>
+        <p>Entonces se mostrará un mensaje, indicando que los filtros son únicamente para personalizar el auto por fuera</p>
+      <h5>Escenario 6: Foto inferior de auto</h5>
+        <p>Dado que el usuario se encuentra en la página "Filtros"</p>
+        <p>Cuando el usuario dirija su cámara a su auto</p>
+        <p>Y la cámara apunte a la parte inferior del auto (debajo, por donde están las ruedas y otros componentes)</p>
+        <p>Entonces se mostrará un mensaje, indicando que no hay ninguna personalización disponible para la parte inferior del auto</p>
+    </td>
+    <td>EP03</td>
+  </tr>
+  <tr>
+    <th>EP03 / TS-US11</th>
+    <th>Detección de ángulo de toma de foto</th>
+    <td>
+      <p> Como desarrollador </p>
+      <p> Quiero que la aplicación detecte correctamente desde qué ángulo de auto el usuario está intentando agregar el filtro </p>
+      <p> Para que pueda aplicar los filtros de manera más realista y consistente </p>
+    </td>
+    <td>
+      <h5>Escenario 1: Foto anterior de auto</h5>
+        <p>Dado que el usuario está disponible</p>
+        <p>Cuando el algoritmo de detección de vehículos encuentre un auto utilizando la cámara delantera del dispositivo móvil del usuario</p>
+        <p>Y el algoritmo detecte que la parte detectada es la parte anterior del auto (parte de adelante, donde está el capot y motor)</p>
+        <p>Entonces el algoritmo de sugerencia de filtros debe únicamente recomendar filtros con tipo Anterior (cambio de color, cambio de luces, antena, calcomanías de carrocería, ruedas en vista anterior) </p>
+      <h5>Escenario 2: Foto posterior de auto</h5>
+        <p>Dado que el usuario está disponible</p>
+        <p>Cuando el algoritmo de detección de vehículos encuentre un auto utilizando la cámara delantera del dispositivo móvil del usuario</p>
+        <p>Y el algoritmo detecte que la parte detectada es la parte posterior del auto (parte de atrás, donde está la maletera)</p>
+        <p>Entonces el algoritmo de sugerencia de filtros debe únicamente recomendar filtros con tipo Posterior (cambio de color, cambio de luces, cambio de tubo de escape, calcomanías de carrocería, calcomanías de ventanas, alerón en vista posterior, antena en vista posterior, ruedas en vista posterior)</p>
+      <h5>Escenario 3: Foto frontal de auto</h5>
+        <p>Dado que el usuario está disponible</p>
+        <p>Cuando el algoritmo de detección de vehículos encuentre un auto utilizando la cámara delantera del dispositivo móvil del usuario</p>
+        <p>Y el algoritmo detecte que la parte detectada es la parte frontal del auto (costados, donde están las puertas)</p>
+        <p>Entonces el algoritmo de sugerencia de filtros debe únicamente recomendar filtros con tipo Frontal (cambio de color,  calcomanías de carrocería, calcomanías de ventanas, antena en vista frontal, ruedas en vista frontal, alerón en vista frontal)</p>
+      <h5>Escenario 4: Foto superior de auto</h5>
+        <p>Dado que el usuario está disponible</p>
+        <p>Cuando el algoritmo de detección de vehículos encuentre un auto utilizando la cámara delantera del dispositivo móvil del usuario</p>
+        <p>Y el algoritmo detecte que la parte detectada es la parte superior del auto (parte de arriba, donde se encuenta el techo)</p>
+        <p>Entonces el algoritmo de sugerencia de filtros debe únicamente recomendar filtros con tipo Superior (cambio de color,  calcomanías de carrocería, antena en vista superior, alerón en vista superior)</p>
+      <h5>Escenario 5: Foto interior de auto</h5>
+        <p>Dado que el usuario está disponible</p>
+        <p>Cuando el algoritmo de detección de vehículos encuentre un auto utilizando la cámara delantera del dispositivo móvil del usuario</p>
+        <p>Y el algoritmo detecte que la parte detectada es el interior del auto (adentro del auto, donde se encuentran los asientos, timón y demás objetos)</p>
+        <p>Entonces el mensaje "No es posible agregar filtros a la parte interior del auto" es mostrado</p>
+      <h5>Escenario 6: Foto inferior de auto</h5>
+        <p>Dado que el usuario está disponible</p>
+        <p>Cuando el algoritmo de detección de vehículos encuentre un auto utilizando la cámara delantera del dispositivo móvil del usuario</p>
+        <p>Y el algoritmo detecte que la parte detectada es la parte inferior del auto (debajo, por donde están las ruedas y otros componentes)</p>
+        <p>Entonces el mensaje "No es posible agregar filtros a la parte inferior del auto" es mostrado</p>
+    </td>
+    <td>EP03</td>
+  </tr>
+  <tr>
+    <th>EP03 / US12</th>
+    <th>Detección en tiempo real del vehículo</th>
+    <td>
+      <p> Como persona que quiere personalizar su auto </p>
+      <p> Quiero que la aplicación detecte cuando mueva la cámara </p>
+      <p> Para que reajuste los filtros aplicados y que no se distorcionen </p>
+    </td>
+    <td>
+      <h5>Escenario 1: Movimiento ligero de la cámara</h5>
+        <p>Dado que el usuario se encuentra en la página "Filtros"</p>
+        <p>Y el algoritmo ha detectado un auto</p>
+        <p>Cuando el usuario mueva ligeramente la cámara</p>
+        <p>Y el algoritmo pueda seguir detectando el auto sin problemas</p>
+        <p>Entonces la aplicación reajustará ligeramente el filtro para adecuarse al nuevo ángulo</p>
+      <h5>Escenario 2: Desenfoque de la cámara</h5>
+        <p>Dado que el usuario se encuentra en la página "Filtros"</p>
+        <p>Y el algoritmo ha detectado un auto</p>
+        <p>Cuando el usuario desenfoque el auto de la cámara</p>
+        <p>Y el algoritmo tenga problemas para seguir detectando el auto</p>
+        <p>Entonces la aplicación el algoritmo de detección de vehículos volverá a ejecutarse</p>
+    </td>
+    <td>EP03</td>
+  </tr>
+  <tr>
+    <th>EP03 / TS-US12</th>
+    <th>Detectar en tiempo real del vehículo</th>
+    <td>
+      <p> Como desarrollador </p>
+      <p> Quiero que la aplicación reaccione rápidamente cuando el usuario desenfoque el vehículo de la cámara </p>
+      <p> Para que haya la menor cantidad de tiempo posible entre la búsqueda del vehículo y la aplicación del filtro </p>
+    </td>
+    <td>
+      <h5>Escenario 1: Movimiento ligero de la cámara</h5>
+        <p>Dado que el usuario está disponible</p>
+        <p>Y el algoritmo de detección de vehículos ha detectado un auto</p>
+        <p>Cuando el algoritmo detecte un movimiento de la cámara delantera del dispositivo móvil de usuario menor o igual a 20°</p>
+        <p>Entonces el algoritmo de aplicación de filtros reajustará ligeramente el filtro para adecuarse al nuevo ángulo deseado</p>
+      <h5>Escenario 2: Desenfoque de la cámara</h5>
+        <p>Dado que el usuario está disponible</p>
+        <p>Y el algoritmo de detección de vehículos ha detectado un auto</p>
+        <p>Cuando el algoritmo detecte un movimiento de la cámara delantera del dispositivo móvil de usuario mayor a 20°</p>
+        <p>Entonces el algoritmo detección de vehículos vuelve a ejecutarse</p>
+        <p>Y el mensaje "Desenfoque del vehículo. Algoritmo de detección de vehículos se vuelve a ejecutar" es mostrado</p>
+    </td>
+    <td>EP03</td>
+  </tr>
   <!--EPIC 6-->
   <tr>
     <td colspan="5">
@@ -1218,6 +1427,9 @@ Se utilizó la aplicación Trello para el desarrollo del product backlog [Trello
 |Orden|User Story ID|Título|Descripción|Story Points|
 | - | - | - | - | - |
 | 1 | US08 | Permisos para uso de la cámara | Como persona que quiere personalizar su auto quiero que la aplicación me solicite permisos para usar la cámara para asegurarme que solo se está utilizando cuando yo lo considero conveniente | 3 |
+| 2 | US10 | Detección de tipo de auto | Como persona que quiere personalizar su auto quiero que la aplicación pueda detectar el tipo de auto que tengo para que pueda aplicar los filtros de manera más realista y consistente | 8 |
+| 3 | US11 | Detección de ángulo de toma de foto | Como persona que quiere personalizar su auto quiero que la aplicación detecte de qué ángulo estoy mostrando el carro para que pueda aplicar los filtros de manera más realista y consistente | 8 |
+| 4 | US12 | Detección en tiempo real del vehículo | Como persona que quiere personalizar su auto quiero que la aplicación detecte cuando mueva la cámara para que reajuste los filtros aplicados y que no se distorcionen | 8 |
 | 10 | US09 | Tutorial de Uso | Como persona que quiere personalizar su auto quiero contar con un pequeño tutorial de uso para aprender cómo utilizar la aplicación | 3 |
 | 11 | US18 | Registro de usuarios | Como usuario de cualquiera de los segmentos objetivos sin una cuenta en el sistema quiero poder registrarme en la aplicación para acceder a todas sus funcionalidades | 3 |
 | 12 | US19 | Acceso de Usuarios | Como usuario de cualquiera de los segmentos objetivos sin una cuenta en el sistema quiero poder iniciar sesión en la aplicación utilizando mi dirección de correo electrónico y contraseña para acceder a mi cuenta y utilizar todas las funcionalidades de la aplicación | 3 |
