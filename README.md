@@ -541,6 +541,621 @@ En esta sección se incluirán términos comúnmente utilizados alrededor de tod
 ![TO BE](img/to-be.png)
 
 ## 3.2. User Stories
+<table>
+  <tr>
+    <th>Epic ID</th>
+    <th> Epic </th>
+    <th> User Story ID </th>
+    <th> User Story </th>
+  </tr>
+  <!--Epic 1-->
+  <tr>
+    <th rowspan="7"> EP01 </th>
+    <th rowspan="7"> Landing Page </th>
+    <td> US01 </td>
+    <td> Implementación de Barra de navegación </td>
+  </tr>
+  <tr>
+    <td> US02 </td>
+    <td> Logo y Descripción de la empresa </td>
+  </tr>
+  <tr>
+    <td> US03 </td>
+    <td> Detalles y Servicios de la empresa </td>
+  </tr>
+  <tr>
+    <td> US04 </td>
+    <td> Clientes de la empresa </td>
+  </tr>
+  <tr>
+    <td> US05 </td>
+    <td> Acerca de nosotros </td>
+  </tr>
+  <tr>
+    <td> US06 </td>
+    <td> Implementación de un Footer </td>
+  </tr>
+  <tr>
+    <td> US07 </td>
+    <td> Traslación a la aplicación web </td>
+  </tr>
+  <!--Epic 2-->
+  <tr>
+    <th rowspan="3"> EP02 </th>
+    <th rowspan="3"> Uso de la cámara </th>
+    <td> US08 </td>
+    <td> Permisos para uso de la cámara </td>
+  </tr>
+  <tr>
+    <td>TS-US08</td>
+    <td>Solicitar permisos para el uso de la cámara</td>
+  </tr>
+  <tr>
+    <td> US09 </td>
+    <td> Tutorial de Uso </td>
+  </tr>
+  <!--Epic 3-->
+  <tr>
+    <th rowspan="6"> EP03 </th>
+    <th rowspan="6"> Detección de Autos </th>
+    <td> US010 </td>
+    <td> Detección de tipo de auto </td>
+  </tr>
+  <tr>
+    <td>TS-US10</td>
+    <td>Detectar tipo de auto</td>
+  </tr>
+  <tr>
+    <td>US11</td>
+    <td>Detección de ángulo de toma de foto</td>
+  </tr>
+  <tr>
+    <td>TS-US11</td>
+    <td>Detectar ángulo de la toma de foto</td>
+  </tr>
+  <tr>
+    <td>US12</td>
+    <td>Detección en tiempo real del vehículo</td>
+  </tr>
+  <tr>
+    <td>TS-US12</td>
+    <td>Detectar en tiempo real el vehículo</td>
+  </tr>
+  <!--Epic 4-->
+  <tr>
+    <th rowspan="6"> EP04 </th>
+    <th rowspan="6"> Implementación de Filtros </th>
+    <td> US13 </td>
+    <td> Agregado de filtro a un auto</td>
+  </tr>
+  <tr>
+    <td>TS-US13</td>
+    <td>Agregar filtro a un auto</td>
+  </tr>
+  <tr>
+    <td> US14 </td>
+    <td> Cambiado de color de un auto</td>
+  </tr>
+  <tr>
+    <td>TS-US14</td>
+    <td>Cambiar de color un auto</td>
+  </tr>
+  <tr>
+    <td> US15 </td>
+    <td> Agregado de accesorios externos</td>
+  </tr>
+  <tr>
+    <td>TS-US15</td>
+    <td>Agregar accesorios externos</td>
+  </tr>
+  <!--Epic 5-->
+  <tr>
+    <th rowspan="4"> EP05 </th>
+    <th rowspan="4"> Comparación y Guardado </th>
+    <td> US16 </td>
+    <td> Comparación de auto antes y después </td>
+  </tr>
+  <tr>
+    <td>TS-US16</td>
+    <td>Comparar un auto antes y después</td>
+  </tr>
+  <tr>
+    <td> US17 </td>
+    <td> Guardado foto y filtros aplicados</td>
+  </tr>
+  <tr>
+    <td>TS-US17</td>
+    <td>Guardar foto y filtros aplicados</td>
+  </tr>
+  <!--Epic 6-->
+  <tr>
+    <th rowspan="4"> EP06 </th>
+    <th rowspan="4"> Autenticación de Usuarios </th>
+    <td> US18 </td>
+    <td> Registro de usuarios </td>
+  </tr>
+  <tr>
+    <td> TS-US18 </td>
+    <td> Registar usuario</td>
+  </tr>
+  <tr>
+    <td> US19 </td>
+    <td> Acceso de Usuarios </td>
+  </tr>
+  <tr>
+    <td> TS-US19 </td>
+    <td> Acceso a usuario </td>
+  </tr>
+  <!--Epic 7-->
+  <tr>
+    <th rowspan="4"> EP07 </th>
+    <th rowspan="4"> Administración de Contraseña de Usuarios </th>
+    <td> US20 </td>
+    <td> Actualización de contraseña </td>
+  </tr>
+  <tr>
+    <td> TS-US20 </td>
+    <td> Actualizar contraseña</td>
+  </tr>
+  <tr>
+    <td> US21 </td>
+    <td> Recuperación de contraseña </td>
+  </tr>
+  <tr>
+    <td> TS-US21 </td>
+    <td> Recuperar de contraseña</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th> Epic / Story ID </th>
+    <th> Título </th>
+    <th> Descripción </th>
+    <th> Criterios de Aceptación </th>
+    <th> Relacionado con (Epic ID) </th>
+  </tr>
+  <tr>
+    <td colspan="5">
+      <h5 style="text-align: center">EPIC 1: LANDING PAGE</h5>
+      <p>
+        Como visitante, quiero contar con una landing page para visualizar todas las funcionalidades que tiene la aplicación móvil que ofrece la empresa
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <th>EP01 / US01</th>
+    <th>Implementación de Barra de navegación</th>
+    <td>
+      <p> Como visitante </p>
+      <p> Quiero tener la opción de atravesar todas las secciones de la landing page a través de una barra de navegación </p>
+      <p> Para facilitar el acceso a la información </p>
+    </td>
+    <td>
+      <h5>Escenario 1: Traslado de una sección a otra</h5>
+        <p> Dado que el usuario se encuentra en la landing page </p>
+        <p> Cuando el usuario seleccione una de las secciones de la barra de navegación </p>
+        <p> Entonces se trasladará a la sección seleccionada </p>
+      <h5>Escenario 2: Selección de la misma sección de la landing page</h5>
+        <p> Dado que el usuario se encuentra en una sección específica de la landing page </p>
+        <p> Cuando el usuario seleccione la misma sección en la barra de navegación </p>
+        <p> Entonces la pantalla no se moverá a otra sección diferente </p>
+    </td>
+    <td>EP01</td>
+    </tr>
+  <tr>
+    <th>EP01 / US02</th>
+    <th> Logo y Descripción de la empresa </th>
+    <td>
+      <p> Como visitante </p>
+      <p> Quiero visualizar el logo y descripción de la empresa </p>
+      <p> Para verificar que estoy en la landing page oficial de la empresa </p>
+    </td>
+    <td>
+      <h5> Escenario 1: Visualización del Logo </h5>
+        <p> Dado que el usuario se encuentra en la landing page </p>
+        <p> Cuando el usuario seleccione “Inicio” en la barra de navegación </p>
+        <p> Entonces se trasladará al usuario a la sección del logo y descripción de la empresa </p>
+      <h5>Escenario 2: El logo no aparece</h5>
+        <p> Dado que el usuario se encuentra en una sección específica de la landing page </p>
+        <p> Cuando el usuario seleccione “Inicio” en la barra de navegación </p>
+        <p> Y el logo de la empresa no haya cargado </p>
+        <p> Entonces se trasladará al usuario a la sección del logo y descripción de la empresa </p>
+        <p> Y aparecerá solo la descripción </p>
+    </td>
+    <td>EP01</td>
+  </tr>
+  <tr>
+    <th>EP01 / US03</th>
+    <th>Detalles y Servicios de la empresa</th>
+    <td>
+      <p> Como visitante </p>
+      <p> Quiero visualizar los detalles y servicios de la empresa </p>
+      <p> Para conocer de qué manera se puede utilizar la aplicación </p>
+    </td>
+    <td>
+      <h5>Escenario 1: Traslado a la sección servicios</h5>
+        <p> Dado que el usuario se encuentra en la landing page </p>
+        <p> Cuando el usuario seleccione “Servicios” en la barra de navegación </p>
+        <p> Entonces se trasladará al usuario a la sección de detalles de servicios </p>
+      <h5>Escenario 2: El usuario ya se encuentra en la sección servicios</h5>
+        <p> Dado que el usuario se encuentra en la sección “servicios” </p>
+        <p> Cuando el usuario seleccione “Servicios” en la barra de navegación </p>
+        <p> Entonces el sistema mantendrá al usuario en la sección seleccionada </p>
+    </td>
+    <td>EP01</td>
+  </tr>
+  <tr>
+    <th>EP01 / US04</th>
+    <th>Clientes de la empresa</th>
+    <td>
+      <p> Como visitante </p>
+      <p> Quiero visualizar las experiencias de clientes previos de la empresa </p>
+      <p> Para es que la vida de los usuarios cambió al utilizar la aplicación </p>
+    </td>
+    <td>
+      <h5>Escenario 1: Traslado a la sección clientes</h5>
+        <p> Dado que el usuario se encuentra en la landing page </p>
+        <p> Cuando el usuario seleccione “Clientes” en la barra de navegación </p>
+        <p> Entonces se trasladará al usuario a la sección de experiencia de clientes </p>
+      <h5>Escenario 2: El usuario ya se encuentra en la sección clientes</h5>
+        <p> Dado que el usuario se encuentra en la sección “clientes” </p>
+        <p> Cuando el usuario seleccione “Clientes” en la barra de navegación </p>
+        <p> Entonces el sistema mantendrá al usuario en la sección seleccionada </p>
+    </td>
+    <td>EP01</td>
+  </tr>
+  <tr>
+    <th>EP01 / US05</th>
+    <th>Acerca de nosotros</th>
+    <td>
+      <p> Como visitante </p>
+      <p> Quiero visualizar la misión y visión de la empresa </p>
+      <p> Para conocer qué planes tienen a futuro </p>
+    </td>
+    <td>
+      <h5>Escenario 1: Traslado a la sección Nosotros</h5>
+        <p> Dado que el usuario se encuentra en la landing page </p>
+        <p> Cuando el usuario seleccione “Acerca de Nosotros” en la barra de navegación </p>
+        <p> Entonces se trasladará al usuario a la sección de experiencia de clientes </p>
+      <h5>Escenario 2: El usuario ya se encuentra en la sección nosotros</h5>
+        <p> Dado que el usuario se encuentra en la sección “Nosotros” </p>
+        <p> Cuando el usuario seleccione “Acerca de Nosotros” en la barra de navegación </p>
+        <p> Entonces el sistema mantendrá al usuario en la sección seleccionada </p>
+    </td>
+    <td>EP01</td>
+  </tr>
+  <tr>
+    <th>EP01 / US06</th>
+    <th>Implementación de un Footer</th>
+    <td>
+      <p> Como visitante </p>
+      <p> Quiero visualizar un Footer al final de la página </p>
+      <p> Para ver las redes sociales asociadas a la empresa </p>
+    </td>
+    <td>
+      <h5>Escenario 1: Traslado a la sección de footer</h5>
+        <p> Dado que el usuario se encuentra en la landing page </p>
+        <p> Cuando el usuario se dirija al final de la landing page </p>
+        <p> Entonces el usuario visualizará las redes sociales asociadas a la empresa </p>
+      <h5>Escenario 2: Traslado al usuario de la red social seleccionada</h5>
+        <p> Dado que el usuario se encuentra en el footer </p>
+        <p> Cuando el usuario seleccione una de íconos de las redes sociales que aparecen la sección del footer </p>
+        <p> Entonces el sistema redirigirá al usuario a la red social indicada </p>
+      </td>
+    <td>EP01</td>
+  </tr>
+  <tr>
+    <th>EP01 / US07</th>  
+    <th>Translación a la aplicación web</th>
+    <td>
+      <p> Como visitante </p>
+      <p> Quiero contar con un botón que me redirija a la aplicación web </p>
+      <p> Para tener un acceso directo y rápido a ella </p>
+    </td>
+    <td>
+      <h5>Escenario 1: Traslado a la aplicación web</h5>
+        <p> Dado que el usuario se encuentra en la landing page </p>
+        <p> Cuando el dé click en el botón "Abrir App" </p>
+        <p> Entonces el sistema redirigirá al usuario a la aplicación web </p>
+      <h5>Escenario 2: Aplicación actualmente en mantenimiento</h5>
+        <p> Dado que el usuario se encuentra en la landing page </p>
+        <p> Cuando el dé click en el botón "Abrir App" </p>
+        <p> Y lo servicios de la aplicación web estén actualmente en mantenimiento </p>
+        <p> Entonces aparecerá un mensaje, indicando que actualmente la aplicación web está en mantenimiento </p>
+    </td>
+    <td>EP01</td>
+  </tr>
+  <!--EPIC 6-->
+  <tr>
+    <td colspan="5">
+      <h5 style="text-align: center">EPIC 6: Autenticación de Usuarios</h5>
+        <p>
+          Como usuario, quiero poder registrarme e iniciar sesión para acceder a todas las herramientas que AutoFX me ofrece
+        </p>
+    </td>
+  </tr>
+  <tr>
+    <th>EP06 / US18</th>
+    <th>Registro de usuario</th>
+    <td>
+      <p> Como usuario de cualquiera de los segmentos objetivos sin una cuenta en el sistema </p>
+      <p> Quiero poder registrarme en la aplicación </p>
+      <p> Para acceder a todas sus funcionalidades </p>
+    </td>
+    <td>
+      <h5>Escenario 1: Ingreso a la página "Crear una cuenta"</h5>
+        <p> Dado que el usuario se encuentra en la página "Inicio Sesión" </p>
+        <p> Cuando el usuario seleccione el botón "Crear nueva cuenta" </p>
+        <p> Entonces se redirige al usuario a la página "Crear nueva cuenta" </p>
+      <h5>Escenario 2: Registro exitoso</h5>
+        <p> Dado que el usuario se encuentra en la página “Crear nueva cuenta” </p>
+        <p> Cuando el usuario ingrese todos sus datos de registro </p>
+        <p> Entonces el sistema crea una nueva cuenta, incluyendo los datos de registro proporcionados por el usuario </p>
+        <p> Y se redirige al usuario a la página principal </p>
+      <h5>Escenario 3: Registro con datos incompletos</h5>
+        <p> Dado que el usuario se encuentra en la página “Crear nueva cuenta” </p>
+        <p> Cuando el usuario intente registrar una cuenta sin proporcionar todos los datos de registro requeridos </p>
+        <p> Entonces se muestra un mensaje de error, indicando que no puede crearse una cuenta sin haber completado todos los campos </p>
+      <h5>Escenario 4: Registro con correo electrónico ya registrado</h5>
+        <p> Dado que el usuario se encuentra en la página “Crear nueva cuenta” </p>
+        <p> Cuando el usuario ingrese una dirección de correo electrónico ya está registrada en el sistema </p>
+        <p> Entonces se muestra un mensaje de error, indicando que la dirección de correo electrónico ya está en uso </p>
+      <h5>Escenario 5: Registro con un nombre inválido</h5>
+        <p> Dado que el usuario se encuentra en la página “Crear nueva cuenta” </p>
+        <p> Cuando el usuario ingrese un nombre inválido </p>
+        <p> Entonces se muestra un mensaje de error, indicando que el nombre escrito no puede ser utilizado para crear una cuenta </p>
+    </td>
+    <td>EP06</td>
+  </tr>
+  <tr>
+    <th>EP06 / TS-US18</th>
+    <th>Registrar Usuario</th>
+    <td>
+      <p> Como desarrollador </p>
+      <p> Quiero agregar usuarios a la base de datos </p>
+      <p> Para que puedan utilizar mi aplicación </p>
+    </td>
+    <td>
+      <h5>Escenario 1: Registro de usuario exitoso</h5>
+        <p> Dado que el ENDPOINT/usuario está disponible </p>
+        <p> Cuando una solicitud POST sea enviada con los datos de nombre, edad, sexo, correo electrónico, contraseña </p>
+        <p> Entonces se recibe una respuesta con el status 201 </p>
+        <p> Y un recurso de usuario es incluido en el campo de respuestas con un nuevo ID y los datos ofrecidos por el usuario </p>
+      <h5>Escenario 2: Registro con correo electrónico ya registrado</h5>
+        <p> Dado que el ENDPOINT/usuario está disponible </p>
+        <p> Cuando una solicitud POST sea enviada con los datos de nombre, edad, sexo, correo electrónico, contraseña </p>
+        <p> Y la dirección de correo electrónico ingresada ya está registrada en el sistema </p>
+        <p> Entonces se recibe una respuesta con el status 400 </p>
+        <p> Y un mensaje con el valor “Correo ya registrado” es mostrado </p>
+      <h5>Escenario 3: Registro con datos incompletos</h5>
+        <p> Dado que el ENDPOINT/usuario está disponible </p>
+        <p> Cuando una solicitud POST sea enviada con solo algunos de los datos de nombre, edad, sexo, correo electrónico, contraseña </p>
+        <p> Entonces se recibe una respuesta con el status 400 </p>
+        <p> Y un mensaje con el valor “Faltan datos” es mostrado </p>
+      <h5>Escenario 4: Registro con un nombre de usuario prohibido</h5>
+        <p> Dado que el ENDPOINT/usuario está disponible </p>
+        <p> Cuando una solicitud POST sea enviada con los datos de nombre, edad, sexo, correo electrónico, contraseña </p>
+        <p> Y el dato nombre sea una palabra inválida </p>
+        <p> Entonces se recibe una respuesta con el status 400 </p>
+        <p> Y un mensaje con el valor “Nombre Prohibido” es mostrado </p>
+      <h5>Escenario 5: Registro con una edad inválida</h5>
+        <p> Dado que el ENDPOINT/usuario está disponible </p>
+        <p> Cuando una solicitud POST sea enviada con los datos de nombre, edad, sexo, correo electrónico, contraseña </p>
+        <p> Y el dato edad menor o igual a 0 o mayor que 130 </p>
+        <p> Entonces se recibe una respuesta con el status 400 </p>
+        <p> Y un mensaje con el valor “La edad no es número entero positivo menor a 130” es mostrado </p>
+      <h5>Escenario 6: Registro con una contraseña débil</h5>
+        <p> Dado que el ENDPOINT/usuario está disponible </p>
+        <p> Cuando una solicitud POST sea enviada con los datos de nombre, edad, sexo, correo electrónico, contraseña </p>
+        <p> Y la contraseña sea muy débil (sin al menos una letra mayúscula, una letra minúscula, un número y un carácter especial) </p>
+        <p> Entonces se recibe una respuesta con el status 400 </p>
+        <p> Y un mensaje con el valor de “La contraseña no incluye al menos una letra mayúscula, una letra minúscula, un número y un carácter especial” es mostrado </p>
+    </td>
+    <td>EP06</td>
+  </tr>
+  <tr>
+    <th>EP06 / US19</th>
+    <th>Acceso de usuario</th>
+    <td>
+      <p> Como usuario de cualquiera de los segmentos objetivos sin una cuenta en el sistema </p>
+      <p> Quiero poder iniciar sesión en la aplicación utilizando mi dirección de correo electrónico y contraseña </p>
+      <p> Para acceder a mi cuenta y utilizar todas las funcionalidades de la aplicación </p>
+    </td>
+    <td>
+      <h5>Escenario 1: Inicio de sesión exitoso</h5>
+        <p> Dado que el usuario se encuentra en la página "Inicio Sesión" </p>
+        <p> Cuando el usuario ingrese una dirección de correo electrónico que tenga una cuenta registrada en el sistema </p>
+        <p>Y el usuario ingrese la contraseña asociada al correo electrónico proporcionado</p>
+        <p> Entonces se redirige al usuario a la página principal de la aplicación </p>
+      <h5>Escenario 2: Inicio de sesión con un correo electrónico no registrado en el sistema</h5>
+        <p> Dado que el usuario se encuentra en la página “Inicio Sesión” </p>
+        <p> Cuando el usuario ingrese una dirección de correo electrónico que no tenga una cuenta registrada en el sistema </p>
+        <p> Entonces se muestra un mensaje de error, indicando que el correo o contraseña es incorrecto </p>
+      <h5>Escenario 3: Inicio de sesión con una contraseña inválida</h5>
+        <p> Dado que el usuario se encuentra en la página “Inicio Sesión” </p>
+        <p> Cuando el usuario ingrese una dirección de correo electrónico </p>
+        <p> Y una contraseña inválida</p>
+        <p> Entonces se muestra un mensaje de 1error, indicando que el correo o contraseña es incorrecto </p>
+      <h5>Escenario 4: Inicio de sesión con una cuenta desactivada</h5>
+        <p> Dado que el usuario se encuentra en la página de “Inicio Sesión” </p>
+        <p> Cuando el usuario intente iniciar sesión con una cuenta desactivada </p>
+        <p> Entonces el sistema activa automáticamente la cuenta</p>
+        <p> Y se redirige al usuario a la página principal de la aplicación</p>
+    </td>
+    <td>EP06</td>
+  </tr>
+  <tr>
+    <th>EP06 / TS-US19</th>
+    <th>Acceder Usuarios</th>
+    <td>
+      <p> Como desarrollador </p>
+      <p> Quiero poder permitir el acceso a los usuarios a la aplicación móvil </p>
+      <p> Para que puedan utilizar los servicios ofrecidos por nuestra empresa </p>
+    </td>
+    <td>
+      <h5>Escenario 1: Inicio de sesión exitoso</h5>
+        <p> Dado que el ENDPOINT/usuario está disponible </p>
+        <p> Cuando una solicitud POST sea enviada con los datos de dirección de correo electrónico y contraseña que se encuentren guardados dentro de la base de datos</p>
+        <p> Entonces se recibe una respuesta con el status 202 </p>
+        <p> Y el sistema permite el acceso al usuario a la página principal </p>
+      <h5>Escenario 2: Registro con correo electrónico ya registrado</h5>
+        <p> Dado que el ENDPOINT/usuario está disponible </p>
+        <p> Cuando una solicitud POST sea enviada con los datos de dirección de correo electrónico y contraseña </p>
+        <p> Y la dirección de correo electrónico no esté guardada en la base de datos </p>
+        <p> Entonces se recibe una respuesta con el status 404 </p>
+        <p> Y un mensaje con el valor de “No existe una cuenta asociada a el correo electrónico proporcionado” es mostrado </p>
+      <h5>Escenario 3: Inicio de sesión con contraseña incorrecta</h5>
+        <p> Dado que el ENDPOINT/usuario está disponible </p>
+        <p> Cuando una solicitud POST sea enviada con los datos de dirección de correo electrónico y contraseña </p>
+        <p> Y la contraseña sea incorrecta </p>
+        <p> Entonces se recibe una respuesta con el status 400 </p>
+        <p> Y un mensaje con el valor “Datos incorrectos” es mostrado </p>
+      <h5>Escenario 4: Inicio de sesión con datos incompletos</h5>
+        <p> Dado que el ENDPOINT/usuario está disponible </p>
+        <p> Cuando una solicitud POST sea enviada con solo uno de los datos de dirección de correo electrónico y contraseña </p>
+        <p> Entonces se recibe una respuesta con el status 400 </p>
+        <p> Y un mensaje con el valor “Faltan Datos” es mostrado </p>
+    </td>
+    <td>EP06</td>
+  </tr>
+  <!--EPIC 07-->
+  <tr>
+    <td colspan="5">
+      <h5 style="text-align: center">EPIC 7: Administración de Contraseña de Usuarios</h5>
+        <p>
+          Como usuario, quiero poder actualizar mi contraseña para asegurarme que mi cuenta esté segura
+        </p>
+    </td>
+  </tr>
+  <tr>
+    <th>EP07 / US20</th>
+    <th>Actualización de contraseña</th>
+    <td>
+      <p> Como usuario de cualquiera de los segmentos objetivos </p>
+      <p> Quiero poder cambiar mi contraseña </p>
+      <p> Para mantener mi cuenta segura </p>
+    </td>
+    <td>
+      <h5>Escenario 1: Entrar en el entorno “Contraseña”</h5>
+        <p> Dado que el usuario se encuentra en el entorno “Configuración” </p>
+        <p> Cuando el usuario seleccione el botón "Contraseña”</p>
+        <p> Entonces se redirige al usuario al entorno “Contraseña” </p>
+      <h5>Escenario 2: Ingreso al entorno “Cambiar Contraseña”</h5>
+        <p> Dado que el usuario se encuentra en el entorno “Contraseña” </p>
+        <p> Cuando el usuario complete el campo mostrado con la contraseña actual </p>
+        <p> Entonces se redirige al usuario al entorno “Cambiar contraseña” </p>
+      <h5>Escenario 3: Contraseña incorrecta</h5>
+        <p> Dado que el usuario se encuentra en el entorno “Contraseña” </p>
+        <p> Cuando el usuario complete el campo mostrado con una contraseña diferente a la actual </p>
+        <p> Entonces se muestra un mensaje de error, indicando que la contraseña escrita no coincide con la contraseña actual </p>
+      <h5>Escenario 4: Cambio de contraseña exitoso</h5>
+        <p> Dado que el usuario se encuentra en el entorno “Cambiar contraseña” </p>
+        <p> Cuando el usuario ingrese la nueva contraseña </p>
+        <p> Y da clic en “Cambiar” </p>
+        <p> Entonces se muestra un mensaje de confirmación, indicando que se cambió la contraseña </p>
+    </td>
+    <td>EP07</td>
+  </tr>
+  <tr>
+    <th>EP07 / TS-US20</th>
+    <th>Actualizar de contraseña</th>
+    <td>
+      <p> Como desarrollador </p>
+      <p> Quiero permitir al usuario cambiar su contraseña actual mediante un entorno aislado del resto de los entornos </p>
+      <p> Para mantener el cambio de contraseña como un método aislado del resto que no pueda afectar ninguna de las otras funcionalidades de la aplicación </p>
+    </td>
+    <td>
+      <h5>Escenario 1: Contraseña actual incorrecta</h5>
+        <p> Dado que el ENDPOINT/usuario está disponible </p>
+        <p> Cuando una solicitud PUT sea enviada con los datos del campo “Contraseña Actual” al presionar el botón “Comprobar” </p>
+        <p> Entonces se recibe una respuesta con el status 400 </p>
+        <p> Y el mensaje “La contraseña escrita no coincide con la actual” es mostrado </p>
+        <p> Y el sistema muestra solo las tareas que están etiquetadas con la etiqueta seleccionada </p>
+      <h5>Escenario 2: Cambio de contraseña exitoso</h5>
+        <p> Dado que el ENDPOINT/usuario está disponible </p>
+        <p> Cuando una solicitud PUT sea enviada con los datos de los campos “Nueva Contraseña” y “Confirmar Contraseña” al presionar el botón “Cambiar” </p>
+        <p> Entonces se recibe una respuesta con el status 202 </p>
+        <p> Y el mensaje “La contraseña ha sido cambiada” es mostrado </p>
+        <p> Y el sistema cambia la contraseña actual por la proporcionada </p>
+    </td>
+    <td>EP07</td>
+  </tr>
+  <tr>
+    <th>EP07 / US21</th>
+    <th>Recuperación de Contraseña</th>
+    <td>
+      <p> Como usuario de cualquiera de los segmentos objetivos </p>
+      <p> Quiero tener la capacidad de restablecer mi contraseña en caso de olvidarla </p>
+      <p> Para así poder acceder nuevamente a mi cuenta </p>
+    </td>
+    <td>
+      <h5>Escenario 1: Ingreso al entorno “Recuperar Contraseña”</h5>
+        <p> Dado que el usuario se encuentra en la página “Inicio sesión” </p>
+        <p> Cuando el usuario dé clic en "Olvidé mi contraseña" </p>
+        <p> Entonces se redirige al usuario al entorno “Recuperar Contraseña” </p>
+      <h5>Escenario 2: Recuperación con dirección de correo electrónico válido</h5>
+        <p> Dado que el usuario se encuentra en el entorno “Recuperar Contraseña” </p>
+        <p> Cuando el usuario escriba una dirección de correo electrónico registrada en el sistema </p>
+        <p> Entonces se muestra el entorno “Nueva Contraseña” </p>
+      <h5>Escenario 3: Recuperación con dirección de correo electrónico inválido</h5>
+        <p> Dado que el usuario se encuentra en el entorno “Recuperar Contraseña” </p>
+        <p> Cuando el usuario proporcione una dirección de correo electrónico que no se encuentra actualmente registrada en el sistema </p>
+        <p> Entonces se muestra un mensaje de error, indicando que la dirección de correo electrónico no está registrada en el sistema </p>
+      <h5>Escenario 4: Restablecimiento de contraseña exitoso</h5>
+        <p> Dado que el usuario se encuentra en la página “Nueva Contraseña” </p>
+        <p> Cuando el usuario ingresa una nueva contraseña </p>
+        <p> Entonces se muestra un mensaje de confirmación, indicando que la contraseña se ha restablecido correctamente </p>
+        <p> Y se redirige al usuario a la página “Inicio Sesión”</p>
+      <h5>Escenario 5: Restablecimiento de contraseña con la misma contraseña que la original</h5>
+        <p> Dado que el usuario se encuentra en la página “Recuperar Contraseña” </p>
+        <p> Cuando el usuario ingresa una contraseña igual a la que actualmente está utilizando </p>
+        <p> Entonces se muestra un mensaje de error, indicando que no puede cambiarse a la misma contraseña que está actualmente en uso </p>
+    </td>
+    <td>EP07</td>
+  </tr>
+  <tr>
+    <th>EP07 / TS-US21</th>
+    <th>Recuperar Contraseña</th>
+    <td>
+      <p> Como desarrollador </p>
+      <p> Quiero que el sistema permita a los usuarios recuperar su contraseña </p>
+      <p> Para permitir que los usuarios tengan un método para acceder de nuevo a la aplicación si es que se han olvidado de su contraseña </p>
+    </td>
+    <td>
+      <h5>Escenario 1: Recuperación con dirección de correo electrónico válido</h5>
+        <p> Dado que el ENDPOINT/usuario está disponible </p>
+        <p> Cuando una solicitud POST sea enviada con el dato de dirección de correo electrónico </p>
+        <p> Y la dirección de correo electrónico ingresada esté registrada en el sistema </p>
+        <p> Entonces se recibe una respuesta con el status 202 </p>
+        <p> Y el sistema permite el acceso al usuario al entorno “Nueva Contraseña” </p>
+      <h5>Escenario 2: Recuperación con dirección de correo electrónico inválido</h5>
+        <p> Dado que el ENDPOINT/usuario está disponible </p>
+        <p> Cuando una solicitud POST sea enviada con el dato de dirección de correo electrónico </p>
+        <p> Y la dirección de correo electrónico ingresada no se encuentre registrada en el sistema </p>
+        <p> Entonces se recibe una respuesta con el status 401 </p>
+        <p> Y un mensaje con el valor “El correo electrónico es incorrecto” es mostrado </p>
+      <h5>Escenario 3: Restablecimiento de contraseña exitoso </h5>
+        <p> Dado que el ENDPOINT/usuario está disponible </p>
+        <p> Cuando una solicitud POST sea enviada con el dato de una nueva contraseña </p>
+        <p> Entonces se recibe una respuesta con el status 202</p>
+        <p> Y el sistema redirige al usuario a la página principal </p>
+      <h5>Escenario 4: Restablecimiento de contraseña con la misma contraseña que la original</h5>
+        <p> Dado que el ENDPOINT/usuario está disponible </p>
+        <p> Cuando una solicitud POST sea enviada con el dato de una contraseña</p>
+        <p> Y la contraseña sea la misma que la contraseña actual </p>
+        <p> Entonces se recibe una respuesta con el status 406 </p>
+        <p> Y un mensaje con el valor “La nueva contraseña coincide con la actual” es mostrado </p>
+      <h5>Escenario 5: Restablecimiento de contraseña sin proporcionar una contraseña</h5>
+        <p> Dado que el ENDPOINT/usuario está disponible </p>
+        <p> Cuando una solicitud POST sea enviada sin datos</p>
+        <p> Entonces se recibe una respuesta con el status 400 </p>
+        <p> Y un mensaje con el valor “Contraseña no proporcionada” es mostrado </p>
+    </td>
+    <td>EP07</td>
+  </tr>
+</table>
+
 ## 3.3. Impact Mapping
 ## 3.4. Product Backlog
 
