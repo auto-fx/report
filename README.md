@@ -462,6 +462,7 @@ Para realizar los componentes elaboramos las preguntas para obtener información
 ### 2.3.3. User Journey Mapping
 ### 2.3.4. Empathy Mapping
 ### 2.3.5. As-is Scenario Mapping
+![AS IS](img/as-is.png)
 
 ## 2.4. Ubiquitous Language
 En esta sección se incluirán términos comúnmente utilizados alrededor de todo el desarrollo del proyecto para eliminar ambigüedades
@@ -498,6 +499,8 @@ En esta sección se incluirán términos comúnmente utilizados alrededor de tod
 # Capítulo III: Requirements Specification
 
 ## 3.1. To-Be Scenario Mapping
+![TO BE](img/to-be.png)
+
 ## 3.2. User Stories
 ## 3.3. Impact Mapping
 ## 3.4. Product Backlog
