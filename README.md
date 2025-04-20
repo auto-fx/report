@@ -919,6 +919,7 @@ En esta sección se incluirán términos comúnmente utilizados alrededor de tod
     </td>
     <td>EP02</td>
   </tr>
+
   <!--EPIC 6-->
   <tr>
     <td colspan="5">
@@ -1211,6 +1212,24 @@ En esta sección se incluirán términos comúnmente utilizados alrededor de tod
 
 ## 3.3. Impact Mapping
 ## 3.4. Product Backlog
+Se utilizó la aplicación Trello para el desarrollo del product backlog [Trello Board](https://trello.com/invite/b/680555a4b1894b16d011fa9a/ATTI48aab33877f28f2e26ff4bfc2e2e7d1d70E6B7DE/arquitectura-de-software-emergentes)
+![Product Backlog](img/product-backlog.png)
+
+|Orden|User Story ID|Título|Descripción|Story Points|
+| - | - | - | - | - |
+| 1 | US08 | Permisos para uso de la cámara | Como persona que quiere personalizar su auto quiero que la aplicación me solicite permisos para usar la cámara para asegurarme que solo se está utilizando cuando yo lo considero conveniente | 3 |
+| 10 | US09 | Tutorial de Uso | Como persona que quiere personalizar su auto quiero contar con un pequeño tutorial de uso para aprender cómo utilizar la aplicación | 3 |
+| 11 | US18 | Registro de usuarios | Como usuario de cualquiera de los segmentos objetivos sin una cuenta en el sistema quiero poder registrarme en la aplicación para acceder a todas sus funcionalidades | 3 |
+| 12 | US19 | Acceso de Usuarios | Como usuario de cualquiera de los segmentos objetivos sin una cuenta en el sistema quiero poder iniciar sesión en la aplicación utilizando mi dirección de correo electrónico y contraseña para acceder a mi cuenta y utilizar todas las funcionalidades de la aplicación | 3 |
+| 13 | US20 | Actualización de contraseña | Como usuario de cualquiera de los segmentos objetivos quiero poder cambiar mi contraseña para mantener mi cuenta segura | 3 |
+| 14 | US21 | Recuperación de contraseña | Como usuario de cualquiera de los segmentos objetivos quiero tener la capacidad de restablecer mi contraseña en caso de olvidarla para así poder acceder nuevamente a mi cuenta | 3 |
+| 15 | US01 |	Implementación de Barra de navegación |	Como visitante quiero tener la opción de atravesar todas las secciones de la landing page a través de una barra de navegación para facilitar el acceso a la información |	1 |
+| 16 | US02 |	Implementación de Barra de navegación | Como visitante quiero visualizar el logo y descripción de la empresa para verificar que estoy en la landing page oficial de la empresa | 1 |
+| 17 | US03 |	Detalles y Servicios de la empresa | Como visitante quiero visualizar los detalles y servicios de la empresa para conocer de qué manera se puede utilizar la aplicación | 1 |
+| 18 | US04 |	Clientes de la empresa | Como visitante quiero visualizar las experiencias de clientes previos de la empresa para es que la vida de los usuarios cambió al utilizar la aplicación | 1 |
+| 19 | US05 |	Acerca de nosotros | Como visitante quiero visualizar la misión y visión de la empresa para conocer qué planes tienen a futuro | 1 |
+| 20 | US06 |	Implementación de un Footer | Como visitante quiero visualizar un Footer al final de la página para ver las redes sociales asociadas a la empresa |	1 |
+| 21 | US07 |	Translación a la aplicación web | Como visitante quiero contar con un botón que me redirija a la aplicación web para tener un acceso directo y rápido a ella | 1 |
 
 # Capítulo IV: Strategic-Level Software Design
 
