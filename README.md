@@ -1733,6 +1733,26 @@ Se utilizó la aplicación Trello para el desarrollo del product backlog [Trello
 
 ## 4.2. Strategic-Level Domain-Driven Design
 ### 4.2.1. EventStorming
+1. Unstructured Exploration
+![Unstructured Exploration](img/Unstructured%20Exploration.jpg)
+2. Timelines
+![Timelines](img/Timeline.jpg)
+3. Paint Points
+![Pain Points](img/Pain%20Points.jpg)
+4. Pivotal Points
+![Pivotal Points](img/Pivotal%20Points.jpg)
+5. Commands
+![Commands](img/Commands.jpg)
+6. Policies
+![Policies](img/Policies.jpg)
+7. Read Models
+![Read Models](img/Read%20Models.jpg)
+8. External Systems
+![External Systems](img/External%20Systems.jpg)
+9. Aggregates
+![Aggregates](img/Aggregates.jpg)
+10. Bounded Contexts
+![Bounded Contexts](img/Bounded%20Contexts.jpg)
 ### 4.2.2. Candidate Context Discovery
 ### 4.2.3. Domain Message Flows Modeling
 ### 4.2.4. Bounded Context Canvases
