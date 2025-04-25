@@ -1816,7 +1816,151 @@ En esta sección se especifican las restricciones técnicas impuestas por el neg
 
 
 ### 4.1.4. Architectural Design Decisions
+
+<table border="1" cellspacing="0" cellpadding="5">
+  <thead>
+    <tr>
+      <th rowspan="2">Driver ID</th>
+      <th rowspan="2">Título de Driver</th>
+      <th colspan="2">Pattern 1: Edge Computing</th>
+      <th colspan="2">Pattern 2: Microservicios</th>
+      <th colspan="2">Pattern 3: Arquitectura Monolítica Optimizada</th>
+    </tr>
+    <tr>
+      <th>Pro</th><th>Con</th><th>Pro</th><th>Con</th><th>Pro</th><th>Con</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>QA01</td>
+      <td>Rendimiento en Detección Visual</td>
+      <td>Reduce latencia y mejora el tiempo de respuesta local</td>
+      <td>Dependencia del hardware del cliente</td>
+      <td>Escalabilidad independiente de servicios críticos</td>
+      <td>Mayor complejidad de despliegue y comunicación</td>
+      <td>Simplicidad de implementación y menor esfuerzo inicial</td>
+      <td>Difícil de escalar para procesamiento intensivo</td>
+    </tr>
+    <tr>
+      <td>QA02</td>
+      <td>Usabilidad en Comparación Visual</td>
+      <td>Separación clara entre interfaz y lógica</td>
+      <td>Mayor complejidad si no se controla el flujo de datos</td>
+      <td>Carga rápida percibida; buena experiencia UX</td>
+      <td>Mayor esfuerzo en el diseño de interfaz</td>
+      <td>Reutilización de UI y fácil mantenimiento visual</td>
+      <td>Curva de aprendizaje inicial más alta</td>
+    </tr>
+    <tr>
+      <td>QA03</td>
+      <td>Alta Disponibilidad de la Aplicación</td>
+      <td>Permite tolerancia a fallos y alta disponibilidad</td>
+      <td>Mayor costo y complejidad de infraestructura</td>
+      <td>Distribuye carga y asegura continuidad</td>
+      <td>Requiere monitoreo constante y redundancia</td>
+      <td>Escalado automático y menor mantenimiento</td>
+      <td>Tiempo frío de arranque y limitado control</td>
+    </tr>
+    <tr>
+      <td>QA04</td>
+      <td>Seguridad de Datos del Usuario</td>
+      <td>Manejo central de credenciales y sesiones seguras</td>
+      <td>Dependencia de un proveedor externo</td>
+      <td>Verificación continua, minimiza exposición</td>
+      <td>Complejidad alta para apps móviles iniciales</td>
+      <td>Filtrado de acceso y autenticación controlada</td>
+      <td>Mayor configuración y posible latencia añadida</td>
+    </tr>
+    <tr>
+      <td>QA05</td>
+      <td>Mantenibilidad ante Nuevas Versiones</td>
+      <td>Automatiza pruebas y despliegue continuo</td>
+      <td>Requiere configuración y monitoreo constantes</td>
+      <td>Permite reemplazar o añadir módulos sin afectar el core</td>
+      <td>Diseño más complejo y dependencia entre plugins</td>
+      <td>Facilita mantenimiento y pruebas por módulo</td>
+      <td>Más esfuerzo inicial de diseño y documentación</td>
+    </tr>
+  </tbody>
+</table>
+
 ### 4.1.5. Quality Attribute Scenario Refinements
+
+<h3>Scenario Refinement for QA01 - Rendimiento en Detección Visual</h3>
+    <table border="1" cellspacing="0" cellpadding="5">
+        <tr><th>Scenario(s):</th><td>El usuario apunta la cámara a su auto para visualizarlo en tiempo real con filtros personalizados.</td></tr>
+        <tr><th>Business Goals:</th><td>Ofrecer una experiencia fluida e inmediata de personalización en RA, que motive al usuario a explorar la aplicación y compartir resultados.</td></tr>
+        <tr><th>Relevant Quality Attributes:</th><td>Stimulus: La cámara del dispositivo detecta el vehículo en escena.</td></tr>
+        <tr><th rowspan="5">Scenario Components</th><td><b>Stimulus Source:</b> Usuario final</td></tr>
+        <tr><td><b>Environment:</b> App en ejecución normal, sin interferencias externas</td></tr>
+        <tr><td><b>Artifact (if Known):</b> Sistema de detección de auto (módulo de reconocimiento visual)</td></tr>
+        <tr><td><b>Response:</b> El sistema identifica tipo, marca y modelo del auto y aplica filtros</td></tr>
+        <tr><td><b>Response Measure:</b> Tiempo de respuesta menor a 3 segundos desde la detección inicial</td></tr>
+        <tr><th>Questions:</th><td>¿Qué tipo de dispositivo usa el usuario y cuánto procesamiento puede delegarse al cliente?<br>¿Se puede mantener este rendimiento en condiciones de red limitada?</td></tr>
+        <tr><th>Issues:</th><td>Dependencia del rendimiento del hardware del cliente móvil.<br>Balance entre calidad de detección y latencia.</td></tr>
+    </table>
+    <br><br>
+    
+<h3>Scenario Refinement for QA02 - Usabilidad en Comparación Visual</h3>
+    <table border="1" cellspacing="0" cellpadding="5">
+        <tr><th>Scenario(s):</th><td>El usuario desea comparar el antes y después de su auto tras aplicar filtros.</td></tr>
+        <tr><th>Business Goals:</th><td>Brindar una experiencia clara e intuitiva que permita evaluar el resultado final de la personalización y facilite la toma de decisión.</td></tr>
+        <tr><th>Relevant Quality Attributes:</th><td>Stimulus: El usuario activa la función de comparación visual.</td></tr>
+        <tr><th rowspan="5">Scenario Components</th><td><b>Stimulus Source:</b> Usuario final</td></tr>
+        <tr><td><b>Environment:</b> App con filtros activos</td></tr>
+        <tr><td><b>Artifact (if Known):</b> Sistema de filtros visuales</td></tr>
+        <tr><td><b>Response:</b> La app muestra en pantalla la versión original y personalizada del auto</td></tr>
+        <tr><td><b>Response Measure:</b> La imagen comparativa se visualiza en menos de 2 segundos</td></tr>
+        <tr><th>Questions:</th><td>¿Cómo asegurar que la interfaz de comparación funcione correctamente en diferentes tamaños de pantalla?</td></tr>
+        <tr><th>Issues:</th><td>Posible sobrecarga visual en pantallas pequeñas si no se optimiza la UI.</td></tr>
+    </table>
+    <br><br>
+    
+<h3>Scenario Refinement for QA03 - Alta Disponibilidad de la Aplicación</h3>
+    <table border="1" cellspacing="0" cellpadding="5">
+        <tr><th>Scenario(s):</th><td>El usuario intenta abrir la app para personalizar su auto.</td></tr>
+        <tr><th>Business Goals:</th><td>Garantizar que la aplicación esté disponible para el usuario la mayor parte del tiempo, evitando interrupciones en la experiencia.</td></tr>
+        <tr><th>Relevant Quality Attributes:</th><td>Stimulus: El usuario inicia la app con una conexión a internet estable.</td></tr>
+        <tr><th rowspan="5">Scenario Components</th><td><b>Stimulus Source:</b> Usuario final</td></tr>
+        <tr><td><b>Environment:</b> Red estable</td></tr>
+        <tr><td><b>Artifact (if Known):</b> Aplicación móvil</td></tr>
+        <tr><td><b>Response:</b> La app abre correctamente y muestra la cámara para iniciar la personalización</td></tr>
+        <tr><td><b>Response Measure:</b> Máximo de 3 horas de inactividad permitida al mes</td></tr>
+        <tr><th>Questions:</th><td>¿Cómo manejar la tolerancia a fallos si uno de los servicios backend está caído?</td></tr>
+        <tr><th>Issues:</th><td>Necesidad de monitoreo constante y despliegue en entornos redundantes.</td></tr>
+    </table>
+    <br><br>
+    
+<h3>Scenario Refinement for QA04 - Seguridad de Datos del Usuario</h3>
+    <table border="1" cellspacing="0" cellpadding="5">
+        <tr><th>Scenario(s):</th><td>El usuario concede permisos de cámara y sube una imagen.</td></tr>
+        <tr><th>Business Goals:</th><td>Proteger los datos personales e imágenes del usuario en todo momento para generar confianza y cumplir con regulaciones.</td></tr>
+        <tr><th>Relevant Quality Attributes:</th><td>Stimulus: Subida de imagen con datos personales desde la app.</td></tr>
+        <tr><th rowspan="5">Scenario Components</th><td><b>Stimulus Source:</b> Usuario final</td></tr>
+        <tr><td><b>Environment:</b> App en ejecución normal</td></tr>
+        <tr><td><b>Artifact (if Known):</b> Módulo de autenticación</td></tr>
+        <tr><td><b>Response:</b> Los datos del usuario se almacenan y transmiten de forma cifrada</td></tr>
+        <tr><td><b>Response Measure:</b> Ninguna fuga de datos reportada</td></tr>
+        <tr><th>Questions:</th><td>¿Qué regulaciones aplican al tratamiento de imágenes capturadas por la cámara?</td></tr>
+        <tr><th>Issues:</th><td>Integración segura entre módulos de autenticación, almacenamiento y permisos de cámara.</td></tr>
+    </table>
+    <br><br>
+    
+<h3>Scenario Refinement for QA05 - Mantenibilidad ante Nuevas Versiones</h3>
+    <table border="1" cellspacing="0" cellpadding="5">
+        <tr><th>Scenario(s):</th><td>El equipo de desarrollo lanza una nueva versión del algoritmo de detección.</td></tr>
+        <tr><th>Business Goals:</th><td>Permitir que nuevas versiones del sistema se integren fácilmente sin interrumpir el funcionamiento del resto del sistema.</td></tr>
+        <tr><th>Relevant Quality Attributes:</th><td>Stimulus: Nueva versión lista para despliegue.</td></tr>
+        <tr><th rowspan="5">Scenario Components</th><td><b>Stimulus Source:</b> Equipo de desarrollo</td></tr>
+        <tr><td><b>Environment:</b> Durante una actualización</td></tr>
+        <tr><td><b>Artifact (if Known):</b> Backend y módulos RA</td></tr>
+        <tr><td><b>Response:</b> El nuevo algoritmo se integra sin afectar funcionalidades existentes</td></tr>
+        <tr><td><b>Response Measure:</b> Tiempo de despliegue menor a 10 minutos</td></tr>
+        <tr><th>Questions:</th><td>¿Cómo asegurar la compatibilidad entre versiones del algoritmo?</td></tr>
+        <tr><th>Issues:</th><td>Necesidad de pruebas automatizadas y entorno de staging confiable.</td></tr>
+    </table>
+    <br><br>
+    
 
 ## 4.2. Strategic-Level Domain-Driven Design
 ### 4.2.1. EventStorming
