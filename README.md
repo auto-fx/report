@@ -329,7 +329,7 @@ A través de nuestra aplicación móvil, AutoFX, buscamos ofrecer una experienci
     </td>
     <td>
       <p>
-        Descripción básica de Oscar
+        Soy Oscar Garayar, estudiante de ingeniería de software de 6to ciclo. Tengo experiencia trabajando con distintos lenguajes de programación así como también en el trabajo en equipo. Me destaco por ser adaptable a la hora de trabajar y personalemente creo que me realto a la hora de realizar la ingeniería atrás del proyecto.
       </p>
     </td>
   </tr>
