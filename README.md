@@ -1880,6 +1880,10 @@ Context Mapping es un paso crucial dentro del Domain-Driven Design que se enfoca
 
 <img src="img\C4\Container-001.png" alt="Container Diagram">
 
+<img src="img\C4\Component-001.png" alt="Component Diagram 1">
+
+<img src="img\C4\Component-002.png" alt="Component Diagram 2">
+
 ### 4.3.4. Deployment Diagrams
 
 <img src="img\C4\Deployment diagram.png" alt="Deployment Diagram">
