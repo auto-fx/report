@@ -1870,19 +1870,19 @@ Context Mapping es un paso crucial dentro del Domain-Driven Design que se enfoca
 ## 4.3. Software Architecture
 ### 4.3.1. System Landscape Diagram
 
-<img src="img\landscape diagram (same as container).png" alt="Landscape Diagram">
+<img src="img\C4\landscape diagram (same as container).png" alt="Landscape Diagram">
 
 ### 4.3.2. Context Level Diagrams
 
-<img src="img\SystemContext-001.png" alt="Context Diagram">
+<img src="img\C4\SystemContext-001.png" alt="Context Diagram">
 
 ### 4.3.3. Container Level Diagrams
 
-<img src="img\Container-001.png" alt="Container Diagram">
+<img src="img\C4\Container-001.png" alt="Container Diagram">
 
 ### 4.3.4. Deployment Diagrams
 
-<img src="img\Deployment diagram.png" alt="Deployment Diagram">
+<img src="img\C4\Deployment diagram.png" alt="Deployment Diagram">
 
 # Capítulo V: Tactical-Level Software Design
 
