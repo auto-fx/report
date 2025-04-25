@@ -1791,7 +1791,10 @@ En esta sección se especifican las restricciones técnicas impuestas por el neg
 | TS-C05             | Límite en tamaño de imágenes renderizadas | Las imágenes generadas con filtros no deben exceder 3 MB para garantizar el rendimiento y la compatibilidad al compartir o guardar contenido personalizado.                  | Se comprimen automáticamente las imágenes al ser almacenadas, manteniendo la calidad mínima requerida para visualización sin distorsión.                                   | EP04, EP05                 |
 ### 4.1.3. Architectural Drivers Backlog
 
-## Architectural Drivers Backlog (Ordenado)
+Architectural Drivers Backlog, es donde se consolidan los drivers funcionales, atributos de calidad y restricciones técnicas priorizadas por su impacto en los stakeholders y la complejidad arquitectónica.
+
+
+
 
 | Driver ID | Título de Driver                         | Descripción                                                                                             | Importancia para Stakeholders | Impacto en Architecture Technical Complexity |
 |-----------|------------------------------------------|---------------------------------------------------------------------------------------------------------|-------------------------------|----------------------------------------------|
@@ -1816,6 +1819,7 @@ En esta sección se especifican las restricciones técnicas impuestas por el neg
 
 
 ### 4.1.4. Architectural Design Decisions
+Se describen las iteraciones realizadas, los patrones considerados y los criterios que guiaron la selección de soluciones arquitectónicas adecuadas para cada driver.
 
 <table border="1" cellspacing="0" cellpadding="5">
   <thead>
@@ -1885,6 +1889,8 @@ En esta sección se especifican las restricciones técnicas impuestas por el neg
 </table>
 
 ### 4.1.5. Quality Attribute Scenario Refinements
+
+Los Quality Attribute Scenario Refinements, es donde se profundiza en los escenarios priorizados, detallando su contexto, estímulos, artefactos involucrados y medidas esperadas para evaluar el cumplimiento del atributo.
 
 <h3>Scenario Refinement for QA01 - Rendimiento en Detección Visual</h3>
     <table border="1" cellspacing="0" cellpadding="5">
