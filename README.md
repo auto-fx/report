@@ -452,6 +452,56 @@ En el contexto de nuestra propuesta innovadora, basada en el uso de Realidad Aum
 # Capítulo II: Requirements Elicitation & Analysis
 
 ## 2.1. Competidores
+
+- 3DTuning: Aplicación para personalizar vehículos en 3D con cientos de modelos y accesorios, pero sin realidad aumentada.
+- Formacar: Plataforma integral que combina personalización 3D, realidad aumentada, compra-venta de vehículos y red social automotriz.
+- Car 3D Configurator: App enfocada en modelos específicos como Porsche, con visualización en 3D y AR de alta calidad para mostrar personalizaciones.
+
+<h3>Análisis FODA</h3>
+
+<table border="1" cellspacing="0" cellpadding="6">
+  <thead>
+    <tr>
+      <th style="background-color:#b3c6ff;">Fortalezas</th>
+      <th style="background-color:#ffffb3;">Debilidades</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Solución más accesible y enfocada en personalización estética cotidiana de vehículos reales.</td>
+      <td>Menor reconocimiento de marca frente a competidores establecidos como 3DTuning y Formacar.</td>
+    </tr>
+    <tr>
+      <td>Uso centrado y sencillo de Realidad Aumentada para una experiencia directa y rápida.</td>
+      <td>Catálogo inicial más limitado en modelos y accesorios que 3DTuning.</td>
+    </tr>
+    <tr>
+      <td>Aplicación enfocada exclusivamente en el usuario final y su vehículo real, no en modelos genéricos o conceptuales.</td>
+      <td>Recursos reducidos para el desarrollo de funcionalidades tan amplias como las de Formacar.</td>
+    </tr>
+  </tbody>
+  <thead>
+    <tr>
+      <th style="background-color:#ccffcc;">Oportunidades</th>
+      <th style="background-color:#ffcccc;">Amenazas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Alto crecimiento del mercado de personalización automotriz digital, especialmente en América Latina.</td>
+      <td>3DTuning y Formacar ya poseen bases de usuarios amplias y fidelizadas.</td>
+    </tr>
+    <tr>
+      <td>Poca competencia local con enfoque en AR aplicada directamente sobre el vehículo del usuario.</td>
+      <td>Ritmo acelerado de avances tecnológicos podría volver obsoletas algunas funcionalidades si no se actualizan a tiempo.</td>
+    </tr>
+    <tr>
+      <td>Posibilidad de alianzas con talleres locales, marcas de repuestos y ferias automotrices para potenciar adopción.</td>
+      <td>Posibles limitaciones legales por uso de modelos o marcas de vehículos sin licencias, como ocurre en apps similares.</td>
+    </tr>
+  </tbody>
+</table>
+
 ### 2.1.1. Análisis competitivo
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
