@@ -468,15 +468,27 @@ Para realizar los componentes elaboramos las preguntas para obtener información
     8. Si existiera una app que te permitiera previsualizar cómo quedaría su auto después de ser personalizado ¿Estaría interesado?
 ### 2.2.2. Registro de entrevistas
 
-### Entrevista 1
+#### Entrevista 1
 
-<img src="img\Entrevista Ronald Huapaya.png" alt="Entrevista Ronald Huapaya">
+![Entrevista Ronald Huapaya](img/Entrevista%20Ronald%20Huapaya.png)
 
-- Nombre y Apellido: Ronald Huapaya
+- Nombre: Ronald Huapaya
 - Distrito: San Miguel
-- Duracion: xx xx
+- Duracion: xx:xx
 
 Ronald Huapaya, un joven de 24 años que reside en San Miguel, compró su auto con el propósito específico de personalizarlo, ya que considera que esta práctica le permite expresar su personalidad a través del diseño del vehículo. Para él, lo más atractivo de modificar su auto es justamente poder reflejar su estilo y preferencias personales. Comenta que, en los talleres donde ha solicitado servicios de personalización, usualmente le muestran referencias visuales como fotos o ejemplos de otros autos ya modificados, lo cual le resulta útil para imaginar el resultado final. Aunque no ha tenido malas experiencias propias, sí conoce personas cercanas que enfrentaron inconvenientes en el proceso de personalización, lo que considera un riesgo a tener en cuenta. Sus marcas favoritas para este tipo de modificaciones son Subaru, BMW y Honda, debido a su versatilidad y estética. Además, utiliza con frecuencia YouTube como principal fuente de inspiración y búsqueda de ideas. Finalmente, se mostró muy interesado en la idea de una aplicación que le permitiera previsualizar digitalmente cómo quedaría su auto antes de realizar los cambios, considerándola una herramienta muy útil y práctica.
+
+#### Entrevista 2
+
+![Entrevista Cristian Paredes](img/Entrevista%20Cristian%20Paredes.png)
+
+- Nombre: Cristian Paredes
+- Distrito: San Borja
+- Duración: xx:xx
+
+Cristian Paredes, un señor de 45 años que reside en San Borja, siempre ha sido un amante de los automóviles, especialmente en personalizarlos. Nos cuenta que lo que más le atrae de personalizar su auto es hacer que se vea diferente al de los demás. En cuanto a sus experiencias personalizando sus autos, nos menciona que los mecánicos nunca le han ofrecido algún método de previsualizar los cambios que harán, por lo que tiene que creer únicamente en su palabra. También, nos dice que ha tenido algunas malas experiencias personalizando su auto y que, como se paga antes de que te realicen el servicio, no hay nada que puedas hacer para revertir los cambios si no te gusta. Por otro lado, nos comenta que sus marcas favoritas de auto son BMW, Audi, Subaru, Toyota y Mitsubishi y que suele utilizar Google para enterarse sobre las modificaciones de su auto.
+
+Por último, muestra interés por una aplicación que te permita previsualizar los cambios de su auto antes de mandarlo al taller, ya que le permitiría conocer si realmente le gusta lo que propone o no
 
 ### 2.2.3. Análisis de entrevistas
 
