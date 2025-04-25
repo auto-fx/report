@@ -1754,9 +1754,75 @@ Se utilizó la aplicación Trello para el desarrollo del product backlog [Trello
 10. Bounded Contexts
 ![Bounded Contexts](img/Bounded%20Contexts.jpg)
 ### 4.2.2. Candidate Context Discovery
+
+#### Contexto: Autenticación
+
+Este contexto se encarga de gestionar todo el ciclo de vida de la identidad del usuario en la aplicación. Incluye el proceso de registro, inicio y cierre de sesión, recuperación y actualización de contraseña, así como la verificación de credenciales. Su objetivo principal es garantizar que solo usuarios autenticados puedan acceder a las funcionalidades principales de la app.
+
+Eventos clave:
+
+- Se crea una cuenta
+
+- Se inician sesión en la aplicación
+
+- Se eliminan las credenciales
+
+- Se envía correo para recuperar contraseña
+
+<img src="img\Autenticacion contexto.png" alt="Autenticacion contexto">
+
+#### Contexto: Realidad Aumentada
+
+Este contexto representa el núcleo de la propuesta de valor del sistema: permitir al usuario visualizar piezas de autos sobrepuestas al vehículo real mediante la cámara del celular. Incluye la detección del auto, selección y aplicación de piezas (filtros), y comparación visual entre el antes y el después.
+
+Eventos clave:
+
+- Se detecta un auto
+
+- Se valida el tipo de auto
+
+- Se aplica el filtro seleccionado
+
+- Se toma una foto del auto modificado
+
+- Se guarda la imagen modificada
+
+<img src="img\Realidad aumentada contexto.png" alt="Realidad aumentada contexto">
+
 ### 4.2.3. Domain Message Flows Modeling
+
+#### Dominio: Iniciar sesión para acceder a RA
+
+Se describe el flujo de autenticación que permite al usuario acceder a la funcionalidad principal de la aplicación: la realidad aumentada. El usuario inicia abriendo la app e ingresando sus credenciales en la pantalla de inicio de sesión. Luego, el sistema de autenticación valida los datos ingresados y, si son correctos, permite el acceso a la aplicación. Una vez autenticado, el usuario puede seleccionar la opción para visualizar una pieza en RA, momento en el cual se activa el contexto de realidad aumentada.
+
+<img src="img\Dominio Iniciar sesion.png" alt="Dominio Iniciar sesion">
+
+#### Dominio: Iniciar sesión para acceder a RA
+
+El usuario, ya autenticado, interactúa con el sistema de Realidad Aumentada para personalizar su vehículo. Una vez iniciada la experiencia RA, el usuario busca una pieza (como una llanta) en el catálogo, la selecciona, y el sistema carga el modelo 3D correspondiente. A través de la cámara del celular, el sistema detecta el auto real y sobrepone la pieza virtual en el lugar adecuado, permitiendo al usuario visualizar cómo se vería instalada. 
+
+<img src="img\Dominio Aplicar una pieza al auto.png" alt="Dominio Aplicar una pieza al auto">
+
 ### 4.2.4. Bounded Context Canvases
+
+#### Bounded Context: Autenticación
+
+El contexto de Autenticación se encarga de gestionar la identidad de los usuarios que interactúan con la aplicación. Abarca procesos esenciales como la creación de cuentas, inicio y cierre de sesión, recuperación de contraseñas y validación de credenciales, garantizando así el acceso seguro a las funcionalidades del sistema. Este contexto actúa como puerta de entrada, asegurando que solo usuarios autorizados puedan acceder a las experiencias personalizadas que ofrece la aplicación, como la visualización de piezas de autos en realidad aumentada. Su diseño se centra en políticas claras de seguridad y uso de lenguaje común, permitiendo una integración robusta con otros servicios como mensajería para recuperación de claves o generación de tokens.
+
+<img src="img\Bounded Context Autenticación.png" alt="Bounded Context: Autenticación">
+
+#### Bounded Context: Realidad Aumentada
+
+El contexto de Realidad Aumentada representa el núcleo funcional y de valor diferencial de la aplicación, ya que permite al usuario visualizar en tiempo real cómo quedarían instaladas diferentes partes de auto (como llantas, parachoques o alerones) directamente sobre su vehículo mediante la cámara del celular. Este contexto se activa tras la autenticación y comprende funcionalidades como la detección del auto, selección de piezas, superposición de modelos 3D y captura de imágenes comparativas. Su diseño está orientado a brindar una experiencia visual fluida e intuitiva, integrando tecnologías de AR como ARCore y considerando reglas de negocio específicas para la detección y posicionamiento de los elementos.
+
+<img src="img\Bounded Context Realidad Aumentada.png" alt="Bounded Context: Realidad Aumentada">
+
 ### 4.2.5. Context Mapping
+
+Context Mapping es un paso crucial dentro del Domain-Driven Design que se enfoca en entender cómo los diferentes bounded contexts (contextos delimitados) dentro de un sistema interactúan y se conectan entre sí. Este proceso permite identificar las relaciones y dependencias entre los distintos dominios o subdominios que componen el proyecto
+
+<img src="img\Context mapping.png" alt="Context mapping">
+
 
 ## 4.3. Software Architecture
 ### 4.3.1. System Landscape Diagram
