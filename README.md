@@ -503,7 +503,125 @@ En el contexto de nuestra propuesta innovadora, basada en el uso de Realidad Aum
 </table>
 
 ### 2.1.1. Análisis competitivo
+
+<h3>Competitive Analysis Landscape</h3>
+
+<table border="1" cellspacing="0" cellpadding="6">
+  <tr>
+    <th>¿Por qué llevar a cabo este análisis?</th>
+    <td colspan="4">Identificar las ventajas diferenciales y áreas de mejora de AutoFX frente a competidores establecidos en el mercado de personalización automotriz digital.</td>
+  </tr>
+  <tr>
+    <th>Competidores:</th>
+    <th>AutoFX</th>
+    <th>3DTuning</th>
+    <th>Formacar</th>
+    <th>Car 3D Configurator</th>
+  </tr>
+
+  <tr><th rowspan="2">Perfil</th>
+    <th>Overview</th>
+    <td>App móvil con RA para personalizar el auto real del usuario en tiempo real.</td>
+    <td>Plataforma 3D web y app con cientos de modelos y opciones de tuning visual.</td>
+    <td>Suite que combina RA, personalización 3D, compra-venta y red social.</td>
+    <td>Visualización de autos como Porsche en 3D/AR con alta calidad de detalle.</td>
+  </tr>
+  <tr>
+    <th>Ventaja competitiva ¿Qué valor ofrece a los clientes?</th>
+    <td>Personalización sencilla, en RA, aplicada directamente sobre el vehículo del usuario.</td>
+    <td>Amplísimo catálogo de autos y tuning visual desde cualquier navegador.</td>
+    <td>Integración de múltiples funciones y comunidad social de entusiastas.</td>
+    <td>Calidad gráfica superior y experiencia visual inmersiva limitada a ciertas marcas.</td>
+  </tr>
+
+  <tr><th rowspan="2">Perfil de Marketing</th>
+    <th>Mercado objetivo</th>
+    <td>Propietarios jóvenes de autos en LATAM interesados en cambios estéticos.</td>
+    <td>Entusiastas del tuning a nivel global.</td>
+    <td>Usuarios interesados en autos + tecnología + comunidad en Europa/Asia.</td>
+    <td>Fanáticos de marcas premium, especialmente Porsche y Ferrari.</td>
+  </tr>
+  <tr>
+    <th>Estrategias de marketing</th>
+    <td>Alianzas con talleres, influencers y eventos locales; promoción digital directa.</td>
+    <td>Promoción en foros y canales de tuning online; comunidad activa de usuarios.</td>
+    <td>Red social interna, contenido generado por usuarios, integración con VR.</td>
+    <td>Presencia en App Store con campañas visuales dirigidas a fanáticos de lujo.</td>
+  </tr>
+
+  <tr><th rowspan="3">Perfil de Producto</th>
+    <th>Productos & Servicios</th>
+    <td>Personalización RA + filtros + comparación + guardado + integración con talleres.</td>
+    <td>Personalización 3D de vehículos y piezas externas/interiores.</td>
+    <td>Configurador 3D + RA + mercado de autos + social + blog.</td>
+    <td>Exploración AR y 3D de modelos exclusivos.</td>
+  </tr>
+  <tr>
+    <th>Precios & Costos</th>
+    <td>Freemium (modelo gratuito con funciones premium planificadas).</td>
+    <td>Freemium con acceso completo limitado a ciertos modelos.</td>
+    <td>Gratuita con monetización indirecta (asociaciones y comunidad).</td>
+    <td>Pago único por modelo premium o funciones avanzadas.</td>
+  </tr>
+  <tr>
+    <th>Canales de distribución (Web y/o Móvil)</th>
+    <td>App móvil (Android, futuro iOS).</td>
+    <td>Web y App móvil (iOS y Android).</td>
+    <td>Web, App móvil y compatibilidad VR/AR.</td>
+    <td>App móvil (iOS, Android); en algunos casos VR.</td>
+  </tr>
+
+  <tr><th rowspan="4">Análisis SWOT</th>
+    <th>Fortalezas</th>
+    <td>RA aplicada al auto real, simplicidad de uso, enfoque en experiencia directa.</td>
+    <td>Amplio catálogo, madurez de producto, comunidad activa.</td>
+    <td>Versatilidad, comunidad integrada, gran presupuesto.</td>
+    <td>Calidad visual superior, experiencia inmersiva en modelos premium.</td>
+  </tr>
+  <tr>
+    <th>Debilidades</th>
+    <td>Marca emergente, catálogo limitado, recursos de desarrollo acotados.</td>
+    <td>Sin RA directa sobre autos reales, interfaz algo compleja.</td>
+    <td>Enfoque disperso, puede confundir al usuario que busca solo personalizar.</td>
+    <td>Limitado a marcas específicas; no útil para autos comunes.</td>
+  </tr>
+  <tr>
+    <th>Oportunidades</th>
+    <td>Mercado LATAM en crecimiento; alianzas con talleres y ferias locales.</td>
+    <td>Expandirse a personalización con RA integrada.</td>
+    <td>Convertirse en una super-app automotriz.</td>
+    <td>Lanzamiento de nuevos modelos de lujo cada año.</td>
+  </tr>
+  <tr>
+    <th>Amenazas</th>
+    <td>Fidelización previa de usuarios en apps conocidas; cambios tecnológicos rápidos.</td>
+    <td>Competencia con Formacar y nuevas apps con RA nativa.</td>
+    <td>Complejidad tecnológica puede afectar usabilidad.</td>
+    <td>Modelo difícil de escalar a vehículos comunes.</td>
+  </tr>
+</table>
+
+
+
 ### 2.1.2. Estrategias y tácticas frente a competidores
+
+Luego de analizar el panorama competitivo y el entorno de oportunidades y amenazas, el equipo ha definido un conjunto de estrategias y tácticas iniciales que se pondrán en marcha para afrontar las fortalezas de los competidores y aprovechar las debilidades identificadas:
+
+- Enfoque en el mercado latinoamericano mediante alianzas con talleres automotrices locales, ferias y marcas regionales, buscando consolidar una red de adopción temprana y generar contenido personalizado localmente.
+
+- Diferenciación clara a través de la simplicidad de uso: se priorizará una experiencia centrada en la personalización directa sobre el vehículo real mediante RA, evitando la dispersión funcional observada en plataformas como Formacar.
+
+- Implementación de campañas visuales educativas en redes sociales para promover el valor único de personalizar con realidad aumentada desde un celular, resaltando casos de uso reales.
+
+- Desarrollo de una interfaz optimizada para dispositivos de gama media, permitiendo una mayor inclusión tecnológica frente a plataformas que requieren mayores recursos gráficos.
+
+- Aplicación de una estrategia de SEO local con foco en búsquedas relacionadas a “personalización de autos en Perú / LATAM” para ganar visibilidad frente a los grandes competidores internacionales.
+
+- Creación de contenido generado por usuarios (UGC), como testimonios visuales antes/después, para reforzar la confianza y el valor percibido por parte de nuevos usuarios.
+
+- Política de licenciamiento neutro para evitar conflictos legales: se utilizarán modelos genéricos personalizables que eviten el uso de marcas protegidas en etapas tempranas del producto.
+
+- Establecimiento de un roadmap ágil de actualización de funcionalidades que responda a la retroalimentación de los primeros usuarios, asegurando mejoras continuas frente a la amenaza del cambio tecnológico acelerado.
 
 ## 2.2. Entrevistas
 ### 2.2.1. Diseño de entrevistas
