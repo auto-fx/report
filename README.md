@@ -1691,6 +1691,8 @@ En esta sección se incluirán términos comúnmente utilizados alrededor de tod
 </table>
 
 ## 3.3. Impact Mapping
+![Impact Mapping](img/impact%20mapping.png)
+
 ## 3.4. Product Backlog
 Se utilizó la aplicación Trello para el desarrollo del product backlog [Trello Board](https://trello.com/invite/b/680555a4b1894b16d011fa9a/ATTI48aab33877f28f2e26ff4bfc2e2e7d1d70E6B7DE/arquitectura-de-software-emergentes)
 ![Product Backlog](img/product-backlog.png)
