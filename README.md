@@ -1747,8 +1747,27 @@ Se utilizó la aplicación Trello para el desarrollo del product backlog [Trello
 
 ## 4.1. Strategic-Level Attribute-Driven Design
 ### 4.1.1. Design Purpose
+El propósito del diseño del sistema **AutoFX** se centra en ofrecer una aplicación móvil innovadora que permite a los usuarios visualizar y personalizar sus vehículos mediante **realidad aumentada (RA)**. Actualmente, realizar modificaciones estéticas en automóviles implica dudas sobre el resultado final y posibles gastos adicionales en ajustes posteriores.
+
+**AutoFX** resuelve este desafío permitiendo que los usuarios apunten la cámara de sus dispositivos móviles hacia su automóvil y visualicen en tiempo real modificaciones como cambios de color, aplicación de vinilos o instalación de nuevas llantas. Esta visualización inmediata ofrece una experiencia interactiva y precisa que ayuda a tomar decisiones informadas antes de realizar cambios físicos.
+
+El diseño del sistema busca ofrecer una visualización precisa y realista de modificaciones en vehículos usando tecnología de realidad aumentada. De esta manera, los usuarios pueden explorar diversas opciones virtualmente antes de realizar modificaciones reales, reduciendo el riesgo y la incertidumbre asociados al proceso.
+
+Asimismo, **AutoFX** ofrece una interfaz amigable e intuitiva, garantizando una experiencia fluida para usuarios con distintos niveles de conocimiento técnico. Esto asegura que cualquier persona pueda aprovechar al máximo las capacidades de la aplicación sin complicaciones.
+
+En resumen, **AutoFX** está diseñado para mejorar la experiencia de personalización vehicular al proporcionar a los usuarios confianza y claridad sobre el resultado final de sus modificaciones, todo esto mediante el uso avanzado de la tecnología de realidad aumentada.
 ### 4.1.2. Attribute-Driven Design Inputs
 #### 4.1.2.1. Primary Functionality
+| Epic / User Story ID | Título                                 | Descripción                                                                                                                             |
+|----------------------|----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
+| EP02 / US08          | Permisos para uso de la cámara         | Como persona que quiere personalizar su auto, quiero que la aplicación me solicite permisos para usar la cámara.                        |
+| EP03 / US10          | Detección de tipo de auto              | Como usuario, quiero que la aplicación detecte el tipo, marca y modelo de mi auto para aplicar los filtros de forma realista.           |
+| EP03 / US11          | Detección de ángulo de toma de foto    | Como usuario, quiero que la aplicación detecte de qué ángulo estoy mostrando el carro para que pueda aplicar los filtros de manera más realista y consistente. |          
+| EP03 / US12          | Detección en tiempo real del vehículo  | Como usuario, quiero que la aplicación detecte el movimiento de la cámara para reajustar los filtros en tiempo real.                    |
+| EP04 / US13          | Agregado de filtro a un auto           | Como usuario, quiero aplicar filtros visuales sobre mi auto para ver cómo quedaría tras personalizarlo.                                 |
+| EP04 / US14          | Cambio de color del auto               | Como usuario, quiero cambiar el color del auto desde la app para visualizar cómo se vería con otros colores.                            |
+| EP05 / US16          | Comparación de auto antes y después    | Como usuario, quiero comparar el auto original con la versión personalizada para decidir si me gusta el resultado final.                |
+| EP05 / US17          | Guardado foto y filtros aplicados      | Como usuario, quiero poder guardar la foto del auto con los filtros aplicados para revisar o compartir mi diseño más tarde.             |
 #### 4.1.2.2. Quality Attribute Scenarios
 #### 4.1.2.3. Constraints
 ### 4.1.3. Architectural Drivers Backlog
