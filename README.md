@@ -1757,6 +1757,7 @@ Asimismo, **AutoFX** ofrece una interfaz amigable e intuitiva, garantizando una 
 
 En resumen, **AutoFX** está diseñado para mejorar la experiencia de personalización vehicular al proporcionar a los usuarios confianza y claridad sobre el resultado final de sus modificaciones, todo esto mediante el uso avanzado de la tecnología de realidad aumentada.
 ### 4.1.2. Attribute-Driven Design Inputs
+Esta sección presenta los tres tipos de elementos clave que guían el diseño de la arquitectura basado en atributos (ADD): funcionalidades principales (Primary Functionality), escenarios de atributos de calidad (Quality Attribute Scenarios) y restricciones técnicas (Constraints), todos aplicados al caso de uso de AutoFX. Cada uno de ellos influye directamente en las decisiones arquitectónicas para garantizar que la solución responda a las necesidades funcionales y no funcionales del cliente.
 #### 4.1.2.1. Primary Functionality
 | Epic / User Story ID | Título                                 | Descripción                                                                                                                             |
 |----------------------|----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
