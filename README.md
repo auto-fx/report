@@ -1790,6 +1790,31 @@ En esta sección se especifican las restricciones técnicas impuestas por el neg
 | TS-C04             | Restricción de acceso sin cámara   | Solo se permitirá el uso de funcionalidades de personalización si la cámara ha sido activada por el usuario y los permisos concedidos.                                      | Si no se otorgan permisos de cámara, el usuario recibe un mensaje explicativo y se desactiva el acceso a filtros y comparaciones.                                           | EP02                       |
 | TS-C05             | Límite en tamaño de imágenes renderizadas | Las imágenes generadas con filtros no deben exceder 3 MB para garantizar el rendimiento y la compatibilidad al compartir o guardar contenido personalizado.                  | Se comprimen automáticamente las imágenes al ser almacenadas, manteniendo la calidad mínima requerida para visualización sin distorsión.                                   | EP04, EP05                 |
 ### 4.1.3. Architectural Drivers Backlog
+
+## Architectural Drivers Backlog (Ordenado)
+
+| Driver ID | Título de Driver                         | Descripción                                                                                             | Importancia para Stakeholders | Impacto en Architecture Technical Complexity |
+|-----------|------------------------------------------|---------------------------------------------------------------------------------------------------------|-------------------------------|----------------------------------------------|
+| QA01      | Rendimiento en Detección Visual          | El sistema debe identificar tipo, modelo y marca del vehículo en menos de 3 segundos cuando el usuario apunta la cámara. | High                          | High                                         |
+| QA03      | Alta Disponibilidad de la Aplicación     | La app debe estar disponible con un máximo de 3 horas de inactividad al mes para asegurar su uso constante. | High                          | High                                         |
+| FD02      | Detección de tipo, marca y modelo de auto| La app debe identificar el vehículo con precisión para aplicar filtros adecuados.                       | High                          | High                                         |
+| FD04      | Detección en tiempo real                 | La app debe ajustar los filtros en tiempo real según el movimiento de la cámara.                        | High                          | High                                         |
+| C01       | Cumplimiento con políticas de privacidad | La app debe cumplir con la Ley de Protección de Datos Personales en Perú y GDPR.                        | High                          | High                                         |
+| QA02      | Usabilidad en Comparación Visual         | El sistema debe mostrar imágenes comparativas del auto antes y después de aplicar filtros, sin retrasos visibles. | High                          | Medium                                       |
+| QA04      | Seguridad de Datos del Usuario           | El sistema debe garantizar privacidad y protección de las imágenes y datos que el usuario sube.         | High                          | Medium                                       |
+| FD01      | Permisos para uso de la cámara           | La aplicación debe solicitar permisos de cámara para iniciar la experiencia de personalización.         | High                          | Medium                                       |
+| FD05      | Aplicación de filtros visuales           | El usuario debe poder aplicar efectos visuales sobre su auto en la imagen.                              | High                          | Medium                                       |
+| FD06      | Cambio de color del auto                 | La app debe permitir cambiar el color del auto de forma visual.                                         | High                          | Medium                                       |
+| FD07      | Comparación antes y después              | El usuario debe poder comparar el diseño original con la versión modificada.                            | High                          | Medium                                       |
+| C02       | Disponibilidad mínima del sistema        | El sistema debe mantener una disponibilidad mensual del 99.5%.                                          | High                          | High                                         |
+| C04       | Restricción sin permisos de cámara       | Solo se permite personalizar si el usuario ha concedido permisos de cámara.                             | High                          | Medium                                       |
+| QA05      | Mantenibilidad ante Nuevas Versiones     | Los cambios en el algoritmo de detección deben integrarse sin afectar funcionalidades existentes en producción. | Medium                        | High                                         |
+| FD03      | Detección de ángulo de toma              | El sistema debe identificar el ángulo de visión del auto para alinear los filtros correctamente.        | Medium                        | High                                         |
+| FD08      | Guardar imagen con filtros               | El usuario podrá guardar una imagen de su auto personalizado.                                           | Medium                        | Medium                                       |
+| C03       | Soporte multiplataforma                  | La app debe funcionar en Android e iOS con las mismas funcionalidades críticas.                         | Medium                        | Medium                                       |
+| C05       | Tamaño limitado de imágenes              | Las imágenes renderizadas no deben exceder los 3MB para mantener rendimiento.                           | Medium                        | Medium                                       |
+
+
 ### 4.1.4. Architectural Design Decisions
 ### 4.1.5. Quality Attribute Scenario Refinements
 
