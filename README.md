@@ -668,6 +668,16 @@ Cristian Paredes, un señor de 45 años que reside en San Borja, siempre ha sido
 
 Por último, muestra interés por una aplicación que te permita previsualizar los cambios de su auto antes de mandarlo al taller, ya que le permitiría conocer si realmente le gusta lo que propone o no
 
+#### Entrevista 3
+
+![Entrevista Adrian Liñan](img/Entrevista%20Adrian%20Liñan.png)
+
+- Nombre: Adrian Liñan
+- Distrito: Lima
+- Duración: 03:32
+
+Adrián Liñán, ingeniero mecánico automotriz de 29 años residente en Lima, ha personalizado su vehículo con cambios en los aros, faros y el sistema de sonido. Afirma que lo que más le atrae de personalizar su auto es poder expresar su estilo personal y hacerlo único. Relata que en los talleres rara vez le muestran cómo quedará el vehículo, y que normalmente se limitan a explicaciones verbales o fotos de otros autos, lo que ha generado malos resultados, como una reciente pintura distinta a la esperada. Sus marcas favoritas son Mazda y Subaru. Para buscar inspiración usa principalmente Instagram y YouTube desde su celular, siguiendo cuentas especializadas en tuning. Le interesa fuertemente una aplicación que le permita visualizar los cambios antes de ir al taller, pues considera que sería de gran ayuda para tomar decisiones antes de gastar dinero.
+
 ### 2.2.3. Análisis de entrevistas
 
 ## 2.3. Needfinding
