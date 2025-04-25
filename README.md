@@ -358,11 +358,21 @@ A través de nuestra aplicación móvil, AutoFX, buscamos ofrecer una experienci
   <th colspan="2">Roca Huapaya, Orlando Arturo</th>
   <tr>
     <td>
-    <img src="img/perfil_orlando.jpg" alt="Foto de perfil de Orlando" width="600px">
+    <img src="https://cdn.discordapp.com/attachments/877299205696262227/1365191908304879666/Captura_de_pantalla_2024-06-16_173218.png?ex=680c698a&is=680b180a&hm=2a5b43302b228e7f9097a0e64bc85d4669760f53401359d703cf1d9ba3b3d3c9&" alt="Foto de perfil de Orlando" width="600px">
     </td>
     <td>
       <p>
-        Descripción básica de Orlando
+        Mi nombre es Orlando Arturo Roca Huapaya, con 
+        el código u201919742 Como estudiante de 
+        ingeniería de software, mi contribución al equipo 
+        se centra en mis conocimientos en la 
+        planificación y diseño de software. A lo largo de 
+        mi formación he podido desarrollar proyectos 
+        utilizando Java, lo que me da una ventaja 
+        significativa con el sistema que trabajamos. Estoy 
+        entusiasmado por aplicar mis habilidades en el 
+        desarrollo y trabajar junto al equipo para alcanzar 
+        nuestros objetivos.
       </p>
     </td>
   </tr>
