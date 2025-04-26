@@ -520,12 +520,13 @@ En el contexto de nuestra propuesta innovadora, basada en el uso de Realidad Aum
 
 <h3>Competitive Analysis Landscape</h3>
 
-<table border="1" cellspacing="0" cellpadding="6">
+<table>
   <tr>
     <th>¿Por qué llevar a cabo este análisis?</th>
-    <td colspan="4">Identificar las ventajas diferenciales y áreas de mejora de AutoFX frente a competidores establecidos en el mercado de personalización automotriz digital.</td>
+    <td colspan="5">Identificar las ventajas diferenciales y áreas de mejora de AutoFX frente a competidores establecidos en el mercado de personalización automotriz digital.</td>
   </tr>
   <tr>
+    <th></th>
     <th>Competidores:</th>
     <th>AutoFX</th>
     <th>3DTuning</th>
