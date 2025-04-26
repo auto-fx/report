@@ -2179,6 +2179,9 @@ Los Quality Attribute Scenario Refinements, es donde se profundiza en los escena
 
 ## 4.2. Strategic-Level Domain-Driven Design
 ### 4.2.1. EventStorming
+
+Para el EventStorming, el equipo completo se reunió por alrededor de 2 horas para poder definir cada una de las funcionalidades que deberá tener la aplicación para cumplir con las necesidades del usuario. También, se definió el flujo de la aplicación, los comandos, las políticas, los aggregates y, sobre todo, los Bounded Context.
+
 1. Unstructured Exploration
 ![Unstructured Exploration](img/Unstructured%20Exploration.jpg)
 2. Timelines
