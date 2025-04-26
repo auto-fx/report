@@ -622,21 +622,37 @@ En el contexto de nuestra propuesta innovadora, basada en el uso de Realidad Aum
 
 Luego de analizar el panorama competitivo y el entorno de oportunidades y amenazas, el equipo ha definido un conjunto de estrategias y tácticas iniciales que se pondrán en marcha para afrontar las fortalezas de los competidores y aprovechar las debilidades identificadas:
 
-- Enfoque en el mercado latinoamericano mediante alianzas con talleres automotrices locales, ferias y marcas regionales, buscando consolidar una red de adopción temprana y generar contenido personalizado localmente.
+- **Enfoque en el mercado latinoamericano:**
+  
+  Mediante alianzas con talleres automotrices locales, ferias y marcas regionales, buscando consolidar una red de adopción temprana y generar contenido personalizado localmente.
 
-- Diferenciación clara a través de la simplicidad de uso: se priorizará una experiencia centrada en la personalización directa sobre el vehículo real mediante RA, evitando la dispersión funcional observada en plataformas como Formacar.
+- **Diferenciación clara a través de la simplicidad de uso:** 
 
-- Implementación de campañas visuales educativas en redes sociales para promover el valor único de personalizar con realidad aumentada desde un celular, resaltando casos de uso reales.
+  Se priorizará una experiencia centrada en la personalización directa sobre el vehículo real mediante RA, evitando la dispersión funcional observada en plataformas como Formacar.
 
-- Desarrollo de una interfaz optimizada para dispositivos de gama media, permitiendo una mayor inclusión tecnológica frente a plataformas que requieren mayores recursos gráficos.
+- **Implementación de campañas visuales educativas en redes sociales:**
+  
+  Se realizará para promover el valor único de personalizar con realidad aumentada desde un celular, resaltando casos de uso reales.
 
-- Aplicación de una estrategia de SEO local con foco en búsquedas relacionadas a “personalización de autos en Perú / LATAM” para ganar visibilidad frente a los grandes competidores internacionales.
+- **Desarrollo de una interfaz optimizada para dispositivos de gama media:**
 
-- Creación de contenido generado por usuarios (UGC), como testimonios visuales antes/después, para reforzar la confianza y el valor percibido por parte de nuevos usuarios.
+  Este enfoque nos permite permite contar con una mayor inclusión tecnológica frente a plataformas que requieren mayores recursos gráficos.
 
-- Política de licenciamiento neutro para evitar conflictos legales: se utilizarán modelos genéricos personalizables que eviten el uso de marcas protegidas en etapas tempranas del producto.
+- **Aplicación de una estrategia de SEO local:**
+  
+  Teniendo un foco en búsquedas relacionadas a *personalización de autos en Perú* podremos ganar visibilidad frente a los grandes competidores internacionales, ya que será más sencillo adecuarnos a estándarse y gustos nacionales
 
-- Establecimiento de un roadmap ágil de actualización de funcionalidades que responda a la retroalimentación de los primeros usuarios, asegurando mejoras continuas frente a la amenaza del cambio tecnológico acelerado.
+- **Creación de contenido generado por usuarios (UGC)**
+
+  Se implementarán funcionalidades como comparaciones de auto visuales de antes y después para reforzar la confianza y el valor percibido por parte de nuevos usuarios.
+
+- **Política de licenciamiento neutro para evitar conflictos legales:**
+  
+  Se utilizarán modelos genéricos personalizables que eviten el uso de marcas protegidas en etapas tempranas del producto.
+
+- **Establecimiento de un roadmap ágil de actualización de funcionalidades:** 
+  
+  De esta manera, podremos responder a la retroalimentación de los primeros usuarios, asegurando mejoras continuas frente a la amenaza del cambio tecnológico acelerado.
 
 ## 2.2. Entrevistas
 ### 2.2.1. Diseño de entrevistas
