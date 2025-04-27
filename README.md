@@ -709,6 +709,16 @@ Por último, muestra interés por una aplicación que te permita previsualizar l
 
 Adrián Liñán, ingeniero mecánico automotriz de 29 años residente en Lima, ha personalizado su vehículo con cambios en los aros, faros y el sistema de sonido. Afirma que lo que más le atrae de personalizar su auto es poder expresar su estilo personal y hacerlo único. Relata que en los talleres rara vez le muestran cómo quedará el vehículo, y que normalmente se limitan a explicaciones verbales o fotos de otros autos, lo que ha generado malos resultados, como una reciente pintura distinta a la esperada. Sus marcas favoritas son Mazda y Subaru. Para buscar inspiración usa principalmente Instagram y YouTube desde su celular, siguiendo cuentas especializadas en tuning. Le interesa fuertemente una aplicación que le permita visualizar los cambios antes de ir al taller, pues considera que sería de gran ayuda para tomar decisiones antes de gastar dinero.
 
+#### Entrevista 4
+
+![Entrevista Maryori Espinoza](https://cdn.discordapp.com/attachments/877299205696262227/1365839496691712120/image.png?ex=680ec4a8&is=680d7328&hm=c4ee6124b0e83dd1a8515845d6606c84326de39670a6e0d97d3e18059b77cd58&)
+
+- Nombre: Maryori Espinoza
+- Distrito: Santa Anita
+- Duración: 04:32
+
+Maryori Espinoza es una joven de 25 años, que vive en Santa Anita. En una entrevista sobre la personalización de vehículos, comentó que le atrae la idea de personalizar su auto para reflejar su estilo personal y, si es posible, mejorar también el rendimiento. Aunque aún no ha personalizado su vehículo, ha considerado hacerlo. Mencionó que en los talleres, en la mayoría de ocasiones, no le han mostrado referencias visuales como fotos o prototipos antes de realizar modificaciones, lo cual considera importante para tener mayor seguridad sobre el resultado. Relató que tuvo una mala experiencia al cambiar el color de su auto, ya que el resultado final no coincidió con sus expectativas. Finalmente, indicó que sus marcas de autos favoritas son Toyota y Mazda, valorando su confiabilidad y buen diseño.
+
 ### 2.2.3. Análisis de entrevistas
 
 ## 2.3. Needfinding
