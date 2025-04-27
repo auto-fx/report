@@ -436,9 +436,98 @@ Estos datos evidencian la magnitud del problema y refuerzan la necesidad de solu
 
 ### 1.2.2. Lean UX Process
 #### 1.2.2.1. Lean UX Problem Statements
+Actualmente, los clientes que desean personalizar sus vehículos enfrentan un gran desafío: no pueden visualizar de manera precisa cómo lucirán los cambios estéticos hasta que estos ya han sido realizados. Esta falta de visualización previa genera incertidumbre, toma de decisiones inseguras y, en muchos casos, insatisfacción con el resultado final. Además, el proceso de personalización tradicional depende únicamente de descripciones verbales o muestras físicas limitadas, lo cual no refleja adecuadamente el resultado esperado.
+
+Hemos observado que en el sector de la personalización automotriz existe una desconexión importante entre las expectativas de los clientes y el resultado final entregado por los talleres, debido a la carencia de herramientas tecnológicas que permitan anticipar de manera realista el impacto de los cambios. Esta brecha en la experiencia genera pérdida de confianza, retrabajos costosos y reduce la satisfacción del cliente.
+
+¿Cómo podríamos crear una solución que permita a los usuarios visualizar, de manera precisa y en tiempo real, las modificaciones que desean realizar en sus vehículos, utilizando tecnologías como la Realidad Aumentada (AR), para que puedan tomar decisiones informadas, seguras y satisfactorias?
 #### 1.2.2.2. Lean UX Assumptions
+
+#### User Assumptions (Supuestos sobre usuarios)
+
+#### ¿Quién es el usuario?
+El usuario es cualquier propietario de un vehículo interesado en personalizar su auto, principalmente jóvenes y adultos entre 18 y 40 años que buscan expresar su estilo personal a través de modificaciones estéticas como cambios de color, instalación de alerones, llantas deportivas, entre otros accesorios.
+
+#### ¿Dónde encaja nuestro producto en su trabajo o vida?
+AutoFX se integra en el proceso previo a la personalización del vehículo, permitiendo al usuario visualizar de manera realista cómo lucirán las modificaciones antes de tomar la decisión final. Esto facilita una experiencia de compra más segura, satisfactoria y confiable.
+
+#### ¿Qué problemas tiene que resolver nuestro producto?
+
+- La imposibilidad de visualizar el resultado de los cambios antes de realizarlos.
+
+- La incertidumbre y el miedo a tomar decisiones incorrectas sobre la personalización de su vehículo.
+
+- El desperdicio de dinero y tiempo en modificaciones que no cumplen con las expectativas del cliente.
+
+#### ¿Cuándo y cómo es usado nuestro producto?
+AutoFX se usa en la etapa de planeamiento de la personalización, cuando el usuario está evaluando cambios estéticos para su vehículo. Mediante la aplicación móvil, los usuarios apuntan la cámara hacia su auto y aplican filtros de modificación visual en tiempo real, explorando distintas opciones antes de decidirse.
+
+#### ¿Cómo debe verse y comportarse nuestro producto?
+Debe tener una interfaz limpia, amigable y fácil de navegar, permitiendo cambios rápidos entre diferentes opciones de personalización (colores, llantas, accesorios) y mostrando los resultados de manera realista a través de Realidad Aumentada (AR). El sistema debe ser estable, rápido y brindar una experiencia inmersiva de alta calidad.
+
+#### Business Assumptions (Supuestos sobre el negocio)
+
+#### Creemos que nuestros usuarios necesitan
+Una herramienta confiable y accesible que les permita visualizar de manera realista las modificaciones que desean realizar en sus vehículos antes de ejecutarlas físicamente.
+
+#### Estas necesidades se pueden satisfacer mediante
+Una aplicación móvil de fácil uso que utilice tecnologías de Realidad Aumentada (AR) para proyectar las modificaciones sobre el vehículo en tiempo real, brindando precisión y claridad en la toma de decisiones.
+
+#### Nuestros clientes iniciales son
+Dueños de vehículos jóvenes, entusiastas de la personalización automotriz, y clientes frecuentes de talleres de tuning y modificaciones estéticas.
+
+#### El valor #1 que nuestros clientes buscan es
+Confianza al poder visualizar los cambios deseados antes de gastar dinero en la personalización real de su vehículo.
+
+#### Los beneficios adicionales incluyen
+
+- Ahorro de tiempo en el proceso de selección de personalizaciones.
+
+- Reducción del riesgo de arrepentimiento o insatisfacción.
+
+- Mejora en la comunicación entre el cliente y los talleres automotrices.
+
+#### Vamos a adquirir clientes a través de
+Estrategias de marketing digital dirigidas a comunidades de entusiastas automotrices, colaboraciones con talleres de personalización, publicidad en redes sociales como Instagram y TikTok, y campañas en eventos de tuning y exhibiciones de automóviles.
+
+#### Nuestro modelo de ingresos será
+Suscripciones premium para acceso a catálogos de modificaciones exclusivos, ventas de paquetes AR personalizados y asociaciones comerciales con talleres automotrices que deseen integrar AutoFX como herramienta de apoyo en su proceso de venta.
+
+#### Nuestra competencia principal son
+Métodos tradicionales de asesoría en talleres (catálogos físicos, bocetos en papel, renderizados digitales genéricos), aplicaciones de personalización básicas sin Realidad Aumentada, y servicios personalizados de diseño automotriz.
+
+#### Venceremos a la competencia porque
+AutoFX ofrecerá una experiencia inmersiva, personalizada y en tiempo real, usando Realidad Aumentada (AR) para mostrar las modificaciones directamente sobre el vehículo del cliente, lo que genera mayor confianza, rapidez y precisión en la decisión.
+
+#### Nuestro mayor riesgo es
+La resistencia inicial de usuarios tradicionales a adoptar tecnología de AR para tomar decisiones de personalización, y las posibles limitaciones técnicas en la precisión visual de los filtros sobre diferentes modelos de vehículos.
+
+#### Mitigaremos este riesgo
+Mediante una estrategia de educación digital, demostraciones gratuitas en talleres, creación de contenido explicativo en redes sociales, y asegurando una alta calidad visual en la proyección AR para maximizar la confianza del usuario en el sistema.
+
 #### 1.2.2.3. Lean UX Hypothesis Statements
+
+- Creemos que al proporcionar a los usuarios una herramienta de Realidad Aumentada (AR) que les permita visualizar en tiempo real las modificaciones estéticas en sus vehículos, lograremos que tomen decisiones de personalización con mayor seguridad y confianza. 
+
+  Sabremos que hemos tenido éxito cuando.
+
+  Más del 70% de los usuarios manifiesten sentirse seguros y satisfechos con su decisión de personalización luego de utilizar la aplicación.
+
+- Creemos que al ofrecer una aplicación móvil intuitiva y de fácil acceso, los usuarios podrán explorar diferentes opciones de personalización de manera rápida y entretenida, aumentando el interés en la realización de modificaciones reales. 
+
+  Sabremos que hemos tenido éxito cuando.
+
+  Al menos el 60% de los usuarios utilicen más de una opción de personalización en su primera sesión de uso y la tasa de interacción media supere los 5 minutos por sesión.
+
+- Creemos que al integrar filtros visuales de alta calidad y realismo, los usuarios confiarán en la visualización que ofrece AutoFX como una representación precisa del resultado final. 
+
+  Sabremos que hemos tenido éxito cuando 
+
+  La percepción de precisión visual, medida a través de encuestas posteriores al uso, alcance un índice de satisfacción superior al 80%.
+
 #### 1.2.2.4. Lean UX Canvas
+
+![](https://cdn.discordapp.com/attachments/877299205696262227/1365853920487931954/Lean_UX_Canvas.jpg?ex=680ed216&is=680d8096&hm=fca58abc51f296aec31d28b05a202e594db7c415ff7870e9325ca30d9ae51ae5&)
 
 ## 1.3. Segmentos objetivo
 En el contexto de nuestra propuesta innovadora, basada en el uso de Realidad Aumentada (RA) para la previsualización de modificaciones vehiculares en tiempo real, hemos identificado varios segmentos clave que se relacionan con el dominio del problema.
