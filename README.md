@@ -781,6 +781,9 @@ Para realizar los componentes elaboramos las preguntas para obtener información
     8. Si existiera una app que te permitiera previsualizar cómo quedaría su auto después de ser personalizado ¿Estaría interesado?
 ### 2.2.2. Registro de entrevistas
 
+Enlace de video de las entrevistas: https://upcedupe-my.sharepoint.com/:v:/g/personal/u201923446_upc_edu_pe/Efw5ULYE-MlMn_y-rldV8Y4B6dtTOz5Gx4KubDzzzry1IQ?e=K7NAgA&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+
+
 #### Entrevista 1
 
 ![Entrevista Ronald Huapaya](img/Entrevista%20Ronald%20Huapaya.png)
