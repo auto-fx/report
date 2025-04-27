@@ -294,30 +294,36 @@
       <td>
         <h4>TB1</h4>
         <h5>Garayar Mori, Oscar Nathaniel</h5>
-        <p>Acciones</p>
+        <p>Desarrollé entrevistas para la validación inicial del proyecto</p>
         <h5>Mendoza Pimentel, Piero</h5>
-        <p>Acciones</p>
+        <p>Desarrollé entrevistas para la validación inicial del proyecto</p>
         <h5>Neyra Santa Cruz, Marcelo Sebastian</h5>
-        <p>Acciones</p>
+        <p>Desarrollé entrevistas para la validación inicial del proyecto</p>
         <h5>Roca Huapaya, Orlando Arturo</h5>
-        <p>Acciones</p>
+        <p>Desarrollé entrevistas para la validación inicial del proyecto</p>
       </td>
-      <td>Conclusiones generales</td>
+      <td>
+        <h4>TB1</h4>
+        <p>Para esta primera entrega, se realizó una investigación detallada para poder cumplir con las expectativas del público. Para ello, se realizaron algunas entrevistas para validar la definición y pronto desarrollo del producto AutoFX</p>
+      </td>
     </tr>
     <tr>
       <td>Comunica en forma escrita ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerarquicos, en el marco del desarrollo de un proyecto en ingeniería.</td>
       <td>
         <h4>TB1</h4>
         <h5>Garayar Mori, Oscar Nathaniel</h5>
-        <p>Acciones</p>
+        <p>Desarrollé la sección de competidores, architectual drivers backlog y los diagramas C4</p>
         <h5>Mendoza Pimentel, Piero</h5>
-        <p>Acciones</p>
+        <p>Desarrollé el startup profile, needfinding y strategic-level domain driven design</p>
         <h5>Neyra Santa Cruz, Marcelo Sebastian</h5>
-        <p>Acciones</p>
+        <p>Desarrollé el solution profile, ubiquitous language y todas las secciones del capítulo 3</p>
         <h5>Roca Huapaya, Orlando Arturo</h5>
-        <p>Acciones</p>
+        <p>Desarrollé el lean ux, stratefic-level attribute-driven design y el diseño de las entrevistas</p>
       </td>
-      <td>Conclusiones generales</td>
+      <td>
+        <h4>TB1</h4>
+        <p>Para esta primera entrega, se realizó una árdua investigación y documentación de diversos puntos principales de la validación del proyecto, como la situación actual con el AS IS Mapping, las historias de usuario y product backlog, los diagramas C4 y los drivers a cumplir</p>
+      </td>
     </tr>
   </tbody>
 </table>
