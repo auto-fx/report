@@ -393,7 +393,7 @@ A través de nuestra aplicación móvil, AutoFX, buscamos ofrecer una experienci
   <th colspan="2">Roca Huapaya, Orlando Arturo</th>
   <tr>
     <td>
-    <img src="https://cdn.discordapp.com/attachments/877299205696262227/1365191908304879666/Captura_de_pantalla_2024-06-16_173218.png?ex=680c698a&is=680b180a&hm=2a5b43302b228e7f9097a0e64bc85d4669760f53401359d703cf1d9ba3b3d3c9&" alt="Foto de perfil de Orlando" width="600px">
+    <img src="img/perfil_orlando.png" alt="Foto de perfil de Orlando" width="600px">
     </td>
     <td>
       <p>
@@ -548,7 +548,7 @@ Mediante una estrategia de educación digital, demostraciones gratuitas en talle
 
 #### 1.2.2.4. Lean UX Canvas
 
-![](https://cdn.discordapp.com/attachments/877299205696262227/1365853920487931954/Lean_UX_Canvas.jpg?ex=680ed216&is=680d8096&hm=fca58abc51f296aec31d28b05a202e594db7c415ff7870e9325ca30d9ae51ae5&)
+![](img/Lean_UX_Canvas.jpg)
 
 ## 1.3. Segmentos objetivo
 En el contexto de nuestra propuesta innovadora, basada en el uso de Realidad Aumentada (RA) para la previsualización de modificaciones vehiculares en tiempo real, hemos identificado varios segmentos clave que se relacionan con el dominio del problema.
