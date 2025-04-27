@@ -790,7 +790,7 @@ Enlace de video de las entrevistas: https://upcedupe-my.sharepoint.com/:v:/g/per
 
 - Nombre: Ronald Huapaya
 - Distrito: San Miguel
-- Duracion: xx:xx
+- Duracion: 03:27
 
 Ronald Huapaya, un joven de 24 años que reside en San Miguel, compró su auto con el propósito específico de personalizarlo, ya que considera que esta práctica le permite expresar su personalidad a través del diseño del vehículo. Para él, lo más atractivo de modificar su auto es justamente poder reflejar su estilo y preferencias personales. Comenta que, en los talleres donde ha solicitado servicios de personalización, usualmente le muestran referencias visuales como fotos o ejemplos de otros autos ya modificados, lo cual le resulta útil para imaginar el resultado final. Aunque no ha tenido malas experiencias propias, sí conoce personas cercanas que enfrentaron inconvenientes en el proceso de personalización, lo que considera un riesgo a tener en cuenta. Sus marcas favoritas para este tipo de modificaciones son Subaru, BMW y Honda, debido a su versatilidad y estética. Además, utiliza con frecuencia YouTube como principal fuente de inspiración y búsqueda de ideas. Finalmente, se mostró muy interesado en la idea de una aplicación que le permitiera previsualizar digitalmente cómo quedaría su auto antes de realizar los cambios, considerándola una herramienta muy útil y práctica.
 
@@ -800,7 +800,7 @@ Ronald Huapaya, un joven de 24 años que reside en San Miguel, compró su auto c
 
 - Nombre: Cristian Paredes
 - Distrito: San Borja
-- Duración: xx:xx
+- Duración: 04:33
 
 Cristian Paredes, un señor de 45 años que reside en San Borja, siempre ha sido un amante de los automóviles, especialmente en personalizarlos. Nos cuenta que lo que más le atrae de personalizar su auto es hacer que se vea diferente al de los demás. En cuanto a sus experiencias personalizando sus autos, nos menciona que los mecánicos nunca le han ofrecido algún método de previsualizar los cambios que harán, por lo que tiene que creer únicamente en su palabra. También, nos dice que ha tenido algunas malas experiencias personalizando su auto y que, como se paga antes de que te realicen el servicio, no hay nada que puedas hacer para revertir los cambios si no te gusta. Por otro lado, nos comenta que sus marcas favoritas de auto son BMW, Audi, Subaru, Toyota y Mitsubishi y que suele utilizar Google para enterarse sobre las modificaciones de su auto.
 
@@ -827,6 +827,25 @@ Adrián Liñán, ingeniero mecánico automotriz de 29 años residente en Lima, h
 Maryori Espinoza es una joven de 25 años, que vive en Santa Anita. En una entrevista sobre la personalización de vehículos, comentó que le atrae la idea de personalizar su auto para reflejar su estilo personal y, si es posible, mejorar también el rendimiento. Aunque aún no ha personalizado su vehículo, ha considerado hacerlo. Mencionó que en los talleres, en la mayoría de ocasiones, no le han mostrado referencias visuales como fotos o prototipos antes de realizar modificaciones, lo cual considera importante para tener mayor seguridad sobre el resultado. Relató que tuvo una mala experiencia al cambiar el color de su auto, ya que el resultado final no coincidió con sus expectativas. Finalmente, indicó que sus marcas de autos favoritas son Toyota y Mazda, valorando su confiabilidad y buen diseño.
 
 ### 2.2.3. Análisis de entrevistas
+
+Se realizaron entrevistas a cuatro personas de distintos distritos de Lima, todos con interés en la personalización de vehículos. A partir de sus testimonios, se identificaron los siguientes problemas principales:
+
+1. **Falta de previsualización:** 
+
+  Todos los entrevistados coincidieron en que los talleres no ofrecen una forma clara de visualizar los cambios antes de realizarlos, limitándose a referencias genéricas o explicaciones verbales. Esto genera inseguridad y expectativas no siempre cumplidas.
+
+2. **Malas experiencias previas:** 
+
+  Tres de los cuatro entrevistados relataron resultados insatisfactorios, especialmente en servicios de pintura y estética, lo que evidencia la necesidad de procesos más confiables y transparentes.
+
+3. **Necesidad de expresión personal:**
+  La motivación principal para personalizar un vehículo es reflejar el estilo personal. La falta de herramientas adecuadas limita esta expresión y aumenta el riesgo de insatisfacción.
+
+4. **Dependencia de fuentes externas:**
+  
+  Muchos usuarios recurren a plataformas como YouTube, Instagram o Google para buscar inspiración, lo que sugiere que los talleres no suplen esta necesidad de visualización y asesoramiento.
+
+En conjunto, los entrevistados manifestaron un interés claro por una aplicación que permita previsualizar digitalmente las modificaciones antes de realizarlas, reduciendo riesgos y mejorando la experiencia de personalización.
 
 ## 2.3. Needfinding
 ### 2.3.1. User Persona
