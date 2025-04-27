@@ -1,3 +1,18 @@
+<style>
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  th {
+    background-color: #f2f2f2;
+    text-align: center;
+  }
+</style>
+
 <p align="center">
   <img src="img/upc.png" alt="Logo de UPC" width="100%">
 </p>
@@ -628,7 +643,6 @@ En el contexto de nuestra propuesta innovadora, basada en el uso de Realidad Aum
     <th>Formacar</th>
     <th>Car 3D Configurator</th>
   </tr>
-
   <tr><th rowspan="2">Perfil</th>
     <th>Overview</th>
     <td>App móvil con RA para personalizar el auto real del usuario en tiempo real.</td>
@@ -643,7 +657,6 @@ En el contexto de nuestra propuesta innovadora, basada en el uso de Realidad Aum
     <td>Integración de múltiples funciones y comunidad social de entusiastas.</td>
     <td>Calidad gráfica superior y experiencia visual inmersiva limitada a ciertas marcas.</td>
   </tr>
-
   <tr><th rowspan="2">Perfil de Marketing</th>
     <th>Mercado objetivo</th>
     <td>Propietarios jóvenes de autos en LATAM interesados en cambios estéticos.</td>
@@ -658,7 +671,6 @@ En el contexto de nuestra propuesta innovadora, basada en el uso de Realidad Aum
     <td>Red social interna, contenido generado por usuarios, integración con VR.</td>
     <td>Presencia en App Store con campañas visuales dirigidas a fanáticos de lujo.</td>
   </tr>
-
   <tr><th rowspan="3">Perfil de Producto</th>
     <th>Productos & Servicios</th>
     <td>Personalización RA + filtros + comparación + guardado + integración con talleres.</td>
@@ -680,7 +692,6 @@ En el contexto de nuestra propuesta innovadora, basada en el uso de Realidad Aum
     <td>Web, App móvil y compatibilidad VR/AR.</td>
     <td>App móvil (iOS, Android); en algunos casos VR.</td>
   </tr>
-
   <tr><th rowspan="4">Análisis SWOT</th>
     <th>Fortalezas</th>
     <td>RA aplicada al auto real, simplicidad de uso, enfoque en experiencia directa.</td>
@@ -710,8 +721,6 @@ En el contexto de nuestra propuesta innovadora, basada en el uso de Realidad Aum
     <td>Modelo difícil de escalar a vehículos comunes.</td>
   </tr>
 </table>
-
-
 
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
@@ -1603,7 +1612,6 @@ En esta sección se incluirán términos comúnmente utilizados alrededor de tod
     </td>
     <td>EP04</td>
   </tr>
-
   <tr>
     <th>EP04 / US15</th>
     <th>Agregado de accesorios externos</th>
