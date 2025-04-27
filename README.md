@@ -830,19 +830,16 @@ Maryori Espinoza es una joven de 25 años, que vive en Santa Anita. En una entre
 
 Se realizaron entrevistas a cuatro personas de distintos distritos de Lima, todos con interés en la personalización de vehículos. A partir de sus testimonios, se identificaron los siguientes problemas principales:
 
-1. **Falta de previsualización:** 
-
+1. **Falta de previsualización:**
   Todos los entrevistados coincidieron en que los talleres no ofrecen una forma clara de visualizar los cambios antes de realizarlos, limitándose a referencias genéricas o explicaciones verbales. Esto genera inseguridad y expectativas no siempre cumplidas.
 
 2. **Malas experiencias previas:** 
-
   Tres de los cuatro entrevistados relataron resultados insatisfactorios, especialmente en servicios de pintura y estética, lo que evidencia la necesidad de procesos más confiables y transparentes.
 
 3. **Necesidad de expresión personal:**
   La motivación principal para personalizar un vehículo es reflejar el estilo personal. La falta de herramientas adecuadas limita esta expresión y aumenta el riesgo de insatisfacción.
 
 4. **Dependencia de fuentes externas:**
-  
   Muchos usuarios recurren a plataformas como YouTube, Instagram o Google para buscar inspiración, lo que sugiere que los talleres no suplen esta necesidad de visualización y asesoramiento.
 
 En conjunto, los entrevistados manifestaron un interés claro por una aplicación que permita previsualizar digitalmente las modificaciones antes de realizarlas, reduciendo riesgos y mejorando la experiencia de personalización.
