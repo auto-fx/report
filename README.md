@@ -818,7 +818,7 @@ Adrián Liñán, ingeniero mecánico automotriz de 29 años residente en Lima, h
 
 #### Entrevista 4
 
-![Entrevista Maryori Espinoza](https://cdn.discordapp.com/attachments/877299205696262227/1365839496691712120/image.png?ex=680ec4a8&is=680d7328&hm=c4ee6124b0e83dd1a8515845d6606c84326de39670a6e0d97d3e18059b77cd58&)
+![Entrevista Maryori Espinoza](img/entrevista_maryori.png)
 
 - Nombre: Maryori Espinoza
 - Distrito: Santa Anita
