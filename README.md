@@ -2475,10 +2475,19 @@ Context Mapping es un paso crucial dentro del Domain-Driven Design que se enfoca
 
 ## 7.4. Video About-the-Product
 
-# Capítulo VIII: Conclusiones y Recomendaciones
+## Conclusiones y Recomendaciones
 
-# Capítulo IX: Video About-the-Team
+### TB1
 
-# Capítulo X: Bibliografía
+Para esta primera entrega, se desarrollaron los primeros 4 capítulos. Se logró validar la idea inicial y notamos que nuestra solución es bastante original, ya que lo más cercano a lo que estamos proponiendo son videojuegos para dispositivos móviles que permiten modificar estéticamente un auto. En las siguiente entregas, se espera continuar aún más con el proyecto para terminar solucionando este problema tan recurrente
 
-# Capítulo XI: Anexos
+
+## Video About-the-Team
+
+## Bibliografía
+
+## Anexos
+
+Video de entrevistas: [Enlace a Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201923446_upc_edu_pe/Efw5ULYE-MlMn_y-rldV8Y4B6dtTOz5Gx4KubDzzzry1IQ?e=K7NAgA&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+
+Product Backlog: [Enlace a Trello](https://trello.com/invite/b/680555a4b1894b16d011fa9a/ATTI48aab33877f28f2e26ff4bfc2e2e7d1d70E6B7DE/arquitectura-de-software-emergentes)
