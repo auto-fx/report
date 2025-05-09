@@ -2507,7 +2507,15 @@ Estas etiquetas aseguran una carga optimizada y correcta indexación para los mo
 
 ### 6.2.5. Navigation Systems
 
+La aplicación utiliza un sistema de navegación simplificado basado en flujos directos entre pantallas:
 
+- Menú principal oculto (icono de cuenta) que da acceso a perfil y logout.
+- Botón central (START CAR RECOGNITION) como punto de entrada al flujo de personalización.
+- Botón "COLLECTION" en la parte inferior izquierda para acceder rápidamente a las fotos guardadas.
+- Navegación en cascada: cada acción lleva al siguiente paso lógico (reconocimiento → filtros → foto → comparación).
+- Botón de regreso en la parte superior izquierda para volver al paso anterior en todo momento.
+
+Este sistema de navegación asegura fluidez en la experiencia del usuario, evitando sobrecarga cognitiva y manteniendo la interfaz limpia y directa.
 
 
 ## 6.3. Landing Page UI Design
