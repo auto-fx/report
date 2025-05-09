@@ -2446,11 +2446,69 @@ Context Mapping es un paso crucial dentro del Domain-Driven Design que se enfoca
 ### 6.1.2. Web, Mobile & Devices Style Guidelines
 
 ## 6.2. Information Architecture
+En esta sección se presenta la arquitectura de información de la aplicación AutoFX, centrada en la organización y acceso eficiente al contenido por parte de los usuarios. Esta arquitectura considera los distintos flujos de navegación para facilitar la personalización de vehículos mediante realidad aumentada. Se detallan los sistemas de organización, etiquetado, búsqueda, navegación y optimización para motores de búsqueda, como parte fundamental del diseño centrado en el usuario.
 ### 6.2.1. Organization Systems
+Para la aplicación móvil de personalización vehicular, se han definido sistemas de organización jerárquicos y secuenciales que permiten al usuario navegar de forma clara y eficiente a través del flujo de funcionalidades:
+
+- Jerárquico:
+  - Acceso por autenticación: el usuario debe iniciar sesión o registrarse para acceder a las funciones principales.
+  - Funciones divididas en secciones: detección de auto, aplicación de filtros (color/accesorios), colección de fotos, y cuenta de usuario.
+
+- Secuencial:
+  - El flujo de personalización sigue una secuencia clara: (1) Reconocimiento del auto → (2) Selección de filtros → (3) Toma de foto → (4) Visualización y comparación → (5) Guardado en colección.
+  - Flujos secundarios como recuperación de contraseña y edición de cuenta también siguen una lógica paso a paso.
+
 ### 6.2.2. Labeling Systems
+
+Los sistemas de etiquetado utilizados en la aplicación permiten que los usuarios identifiquen fácilmente las secciones y funciones:
+
+- “START CAR RECOGNITION”: botón principal en la pantalla de cámara para iniciar la detección del auto.
+- “COLOR” / “ACCESSORY”: opciones para aplicar filtros de color o accesorios.
+- “TAKE PHOTO”: captura la imagen con los filtros aplicados.
+- “COLLECTION”: accede a la galería de imágenes personalizadas.
+- “LOG IN” / “SIGN UP” / “RESET PASSWORD”: etiquetas claras para funciones de autenticación.
+- “ACCOUNT”: sección para editar datos de usuario o cerrar sesión.
+
+Estas etiquetas usan tipografía sans-serif en mayúsculas, destacadas por color y posición, asegurando una jerarquía visual clara.
+
+
 ### 6.2.3. Searching Systems
+
+
+Dado el flujo contenido y enfocado de la aplicación, no se implementa un sistema de búsqueda general. Sin embargo, la navegación está optimizada mediante botones directos hacia cada funcionalidad principal como filtros, colección y cuenta.
+
+En futuras versiones se podría considerar un sistema de búsqueda para filtrar imágenes por tipo de filtro aplicado o fecha de creación dentro de la galería personal del usuario.
+
+
 ### 6.2.4. SEO Tags and Meta Tags
+
+
+Aunque la aplicación se centra en la experiencia móvil, se planea una landing page web informativa. Para dicha página se proponen las siguientes etiquetas:
+
+- Estructura del documento:
+  - `<!DOCTYPE html>`
+  - `<html lang="es">`
+
+- Metadatos:
+  - `<meta charset="UTF-8">`
+  - `<meta name="viewport" content="width=device-width, initial-scale=1.0">`
+  - `<meta name="description" content="Aplicación de personalización automotriz con realidad aumentada">`
+  - `<meta name="keywords" content="personalización auto, AR, filtros auto, accesorios auto">`
+  - `<meta name="author" content="Equipo After Effects">`
+  - `<link rel="icon" href="img/logo_autofx.png">`
+
+- Fuentes y estilos:
+  - `<link rel="preconnect" href="https://fonts.googleapis.com">`
+  - `<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">`
+  - `<link rel="stylesheet" href="styles.css">`
+
+Estas etiquetas aseguran una carga optimizada y correcta indexación para los motores de búsqueda.
+
+
 ### 6.2.5. Navigation Systems
+
+
+
 
 ## 6.3. Landing Page UI Design
 ### 6.3.1. Landing Page Wireframe
