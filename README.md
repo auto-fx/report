@@ -2458,7 +2458,30 @@ Context Mapping es un paso crucial dentro del Domain-Driven Design que se enfoca
 
 ## 6.4. Applications UX/UI Design
 ### 6.4.1. Applications Wireframes
+<img src="img\MobileWireframe\wireframe.png" alt="Wireframe 1">
+<img src="img\MobileWireframe\wireframe 2.png" alt="Wireframe 2">
+
 ### 6.4.2. Applications Wireflow Diagrams
+
+#### Sign Up Wireflow:
+<img src="img\Mobile Wireflow\SignUp.png" alt="SignUp Wireflow">
+
+
+#### Reset Password Wireflow:
+<img src="img\Mobile Wireflow\ResetPassword.png" alt="Reset Password Wireflow">
+
+#### Color Filter Wireflow:
+<img src="img\Mobile Wireflow\ColorFilter.png" alt="Color Filter Wireflow">
+
+#### Accessory Filter Wireflow:
+<img src="img\Mobile Wireflow\AccessoryFilter.png" alt="Accessory Filter Wireflow">
+
+#### Collection Wireflow:
+<img src="img\Mobile Wireflow\Collection.png" alt="Collection Wireflow">
+
+#### Account Wireflow:
+<img src="img\Mobile Wireflow\Account.png" alt="Account Wireflow">
+
 ### 6.4.3. Applications Mock-ups
 ### 6.4.4. Applications User Flow Diagrams
 
