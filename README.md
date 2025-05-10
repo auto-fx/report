@@ -2468,9 +2468,17 @@ Esta capa interactúa con servicios externos y proporciona implementaciones conc
 - JWTService (Integration Service): Genera y valida tokens JWT, asegurando la integridad y autenticidad de las sesiones de usuario.
 
 ### 5.1.5. Component Level Diagrams
+
+![Component Level Diagrams](<img/Component Level Diagrams.png>)
+
 ### 5.1.6. Code Level Diagrams
 #### 5.1.6.1. Domain Layer Class Diagrams
+
+![Domain Layer Class Diagrams](<img/Domain Layer Class Diagrams.png>)
+
 #### 5.1.6.2. Database Design Diagram
+
+
 
 ## 5.X. Bounded Context: <Bounded Context Name>
 ### 5.X.1. Domain Layer
