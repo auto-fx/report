@@ -2463,9 +2463,9 @@ Aquí se gestionan los flujos de procesos del negocio, coordinando las operacion
 
 Esta capa interactúa con servicios externos y proporciona implementaciones concretas para las interfaces definidas en el dominio.
 
-UserRepository (Repository): Implementa IUserRepository utilizando una base de datos relacional para almacenar y recuperar información de usuarios.
+- UserRepository (Repository): Implementa IUserRepository utilizando una base de datos relacional para almacenar y recuperar información de usuarios.
 
-JWTService (Integration Service): Genera y valida tokens JWT, asegurando la integridad y autenticidad de las sesiones de usuario.
+- JWTService (Integration Service): Genera y valida tokens JWT, asegurando la integridad y autenticidad de las sesiones de usuario.
 
 ### 5.1.5. Component Level Diagrams
 ### 5.1.6. Code Level Diagrams
