@@ -2429,6 +2429,49 @@ Context Mapping es un paso crucial dentro del Domain-Driven Design que se enfoca
 
 # Capítulo V: Tactical-Level Software Design
 
+## 5.1. Bounded Context: <Bounded Autenticación>
+### 5.1.1. Domain Layer
+
+En esta capa se representan las reglas de negocio y el núcleo del dominio de autenticación. A continuación, se detallan las principales clases y sus responsabilidades:
+
+- User (Entity): Representa a un usuario del sistema, incluyendo atributos como id, email, password, roles, entre otros. Esta entidad encapsula la lógica relacionada con la autenticación y autorización del usuario.
+
+- Email (Value Object): Encapsula y valida la estructura del correo electrónico del usuario.
+
+- Password (Value Object): Maneja el hashing y la validación de contraseñas, asegurando que cumplan con los estándares de seguridad.
+
+-UserAggregate (Aggregate): Actúa como punto de entrada para las operaciones relacionadas con el usuario, coordinando la interacción entre la entidad User y los value objects Email y Password.
+
+### 5.1.2. Interface Layer
+
+Esta capa expone las funcionalidades del sistema a través de interfaces, facilitando la interacción con los usuarios y otros sistemas.
+
+- AuthController (Controller): Maneja las solicitudes HTTP relacionadas con la autenticación, como el registro (/signup) y el inicio de sesión (/login). Utiliza los servicios del dominio para procesar las solicitudes y devolver respuestas adecuadas.
+
+### 5.1.3. Application Layer
+
+Aquí se gestionan los flujos de procesos del negocio, coordinando las operaciones entre las capas de interfaz y dominio.
+
+- RegisterUserCommandHandler (Command Handlers): Procesa el comando de registro de un nuevo usuario, validando los datos y creando una nueva entidad User.
+
+- LoginUserCommandHandler (Command Handlers): Maneja el inicio de sesión, verificando las credenciales y generando un token JWT si la autenticación es exitosa.
+
+- UserRegisteredEventHandler (Event Handlers
+): Escucha el evento de registro de usuario y puede realizar acciones adicionales, como enviar un correo de bienvenida.
+
+### 5.1.4. Infrastructure Layer
+
+Esta capa interactúa con servicios externos y proporciona implementaciones concretas para las interfaces definidas en el dominio.
+
+UserRepository (Repository): Implementa IUserRepository utilizando una base de datos relacional para almacenar y recuperar información de usuarios.
+
+JWTService (Integration Service): Genera y valida tokens JWT, asegurando la integridad y autenticidad de las sesiones de usuario.
+
+### 5.1.5. Component Level Diagrams
+### 5.1.6. Code Level Diagrams
+#### 5.1.6.1. Domain Layer Class Diagrams
+#### 5.1.6.2. Database Design Diagram
+
 ## 5.X. Bounded Context: <Bounded Context Name>
 ### 5.X.1. Domain Layer
 ### 5.X.2. Interface Layer
