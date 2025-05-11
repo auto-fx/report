@@ -2478,7 +2478,7 @@ Esta capa interactúa con servicios externos y proporciona implementaciones conc
 
 #### 5.1.6.2. Database Design Diagram
 
-
+![Database Design Diagram](<img/Database Design Diagram.png>)
 
 ## 5.X. Bounded Context: <Bounded Context Name>
 ### 5.X.1. Domain Layer
