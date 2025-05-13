@@ -2432,40 +2432,136 @@ Context Mapping es un paso crucial dentro del Domain-Driven Design que se enfoca
 ## 5.1. Bounded Context: Autenticación
 ### 5.1.1. Domain Layer
 
-En esta capa se representan las reglas de negocio y el núcleo del dominio de autenticación. A continuación, se detallan las principales clases y sus responsabilidades:
+#### Aggregates
+##### User
+Representa a un usuario del sistema con credenciales de autenticación y roles asignados.
 
-- User (Entity): Representa a un usuario del sistema, incluyendo atributos como id, email, password, roles, entre otros. Esta entidad encapsula la lógica relacionada con la autenticación y autorización del usuario.
+###### Atributos:
 
-- Email (Value Object): Encapsula y valida la estructura del correo electrónico del usuario.
+1. id (UUID): Identificador único del usuario.
 
-- Password (Value Object): Maneja el hashing y la validación de contraseñas, asegurando que cumplan con los estándares de seguridad.
+2. email (Email): Correo electrónico del usuario, encapsulado en un Value Object.
 
--UserAggregate (Aggregate): Actúa como punto de entrada para las operaciones relacionadas con el usuario, coordinando la interacción entre la entidad User y los value objects Email y Password.
+3. password (Password): Contraseña encriptada del usuario, encapsulada en un Value Object.
+
+4. role (Role): Rol asignado al usuario (e.g., USER, ADMIN).
+
+5. isActive (boolean): Indica si la cuenta del usuario está activa.
+
+6. createdAt (Date): Fecha de creación del usuario.
+
+###### Métodos:
+
+1. changePassword(Password newPassword): Cambia la contraseña del usuario.
+
+2. disable(): Desactiva la cuenta del usuario.
+
+3. isValidUser(): Verifica si el usuario es válido y activo.
+
+#### Value Objects
+##### Email
+Encapsula y valida la estructura de una dirección de correo electrónico.
+
+###### Atributos:
+
+1. value (String): Dirección de correo electrónico.
+
+###### Métodos:
+
+1. getValue(): Retorna el valor del correo electrónico.
+
+2. isValid(): Valida la estructura del correo electrónico.
+
+##### Password
+Encapsula la lógica relacionada con la contraseña del usuario.
+
+###### Atributos:
+
+1. hashedValue (String): Contraseña encriptada.
+
+###### Métodos:
+
+1. compare(String rawPassword): Compara una contraseña en texto plano con la encriptada.
+
+2. getHashed(): Retorna la contraseña encriptada.
+
+#### Enumeraciones
+##### Role
+Define los roles posibles que un usuario puede tener en el sistema.
+
+Valores:
+
+1. USER
+2. ADMIN
+
+#### Interfaces
+##### IUserRepository
+Interfaz que define las operaciones de persistencia y recuperación de usuarios.
+
+###### Métodos:
+
+1. findByEmail(Email email): Busca un usuario por su correo electrónico.
+
+2. save(User user): Persiste un nuevo usuario o actualiza uno existente.
+
+#### Domain Services
+##### AuthService
+Servicio que encapsula la lógica de negocio relacionada con la autenticación y registro de usuarios.
+
+###### Métodos:
+
+1. authenticate(Email email, Password password): Autentica a un usuario y retorna un token JWT.
+
+2. register(User user): Registra un nuevo usuario en el sistema.
 
 ### 5.1.2. Interface Layer
 
-Esta capa expone las funcionalidades del sistema a través de interfaces, facilitando la interacción con los usuarios y otros sistemas.
+Esta capa expone las funcionalidades del sistema a través de interfaces HTTP (controladores), permitiendo que los usuarios y otros sistemas interactúen con los casos de uso definidos en la Application Layer.
 
-- AuthController (Controller): Maneja las solicitudes HTTP relacionadas con la autenticación, como el registro (/signup) y el inicio de sesión (/login). Utiliza los servicios del dominio para procesar las solicitudes y devolver respuestas adecuadas.
+#### Controladores
+
+##### AuthController
+Expone endpoints relacionados con la autenticación de usuarios.
+
+###### Endpoints:
+
+1. POST /auth/login: Autentica a un usuario y retorna un token JWT.
+
+2. POST /auth/register: Registra un nuevo usuario en el sistema.
 
 ### 5.1.3. Application Layer
 
-Aquí se gestionan los flujos de procesos del negocio, coordinando las operaciones entre las capas de interfaz y dominio.
+Esta capa coordina las operaciones del dominio, gestionando la orquestación de comandos y queries. Implementa los servicios definidos en el Domain Layer.
 
-- RegisterUserCommandHandler (Command Handlers): Procesa el comando de registro de un nuevo usuario, validando los datos y creando una nueva entidad User.
+#### Command Handlers
+##### RegisterUserCommandHandler
+Maneja el comando de registro de un nuevo usuario.
 
-- LoginUserCommandHandler (Command Handlers): Maneja el inicio de sesión, verificando las credenciales y generando un token JWT si la autenticación es exitosa.
+###### Métodos:
 
-- UserRegisteredEventHandler (Event Handlers
-): Escucha el evento de registro de usuario y puede realizar acciones adicionales, como enviar un correo de bienvenida.
+1. handle(RegisterUserCommand command): Procesa el registro de un usuario.
+
+#### Query Handlers
+##### AuthenticateUserQueryHandler
+Maneja la autenticación de un usuario existente.
+
+###### Métodos:
+
+1. handle(AuthenticateUserQuery query): Procesa la autenticación y retorna un token JWT.
 
 ### 5.1.4. Infrastructure Layer
 
-Esta capa interactúa con servicios externos y proporciona implementaciones concretas para las interfaces definidas en el dominio.
+Esta capa proporciona la implementación técnica para persistencia de datos y acceso a recursos externos.
 
-- UserRepository (Repository): Implementa IUserRepository utilizando una base de datos relacional para almacenar y recuperar información de usuarios.
+#### Repositories
+##### UserRepository
+Implementación de la interfaz IUserRepository que interactúa con la base de datos para operaciones CRUD de usuarios.
 
-- JWTService (Integration Service): Genera y valida tokens JWT, asegurando la integridad y autenticidad de las sesiones de usuario.
+###### Métodos:
+
+1. findByEmail(Email email): Busca un usuario por su correo electrónico en la base de datos.
+
+2. save(User user): Persiste un nuevo usuario o actualiza uno existente en la base de datos.
 
 ### 5.1.5. Component Level Diagrams
 
@@ -2487,7 +2583,7 @@ En esta capa se representan las reglas de negocio y el núcleo del dominio de Re
 ##### Automobile
 Representa a un auto detectado con la cámara del teléfono del usuario al cual se le pondrán agregar filtros.
 ###### Atributos
-1. `Id (UUID)` El identificador de la clase. Es un valor autogenerado
+1. `Id (Long)` El identificador de la clase. Es un valor autogenerado
 2. `Model (AutomobileModel)` El modelo del auto
 3. `Brand (AutomobileBrand)` La marca del auto
 4. `Color (String)` El color actual del auto
@@ -2500,7 +2596,7 @@ Representa a un auto detectado con la cámara del teléfono del usuario al cual 
 ##### Filter
 Representa un filtro que se le puede agregar a un auto
 ###### Atributos
-1. `Id (UUID)` El identificador de la clase. Es un valor autogenerado
+1. `Id (Long)` El identificador de la clase. Es un valor autogenerado
 2. `Name (String)` El nombre del filtro que el usuario podrá visualizar en la aplicación
 3. `Type (FilterType)` El tipo de filtro aplicado. Es de tipo FilterType
 4. `Description(String)` Una breve descripción del filtro
@@ -2511,24 +2607,24 @@ Representa un filtro que se le puede agregar a un auto
 ##### AutomobileModel
 Representa el modelo específico del auto
 ###### Atributos
-1. `Id (UUID) ` El identificador de la clase. Es un valor autogenerado
+1. `Id (Long) ` El identificador de la clase. Es un valor autogenerado
 2. `Name (String)` El nombre del modelo del auto
 3. `Year (Int)` El año de fabricación del auto
 ##### AutomobileBrand
 Representa la marca del auto
 ###### Atributos
-1. `Id (UUID)` El identificador de la clase. Es un valor autogenerado
+1. `Id (Long)` El identificador de la clase. Es un valor autogenerado
 2. `Name (String)` El nombre de la marca del auto
 3. `LogoUrl (String)` Una URL del logo del auto. Solo se mostrará en la aplicación si es que existe, de lo contrario, se muestra un logo predeterminado
 ##### FilterType
 Una clase de utilidad que permita agregar un único valor del enum `FilterTypeEnum` a la clase `Automobile`
 ###### Atributos
-1. `Id (UUID)` El identificador de la clase. Es un valor autogenerado
+1. `Id (Long)` El identificador de la clase. Es un valor autogenerado
 2. `Filter (FilterTypeEnum)` Un valor del enum FilterTypeEnum
 ##### ArFilter
 Representa el filtro de AR (Augmented Reality) que se aplicará visualmente al auto.
 ###### Atributos
-1. `Id (UUID)` El identificador de la clase. Es un valor autogenerado
+1. `Id (Long)` El identificador de la clase. Es un valor autogenerado
 2. `FileUrl (String)` La URL del archivo del filtro AR
 3. `Position (Vector3)` coordenadas en el espacio tridimensional
 4. `Scale (Vector3)` La escala del objeto
@@ -2552,8 +2648,6 @@ Define los distintos tipos de filtros que se pueden aplicar al auto.
 #### Queries
 1. `GetAutomobileByIdQuery` Record para recuperar un automobile por id
 2. `GetFilterByIdQuery` Record para recuperar un filtro por id
-3. `GetAutomobileBrandByNameQuery` Record para recuperar la marca por nombre
-4. `GetAutomobileModelByNameQuery` Record para recuperar el modelo por nombre
 #### Services
 ##### CommandServices
 1. `AutomobileCommandService` Servicio que encapsula los commands relacionados con la clase `Automobile`
@@ -2602,12 +2696,13 @@ Esta capa proporciona la implementación técnica para persistencia de datos y a
 5. `FilterTypeRepository` Permite mantener una lista persistente de los tipos de filtros si se requiere consultar dinámicamente desde la base de datos.
 
 ### 5.2.5. Component Level Diagrams
-![Diagrama de Componentes de AR](img/components-ar.png)
+
 ### 5.2.6. Code Level Diagrams
+
 #### 5.2.6.1. Domain Layer Class Diagrams
-![AR Class Diagram](img/ar-class.png)
+
 #### 5.2.6.2. Database Design Diagram
-![AR Database](img/ar-database.png)
+
 
 # Capítulo VI: Solution UX Design
 
