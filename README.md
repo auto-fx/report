@@ -2487,7 +2487,7 @@ En esta capa se representan las reglas de negocio y el núcleo del dominio de Re
 ##### Automobile
 Representa a un auto detectado con la cámara del teléfono del usuario al cual se le pondrán agregar filtros.
 ###### Atributos
-1. `Id (Long)` El identificador de la clase. Es un valor autogenerado
+1. `Id (UUID)` El identificador de la clase. Es un valor autogenerado
 2. `Model (AutomobileModel)` El modelo del auto
 3. `Brand (AutomobileBrand)` La marca del auto
 4. `Color (String)` El color actual del auto
@@ -2500,7 +2500,7 @@ Representa a un auto detectado con la cámara del teléfono del usuario al cual 
 ##### Filter
 Representa un filtro que se le puede agregar a un auto
 ###### Atributos
-1. `Id (Long)` El identificador de la clase. Es un valor autogenerado
+1. `Id (UUID)` El identificador de la clase. Es un valor autogenerado
 2. `Name (String)` El nombre del filtro que el usuario podrá visualizar en la aplicación
 3. `Type (FilterType)` El tipo de filtro aplicado. Es de tipo FilterType
 4. `Description(String)` Una breve descripción del filtro
@@ -2511,24 +2511,24 @@ Representa un filtro que se le puede agregar a un auto
 ##### AutomobileModel
 Representa el modelo específico del auto
 ###### Atributos
-1. `Id (Long) ` El identificador de la clase. Es un valor autogenerado
+1. `Id (UUID) ` El identificador de la clase. Es un valor autogenerado
 2. `Name (String)` El nombre del modelo del auto
 3. `Year (Int)` El año de fabricación del auto
 ##### AutomobileBrand
 Representa la marca del auto
 ###### Atributos
-1. `Id (Long)` El identificador de la clase. Es un valor autogenerado
+1. `Id (UUID)` El identificador de la clase. Es un valor autogenerado
 2. `Name (String)` El nombre de la marca del auto
 3. `LogoUrl (String)` Una URL del logo del auto. Solo se mostrará en la aplicación si es que existe, de lo contrario, se muestra un logo predeterminado
 ##### FilterType
 Una clase de utilidad que permita agregar un único valor del enum `FilterTypeEnum` a la clase `Automobile`
 ###### Atributos
-1. `Id (Long)` El identificador de la clase. Es un valor autogenerado
+1. `Id (UUID)` El identificador de la clase. Es un valor autogenerado
 2. `Filter (FilterTypeEnum)` Un valor del enum FilterTypeEnum
 ##### ArFilter
 Representa el filtro de AR (Augmented Reality) que se aplicará visualmente al auto.
 ###### Atributos
-1. `Id (Long)` El identificador de la clase. Es un valor autogenerado
+1. `Id (UUID)` El identificador de la clase. Es un valor autogenerado
 2. `FileUrl (String)` La URL del archivo del filtro AR
 3. `Position (Vector3)` coordenadas en el espacio tridimensional
 4. `Scale (Vector3)` La escala del objeto
@@ -2552,6 +2552,8 @@ Define los distintos tipos de filtros que se pueden aplicar al auto.
 #### Queries
 1. `GetAutomobileByIdQuery` Record para recuperar un automobile por id
 2. `GetFilterByIdQuery` Record para recuperar un filtro por id
+3. `GetAutomobileBrandByNameQuery` Record para recuperar la marca por nombre
+4. `GetAutomobileModelByNameQuery` Record para recuperar el modelo por nombre
 #### Services
 ##### CommandServices
 1. `AutomobileCommandService` Servicio que encapsula los commands relacionados con la clase `Automobile`
@@ -2600,13 +2602,12 @@ Esta capa proporciona la implementación técnica para persistencia de datos y a
 5. `FilterTypeRepository` Permite mantener una lista persistente de los tipos de filtros si se requiere consultar dinámicamente desde la base de datos.
 
 ### 5.2.5. Component Level Diagrams
-
+![Diagrama de Componentes de AR](img/components-ar.png)
 ### 5.2.6. Code Level Diagrams
-
 #### 5.2.6.1. Domain Layer Class Diagrams
-
+![AR Class Diagram](img/ar-class.png)
 #### 5.2.6.2. Database Design Diagram
-
+![AR Database](img/ar-database.png)
 
 # Capítulo VI: Solution UX Design
 
