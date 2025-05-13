@@ -2429,7 +2429,7 @@ Context Mapping es un paso crucial dentro del Domain-Driven Design que se enfoca
 
 # Capítulo V: Tactical-Level Software Design
 
-## 5.1. Bounded Context: <Bounded Autenticación>
+## 5.1. Bounded Context: Autenticación
 ### 5.1.1. Domain Layer
 
 En esta capa se representan las reglas de negocio y el núcleo del dominio de autenticación. A continuación, se detallan las principales clases y sus responsabilidades:
@@ -2480,15 +2480,133 @@ Esta capa interactúa con servicios externos y proporciona implementaciones conc
 
 ![Database Design Diagram](<img/Database Design Diagram.png>)
 
-## 5.X. Bounded Context: <Bounded Context Name>
-### 5.X.1. Domain Layer
-### 5.X.2. Interface Layer
-### 5.X.3. Application Layer
-### 5.X.4. Infrastructure Layer
-### 5.X.5. Component Level Diagrams
-### 5.X.6. Code Level Diagrams
-#### 5.X.6.1. Domain Layer Class Diagrams
-#### 5.X.6.2. Database Design Diagram
+## 5.2. Bounded Context: Realidad Aumentada
+En esta capa se representan las reglas de negocio y el núcleo del dominio de Realidad Aumentada. A continuación, se detallan las principales clases y sus responsabilidades:
+### 5.2.1. Domain Layer
+#### Aggregates
+##### Automobile
+Representa a un auto detectado con la cámara del teléfono del usuario al cual se le pondrán agregar filtros.
+###### Atributos
+1. `Id (Long)` El identificador de la clase. Es un valor autogenerado
+2. `Model (AutomobileModel)` El modelo del auto
+3. `Brand (AutomobileBrand)` La marca del auto
+4. `Color (String)` El color actual del auto
+5. `FilterList(List<AutomobileFilter>)` La lista de filtros agregados al auto
+###### Métodos
+1. `applyFilter()` Permite agregar un filtro al auto
+2. `removeFilter()` Permite remover un filtro del auto
+
+#### Entities
+##### Filter
+Representa un filtro que se le puede agregar a un auto
+###### Atributos
+1. `Id (Long)` El identificador de la clase. Es un valor autogenerado
+2. `Name (String)` El nombre del filtro que el usuario podrá visualizar en la aplicación
+3. `Type (FilterType)` El tipo de filtro aplicado. Es de tipo FilterType
+4. `Description(String)` Una breve descripción del filtro
+5. `ArFilter` El filtro que se le agregará al auto
+###### Métodos
+1. `apply(Automobile automobile)` Agrega visualmente el filtro al auto
+2. `remove(Automobile automobile)` Remueve visualmente el filtro del auto
+##### AutomobileModel
+Representa el modelo específico del auto
+###### Atributos
+1. `Id (Long) ` El identificador de la clase. Es un valor autogenerado
+2. `Name (String)` El nombre del modelo del auto
+3. `Year (Int)` El año de fabricación del auto
+##### AutomobileBrand
+Representa la marca del auto
+###### Atributos
+1. `Id (Long)` El identificador de la clase. Es un valor autogenerado
+2. `Name (String)` El nombre de la marca del auto
+3. `LogoUrl (String)` Una URL del logo del auto. Solo se mostrará en la aplicación si es que existe, de lo contrario, se muestra un logo predeterminado
+##### FilterType
+Una clase de utilidad que permita agregar un único valor del enum `FilterTypeEnum` a la clase `Automobile`
+###### Atributos
+1. `Id (Long)` El identificador de la clase. Es un valor autogenerado
+2. `Filter (FilterTypeEnum)` Un valor del enum FilterTypeEnum
+##### ArFilter
+Representa el filtro de AR (Augmented Reality) que se aplicará visualmente al auto.
+###### Atributos
+1. `Id (Long)` El identificador de la clase. Es un valor autogenerado
+2. `FileUrl (String)` La URL del archivo del filtro AR
+3. `Position (Vector3)` coordenadas en el espacio tridimensional
+4. `Scale (Vector3)` La escala del objeto
+5. `Rotation (Vector3)` La rotación del objeto
+
+#### Value Objects
+##### FilterTypeEnum
+Define los distintos tipos de filtros que se pueden aplicar al auto.
+###### Valores
+1. COLOR_CHANGE
+2. ACCESSORY
+4. TEXTURE
+5. DECAL
+
+#### Commands
+1. `CreateAutomobileCommand` Record para crear un automobile
+2. `CreateFilterCommand` Record para crear un filtro
+3. `SeedAutomobileBrands` Record para prepoblar la tabla de marcas de automóviles
+4. `SeedAutomobileModels` Record para prepoblar la tabla de modelos de automóviles
+5. `PatchAutomobileCommand` Record para actualizar un automobile
+#### Queries
+1. `GetAutomobileByIdQuery` Record para recuperar un automobile por id
+2. `GetFilterByIdQuery` Record para recuperar un filtro por id
+#### Services
+##### CommandServices
+1. `AutomobileCommandService` Servicio que encapsula los commands relacionados con la clase `Automobile`
+2. `FilterCommandService` Servicio que encapsula los commands relacionados con la clase `Filter`
+3. `AutomobileBrandCommandService` Servicio que encapsula los commands relacionados con la clase `AutomobileBrand`
+4. `AutomobileModelCommandService` Servicio que encapsula los commands relacionados con la clase `AutomobileModel`
+##### QueryServices
+1. `AutomobileQueryService` Servicio que encapsula los queries relacionados con la clase `Automobile`
+2. `FilterQueryService` Servicio que encapsula los queries relacionados con la clase `Filter`
+3. `AutomobileBrandQueryService` Servicio que encapsula los queries relacionados con la clase `AutomobileBrand`
+4. `AutomobileModelQueryService` Servicio que encapsula los queries relacionados con la clase `AutomobileModel`
+
+### 5.2.2. Interface Layer
+Esta capa expone las funcionalidades del sistema a través de interfaces HTTP (controladores), permitiendo que los usuarios y otros sistemas interactúen con los casos de uso definidos en la Application Layer.
+
+1. `AutomobileController` Expone endpoints relacionados con la gestión de automóviles detectados.
+  - `POST /automobiles` Crea un nuevo automóvil
+  - `PATCH /automobiles/{id}` Actualiza los datos de un automóvil
+  - `GET /automobiles/{id}` Recupera un automóvil por ID
+
+2. `FilterController` Expone endpoints relacionados con los filtros AR.
+  - `POST /filters` – Crea un nuevo filtro.
+  - `GET /filters/{id}` – Recupera un filtro por ID.
+
+### 5.2.3. Application Layer
+Esta capa coordina las operaciones del dominio, gestionando la orquestación de comandos y queries. Implementa los servicios definidos en el Domain Layer.
+
+#### Command Service Implementations
+1. `AutomobileCommandServiceImpl` Implementaciones de `CreateAutomobileCommand` y `PatchAutomobileCommand`
+2. `FilterCommandServiceImpl` Implementación de `CreateFilterCommand`
+3. `AutomobileBrandCommandServiceImpl` Implementación de `SeedAutomobileBrands`
+4. `AutomobileModelCommandServiceImpl` Implementación de `SeedAutomobileModels`
+#### Query Service Implementations
+1. `AutomobileQueryServiceImpl` Implementación de `GetAutomobileByIdQuery`
+2. `FilterQueryServiceImpl` Implementación de `GetFilterByIdQuery`
+3. `AutomobileBrandQueryServiceImpl` Implementación de `AutomobileBrandQueryService`
+4. `AutomobileModelQueryServiceImpl` Implementación de `AutomobileModelQueryService`
+
+### 5.2.4. Infrastructure Layer
+Esta capa proporciona la implementación técnica para persistencia de datos y acceso a recursos externos.
+#### Repositories
+1. `AutomobileRepository` Guarda, actualiza y recupera entidades Automobile desde la base de datos.
+2. `FilterRepository` Persiste y recupera instancias de Filter.
+3. `AutomobileBrandRepository` Guarda marcas de automóviles (AutomobileBrand).
+4. `AutomobileModelRepository` Persiste modelos de automóviles (AutomobileModel).
+5. `FilterTypeRepository` Permite mantener una lista persistente de los tipos de filtros si se requiere consultar dinámicamente desde la base de datos.
+
+### 5.2.5. Component Level Diagrams
+
+### 5.2.6. Code Level Diagrams
+
+#### 5.2.6.1. Domain Layer Class Diagrams
+
+#### 5.2.6.2. Database Design Diagram
+
 
 # Capítulo VI: Solution UX Design
 
