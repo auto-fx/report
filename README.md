@@ -2337,7 +2337,7 @@ Para el EventStorming, el equipo completo se reunió por alrededor de 2 horas pa
 ![Bounded Contexts](img/Bounded%20Contexts.jpg)
 ### 4.2.2. Candidate Context Discovery
 
-#### Contexto: Autenticación
+#### Contexto: Security
 
 Este contexto se encarga de gestionar todo el ciclo de vida de la identidad del usuario en la aplicación. Incluye el proceso de registro, inicio y cierre de sesión, recuperación y actualización de contraseña, así como la verificación de credenciales. Su objetivo principal es garantizar que solo usuarios autenticados puedan acceder a las funcionalidades principales de la app.
 
@@ -2353,7 +2353,7 @@ Eventos clave:
 
 <img src="img\Autenticacion contexto.png" alt="Autenticacion contexto">
 
-#### Contexto: Realidad Aumentada
+#### Contexto: Filter
 
 Este contexto representa el núcleo de la propuesta de valor del sistema: permitir al usuario visualizar piezas de autos sobrepuestas al vehículo real mediante la cámara del celular. Incluye la detección del auto, selección y aplicación de piezas (filtros), y comparación visual entre el antes y el después.
 
@@ -2387,17 +2387,17 @@ El usuario, ya autenticado, interactúa con el sistema de Realidad Aumentada par
 
 ### 4.2.4. Bounded Context Canvases
 
-#### Bounded Context: Autenticación
+#### Bounded Context: Security
 
-El contexto de Autenticación se encarga de gestionar la identidad de los usuarios que interactúan con la aplicación. Abarca procesos esenciales como la creación de cuentas, inicio y cierre de sesión, recuperación de contraseñas y validación de credenciales, garantizando así el acceso seguro a las funcionalidades del sistema. Este contexto actúa como puerta de entrada, asegurando que solo usuarios autorizados puedan acceder a las experiencias personalizadas que ofrece la aplicación, como la visualización de piezas de autos en realidad aumentada. Su diseño se centra en políticas claras de seguridad y uso de lenguaje común, permitiendo una integración robusta con otros servicios como mensajería para recuperación de claves o generación de tokens.
+El contexto de Security se encarga de gestionar la identidad de los usuarios que interactúan con la aplicación. Abarca procesos esenciales como la creación de cuentas, inicio y cierre de sesión, recuperación de contraseñas y validación de credenciales, garantizando así el acceso seguro a las funcionalidades del sistema. Este contexto actúa como puerta de entrada, asegurando que solo usuarios autorizados puedan acceder a las experiencias personalizadas que ofrece la aplicación, como la visualización de piezas de autos en realidad aumentada. Su diseño se centra en políticas claras de seguridad y uso de lenguaje común, permitiendo una integración robusta con otros servicios como mensajería para recuperación de claves o generación de tokens.
 
-<img src="img\Bounded Context Autenticación.png" alt="Bounded Context: Autenticación">
+<img src="img\Bounded Context Autenticación.png" alt="Bounded Context: Security">
 
-#### Bounded Context: Realidad Aumentada
+#### Bounded Context: Filter
 
-El contexto de Realidad Aumentada representa el núcleo funcional y de valor diferencial de la aplicación, ya que permite al usuario visualizar en tiempo real cómo quedarían instaladas diferentes partes de auto (como llantas, parachoques o alerones) directamente sobre su vehículo mediante la cámara del celular. Este contexto se activa tras la autenticación y comprende funcionalidades como la detección del auto, selección de piezas, superposición de modelos 3D y captura de imágenes comparativas. Su diseño está orientado a brindar una experiencia visual fluida e intuitiva, integrando tecnologías de AR como ARCore y considerando reglas de negocio específicas para la detección y posicionamiento de los elementos.
+El contexto de Filter representa el núcleo funcional y de valor diferencial de la aplicación, ya que permite al usuario visualizar en tiempo real cómo quedarían instaladas diferentes partes de auto (como llantas, parachoques o alerones) directamente sobre su vehículo mediante la cámara del celular. Este contexto se activa tras la autenticación y comprende funcionalidades como la detección del auto, selección de piezas, superposición de modelos 3D y captura de imágenes comparativas. Su diseño está orientado a brindar una experiencia visual fluida e intuitiva, integrando tecnologías de AR como ARCore y considerando reglas de negocio específicas para la detección y posicionamiento de los elementos.
 
-<img src="img\Bounded Context Realidad Aumentada.png" alt="Bounded Context: Realidad Aumentada">
+<img src="img\Bounded Context Realidad Aumentada.png" alt="Bounded Context: Filter">
 
 ### 4.2.5. Context Mapping
 
@@ -2429,7 +2429,7 @@ Context Mapping es un paso crucial dentro del Domain-Driven Design que se enfoca
 
 # Capítulo V: Tactical-Level Software Design
 
-## 5.1. Bounded Context: Autenticación
+## 5.1. Bounded Context: Security
 ### 5.1.1. Domain Layer
 
 #### Aggregates
@@ -2576,8 +2576,8 @@ Implementación de la interfaz IUserRepository que interactúa con la base de da
 
 ![Database Design Diagram](<img/Database Design Diagram.png>)
 
-## 5.2. Bounded Context: Realidad Aumentada
-En esta capa se representan las reglas de negocio y el núcleo del dominio de Realidad Aumentada. A continuación, se detallan las principales clases y sus responsabilidades:
+## 5.2. Bounded Context: Filter
+En esta capa se representan las reglas de negocio y el núcleo del dominio de Filter. A continuación, se detallan las principales clases y sus responsabilidades:
 ### 5.2.1. Domain Layer
 #### Aggregates
 ##### Automobile
