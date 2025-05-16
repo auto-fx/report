@@ -2708,7 +2708,49 @@ Esta capa proporciona la implementación técnica para persistencia de datos y a
 
 ## 6.1. Style Guidelines
 ### 6.1.1. General Style Guidelines
+Esta guía establece las características para la interfaz móvil de AutoFX, utilizando una paleta rojo + negro que transmite poder, estilo y decisión.
+
+#### Branding
+- Identidad: Logo de un auto deportivo rojo sobre fondo negro.
+- Tono visual: Moderno y enfocado en la personalización.
+
+#### Typography
+- Fuente principal: Roboto (iOS) / Roboto (Android)
+- Colores del texto:
+  - Blanco puro `#FFFFFF` sobre fondo negro
+  - Rojo acento `#FF1F1F` para botones o títulos
+- Tamaños recomendados:
+  - Título principal: 26–30 px (bold)
+  - Subtítulos: 18–20 px
+  - Texto general: 14–16 px
+- Estilo: Negritas marcadas, uso de mayúsculas en títulos clave.
+
+#### Colors
+- Color Primario: Negro `#000000`
+- Color Secundario: Rojo vibrante `#FF1F1F`
+- Texto principal: Blanco `#FFFFFF`
+- Acentos y errores: Rojo oscuro `#B30000`
+- Hover/Pressed: Gris oscuro translúcido `#1A1A1A`
+
 ### 6.1.2. Web, Mobile & Devices Style Guidelines
+
+
+#### Diseño Adaptativo
+- Interfaces móviles diseñadas con prioridad vertical con scroll natural
+- Elementos centrados y jerárquicos
+
+#### Interacción
+- Gestos principales: Tap, Swipe, Slide
+- Transiciones suaves: animaciones en botones, cambios de vista con fade o slide
+- Componentes clave:
+  - Bottom tabs (negro con iconos rojos)
+  - Botones grandes y visibles (rojos con texto blanco)
+  - Cards con autos en vista previa (imagen central + opciones visuales)
+
+#### UI Components
+- Botones: Rojos `#FF1F1F` con texto blanco, bordes redondeados (16px), sombra sutil
+- Inputs: Fondos oscuros con bordes rojos al enfocar
+- Modales: Fondo negro con contenido blanco, esquinas redondeadas
 
 ## 6.2. Information Architecture
 En esta sección se presenta la arquitectura de información de la aplicación AutoFX, centrada en la organización y acceso eficiente al contenido por parte de los usuarios. Esta arquitectura considera los distintos flujos de navegación para facilitar la personalización de vehículos mediante realidad aumentada. Se detallan los sistemas de organización, etiquetado, búsqueda, navegación y optimización para motores de búsqueda, como parte fundamental del diseño centrado en el usuario.
@@ -2785,7 +2827,15 @@ Este sistema de navegación asegura fluidez en la experiencia del usuario, evita
 
 ## 6.3. Landing Page UI Design
 ### 6.3.1. Landing Page Wireframe
+<img src="img\landing-page\w1.png" alt="">
+<img src="img\landing-page\w2.png" alt="">
+<img src="img\landing-page\w3.png" alt="">
+<img src="img\landing-page\w4.png" alt="">
+
 ### 6.3.2. Landing Page Mock-up
+<img src="img\landing-page\m1.png" alt="">
+<img src="img\landing-page\m2.png" alt="">
+<img src="img\landing-page\m3.png" alt="">
 
 ## 6.4. Applications UX/UI Design
 ### 6.4.1. Applications Wireframes
