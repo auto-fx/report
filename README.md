@@ -68,9 +68,9 @@
   </thead>
   <tbody>
   <tr>
-      <td><strong>TB1</strong></td>
+      <th>TB1</th>
       <td>08/04/2025</td>
-      <td> <!--Agregar rowspan="num de entregas" en el futuro-->
+      <td rowspan="2">
         <ul>
           <li>Garayar Mori, Oscar Nathaniel</li>
           <li>Mendoza Pimentel, Piero</li>
@@ -88,68 +88,18 @@
         </ul>
       </td>
   </tr>
-  <!--
   <tr>
-      <td><strong>TP1</strong></td>
-      <td>--/--/--</td>
-      <td>
+    <th>Trabajo Parcial</th>
+    <td>16/05/2025</td>
+    <td>
+      Se han agregado los siguientes capítulos
         <ul>
-          <li>Garayar Mori, Oscar Nathaniel</li>
-          <li>Mendoza Pimentel, Piero</li>
-          <li>Neyra Santa Cruz, Marcelo Sebastian</li>
-          <li>Roca Huapaya, Orlando Arturo</li>
+          <li>Capítulo 5</li>
+          <li>Capítulo 6</li>
         </ul>
       </td>
-      <td>
-        DESCRIPCION X
-        <ul>
-          <li>X</li>
-          <li>X</li>
-          <li>X</li>
-        </ul>
-      </td>
+    </td>
   </tr>
-  <tr>
-      <td><strong>TB2</strong></td>
-      <td>--/--/--</td>
-      <td>
-        <ul>
-          <li>Garayar Mori, Oscar Nathaniel</li>
-          <li>Mendoza Pimentel, Piero</li>
-          <li>Neyra Santa Cruz, Marcelo Sebastian</li>
-          <li>Roca Huapaya, Orlando Arturo</li>
-        </ul>
-      </td>
-      <td>
-        DESCRIPCION X
-        <ul>
-          <li>X</li>
-          <li>X</li>
-          <li>X</li>
-        </ul>
-      </td>
-  </tr>
-  <tr>
-      <td><strong>TF1</strong></td>
-      <td>--/--/--</td>
-      <td>
-        <ul>
-          <li>Garayar Mori, Oscar Nathaniel</li>
-          <li>Mendoza Pimentel, Piero</li>
-          <li>Neyra Santa Cruz, Marcelo Sebastian</li>
-          <li>Roca Huapaya, Orlando Arturo</li>
-        </ul>
-      </td>
-      <td>
-        DESCRIPCION X
-        <ul>
-          <li>X</li>
-          <li>X</li>
-          <li>X</li>
-        </ul>
-      </td>
-  </tr>
-  -->
   </tbody>
 </table>
 
@@ -170,6 +120,18 @@
       <img src="img/commits-tb1.png">
     </td>
   </tr>
+  <tr>
+    <th colspan="2">Entrega Trabajo Parcial</th>
+  </tr>
+  <td>
+      <p> Para la entrega del Trabajo Parcial, se realizaron los capítulos 5 y 6, que incluyen los prototipos de las aplicaciones Landing Page y Móvil</p>
+      <p> El informe se realizó en el siguiente repositorio:</p>
+      <p>Reporte: <a href="https://github.com/auto-fx/report">Documento Trabajo Parcial</a></p>
+    </td>
+    <td>
+      <img src="img/insights-tp1.png">
+      <img src="img/commits-tp1.png">
+    </td>
 </table>
 
 # Tabla de Contenidos
@@ -316,10 +278,21 @@
         <p>Desarrollé entrevistas para la validación inicial del proyecto</p>
         <h5>Roca Huapaya, Orlando Arturo</h5>
         <p>Desarrollé entrevistas para la validación inicial del proyecto</p>
+        <h4>Trabajo Parcial</h4>
+        <h5>Garayar Mori, Oscar Nathaniel</h5>
+        <p>Realicé la presentación oral del trabajo parcial</p>
+        <h5>Mendoza Pimentel, Piero</h5>
+        <p>Realicé la presentación oral del trabajo parcial</p>
+        <h5>Neyra Santa Cruz, Marcelo Sebastian</h5>
+        <p>Realicé la presentación oral del trabajo parcial</p>
+        <h5>Roca Huapaya, Orlando Arturo</h5>
+        <p>Realicé la presentación oral del trabajo parcial</p>
       </td>
       <td>
         <h4>TB1</h4>
         <p>Para esta primera entrega, se realizó una investigación detallada para poder cumplir con las expectativas del público. Para ello, se realizaron algunas entrevistas para validar la definición y pronto desarrollo del producto AutoFX</p>
+        <h4>Trabajo Parcial</h4>
+        <p>Para la entrega del trabajo parcial, se realizó una investigación detallada para poder cumplir las expectativas del público. Debido a ello, se investigó acerca de la correcta manera de definir los bounded context, los application wireframes y application mockups</p>
       </td>
     </tr>
     <tr>
@@ -334,10 +307,21 @@
         <p>Desarrollé el solution profile, ubiquitous language y todas las secciones del capítulo 3</p>
         <h5>Roca Huapaya, Orlando Arturo</h5>
         <p>Desarrollé el lean ux, stratefic-level attribute-driven design y el diseño de las entrevistas</p>
+        <h4>Trabajo Parcial</h4>
+        <h5>Garayar Mori, Oscar Nathaniel</h5>
+        <p>Desarrollé los Style Guidelines y los Mobile Style Guidelines y Mockups</p>
+        <h5>Mendoza Pimentel, Piero</h5>
+        <p>Desarrollé la definición y ejecución del Security Bounded Context</p>
+        <h5>Neyra Santa Cruz, Marcelo Sebastian</h5>
+        <p>Desarrollé la definición y ejecución del Filter Bounded Context</p>
+        <h5>Roca Huapaya, Orlando Arturo</h5>
+        <p>Desarrollé el Information Arquitecture y Landing Page Style Guidelines y Mockups</p>
       </td>
       <td>
         <h4>TB1</h4>
         <p>Para esta primera entrega, se realizó una árdua investigación y documentación de diversos puntos principales de la validación del proyecto, como la situación actual con el AS IS Mapping, las historias de usuario y product backlog, los diagramas C4 y los drivers a cumplir</p>
+        <h4>Trabajo Parcial</h4>
+        <p>Para la entrega del trabajo parcial, se realizó el detalle de la arquitectura que se utilizará para el desarrollo de la aplicación, tanto la arquitectura visual como la de código</p>
       </td>
     </tr>
   </tbody>
@@ -2369,7 +2353,7 @@ Eventos clave:
 
 - Se guarda la imagen modificada
 
-<img src="img\Realidad aumentada contexto.png" alt="Realidad aumentada contexto">
+<img src="img\Realidad aumentada contexto.jpg" alt="Realidad aumentada contexto">
 
 ### 4.2.3. Domain Message Flows Modeling
 
@@ -2397,13 +2381,13 @@ El contexto de Security se encarga de gestionar la identidad de los usuarios que
 
 El contexto de Filter representa el núcleo funcional y de valor diferencial de la aplicación, ya que permite al usuario visualizar en tiempo real cómo quedarían instaladas diferentes partes de auto (como llantas, parachoques o alerones) directamente sobre su vehículo mediante la cámara del celular. Este contexto se activa tras la autenticación y comprende funcionalidades como la detección del auto, selección de piezas, superposición de modelos 3D y captura de imágenes comparativas. Su diseño está orientado a brindar una experiencia visual fluida e intuitiva, integrando tecnologías de AR como ARCore y considerando reglas de negocio específicas para la detección y posicionamiento de los elementos.
 
-<img src="img\Bounded Context Realidad Aumentada.png" alt="Bounded Context: Filter">
+<img src="img/Bounded Context Realidad Aumentada.png" alt="Bounded Context: Filter">
 
 ### 4.2.5. Context Mapping
 
 Context Mapping es un paso crucial dentro del Domain-Driven Design que se enfoca en entender cómo los diferentes bounded contexts (contextos delimitados) dentro de un sistema interactúan y se conectan entre sí. Este proceso permite identificar las relaciones y dependencias entre los distintos dominios o subdominios que componen el proyecto
 
-<img src="img\Context mapping.png" alt="Context mapping">
+<img src="img/Context mapping.jpg" alt="Context mapping">
 
 
 ## 4.3. Software Architecture
@@ -2437,60 +2421,39 @@ Context Mapping es un paso crucial dentro del Domain-Driven Design que se enfoca
 Representa a un usuario del sistema con credenciales de autenticación y roles asignados.
 
 ###### Atributos:
-
-1. id (UUID): Identificador único del usuario.
-
-2. email (Email): Correo electrónico del usuario, encapsulado en un Value Object.
-
-3. password (Password): Contraseña encriptada del usuario, encapsulada en un Value Object.
-
-4. role (Role): Rol asignado al usuario (e.g., USER, ADMIN).
-
-5. isActive (boolean): Indica si la cuenta del usuario está activa.
-
-6. createdAt (Date): Fecha de creación del usuario.
+1. `id (UUID)`: Identificador único del usuario.
+2. `email (Email)`: Correo electrónico del usuario, encapsulado en un Value Object.
+3. `password (Password)`: Contraseña encriptada del usuario, encapsulada en un Value Object.
+4. `role (Role)`: Rol asignado al usuario (e.g., USER, ADMIN).
+5. `isActive (boolean)`: Indica si la cuenta del usuario está activa.
+6. `createdAt (Date)`: Fecha de creación del usuario.
 
 ###### Métodos:
 
-1. changePassword(Password newPassword): Cambia la contraseña del usuario.
-
-2. disable(): Desactiva la cuenta del usuario.
-
-3. isValidUser(): Verifica si el usuario es válido y activo.
+1. `changePassword(Password newPassword)`: Cambia la contraseña del usuario.
+2. `disable()`: Desactiva la cuenta del usuario.
+3. `isValidUser()`: Verifica si el usuario es válido y activo.
 
 #### Value Objects
 ##### Email
 Encapsula y valida la estructura de una dirección de correo electrónico.
 
 ###### Atributos:
-
-1. value (String): Dirección de correo electrónico.
-
+1. `value (String)`: Dirección de correo electrónico.
 ###### Métodos:
-
-1. getValue(): Retorna el valor del correo electrónico.
-
-2. isValid(): Valida la estructura del correo electrónico.
-
+1. `getValue()`: Retorna el valor del correo electrónico.
+2. `isValid()`: Valida la estructura del correo electrónico.
 ##### Password
 Encapsula la lógica relacionada con la contraseña del usuario.
-
 ###### Atributos:
-
-1. hashedValue (String): Contraseña encriptada.
-
+1. `hashedValue (String)`: Contraseña encriptada.
 ###### Métodos:
-
-1. compare(String rawPassword): Compara una contraseña en texto plano con la encriptada.
-
-2. getHashed(): Retorna la contraseña encriptada.
-
+1. `compare(String rawPassword)`: Compara una contraseña en texto plano con la encriptada.
+2. `getHashed()`: Retorna la contraseña encriptada.
 #### Enumeraciones
 ##### Role
 Define los roles posibles que un usuario puede tener en el sistema.
-
 Valores:
-
 1. USER
 2. ADMIN
 
@@ -2500,34 +2463,27 @@ Interfaz que define las operaciones de persistencia y recuperación de usuarios.
 
 ###### Métodos:
 
-1. findByEmail(Email email): Busca un usuario por su correo electrónico.
+1. `findByEmail(Email email)`: Busca un usuario por su correo electrónico.
 
-2. save(User user): Persiste un nuevo usuario o actualiza uno existente.
+2. `save(User user)`: Persiste un nuevo usuario o actualiza uno existente.
 
 #### Domain Services
 ##### AuthService
 Servicio que encapsula la lógica de negocio relacionada con la autenticación y registro de usuarios.
 
 ###### Métodos:
-
-1. authenticate(Email email, Password password): Autentica a un usuario y retorna un token JWT.
-
-2. register(User user): Registra un nuevo usuario en el sistema.
-
+1. `authenticate(Email email, Password password)`: Autentica a un usuario y retorna un token JWT.
+2. `register(User user)`: Registra un nuevo usuario en el sistema.
 ### 5.1.2. Interface Layer
 
 Esta capa expone las funcionalidades del sistema a través de interfaces HTTP (controladores), permitiendo que los usuarios y otros sistemas interactúen con los casos de uso definidos en la Application Layer.
 
 #### Controladores
-
 ##### AuthController
 Expone endpoints relacionados con la autenticación de usuarios.
-
 ###### Endpoints:
-
-1. POST /auth/login: Autentica a un usuario y retorna un token JWT.
-
-2. POST /auth/register: Registra un nuevo usuario en el sistema.
+1. `POST /auth/login`: Autentica a un usuario y retorna un token JWT.
+2. `POST /auth/register`: Registra un nuevo usuario en el sistema.
 
 ### 5.1.3. Application Layer
 
@@ -2538,42 +2494,30 @@ Esta capa coordina las operaciones del dominio, gestionando la orquestación de 
 Maneja el comando de registro de un nuevo usuario.
 
 ###### Métodos:
-
-1. handle(RegisterUserCommand command): Procesa el registro de un usuario.
-
+1. `handle(RegisterUserCommand command)`: Procesa el registro de un usuario.
 #### Query Handlers
 ##### AuthenticateUserQueryHandler
 Maneja la autenticación de un usuario existente.
 
 ###### Métodos:
-
-1. handle(AuthenticateUserQuery query): Procesa la autenticación y retorna un token JWT.
-
+1. `handle(AuthenticateUserQuery query)`: Procesa la autenticación y retorna un token JWT.
 ### 5.1.4. Infrastructure Layer
-
 Esta capa proporciona la implementación técnica para persistencia de datos y acceso a recursos externos.
-
 #### Repositories
 ##### UserRepository
 Implementación de la interfaz IUserRepository que interactúa con la base de datos para operaciones CRUD de usuarios.
 
 ###### Métodos:
-
-1. findByEmail(Email email): Busca un usuario por su correo electrónico en la base de datos.
-
-2. save(User user): Persiste un nuevo usuario o actualiza uno existente en la base de datos.
+1. `findByEmail(Email email)`: Busca un usuario por su correo electrónico en la base de datos.
+2. `save(User user)`: Persiste un nuevo usuario o actualiza uno existente en la base de datos.
 
 ### 5.1.5. Component Level Diagrams
-
 ![Component Level Diagrams](<img/Component Level Diagrams.png>)
 
 ### 5.1.6. Code Level Diagrams
 #### 5.1.6.1. Domain Layer Class Diagrams
-
 ![Domain Layer Class Diagrams](<img/Domain Layer Class Diagrams.png>)
-
 #### 5.1.6.2. Database Design Diagram
-
 ![Database Design Diagram](<img/Database Design Diagram.png>)
 
 ## 5.2. Bounded Context: Filter
@@ -2696,13 +2640,12 @@ Esta capa proporciona la implementación técnica para persistencia de datos y a
 5. `FilterTypeRepository` Permite mantener una lista persistente de los tipos de filtros si se requiere consultar dinámicamente desde la base de datos.
 
 ### 5.2.5. Component Level Diagrams
-
+![Filter Component Diagram](img/components-ar.png)
 ### 5.2.6. Code Level Diagrams
-
 #### 5.2.6.1. Domain Layer Class Diagrams
-
+![Filter Class Diagram](img/ar-class.png)
 #### 5.2.6.2. Database Design Diagram
-
+![Filter Database Diagram](img/ar-database.png)
 
 # Capítulo VI: Solution UX Design
 
@@ -2733,8 +2676,6 @@ Esta guía establece las características para la interfaz móvil de AutoFX, uti
 - Hover/Pressed: Gris oscuro translúcido `#1A1A1A`
 
 ### 6.1.2. Web, Mobile & Devices Style Guidelines
-
-
 #### Diseño Adaptativo
 - Interfaces móviles diseñadas con prioridad vertical con scroll natural
 - Elementos centrados y jerárquicos
@@ -2781,15 +2722,12 @@ Estas etiquetas usan tipografía sans-serif en mayúsculas, destacadas por color
 
 ### 6.2.3. Searching Systems
 
-
 Dado el flujo contenido y enfocado de la aplicación, no se implementa un sistema de búsqueda general. Sin embargo, la navegación está optimizada mediante botones directos hacia cada funcionalidad principal como filtros, colección y cuenta.
 
 En futuras versiones se podría considerar un sistema de búsqueda para filtrar imágenes por tipo de filtro aplicado o fecha de creación dentro de la galería personal del usuario.
 
 
 ### 6.2.4. SEO Tags and Meta Tags
-
-
 Aunque la aplicación se centra en la experiencia móvil, se planea una landing page web informativa. Para dicha página se proponen las siguientes etiquetas:
 
 - Estructura del documento:
@@ -2813,7 +2751,6 @@ Estas etiquetas aseguran una carga optimizada y correcta indexación para los mo
 
 
 ### 6.2.5. Navigation Systems
-
 La aplicación utiliza un sistema de navegación simplificado basado en flujos directos entre pantallas:
 
 - Menú principal oculto (icono de cuenta) que da acceso a perfil y logout.
@@ -2827,15 +2764,15 @@ Este sistema de navegación asegura fluidez en la experiencia del usuario, evita
 
 ## 6.3. Landing Page UI Design
 ### 6.3.1. Landing Page Wireframe
-<img src="img\landing-page\w1.png" alt="">
-<img src="img\landing-page\w2.png" alt="">
-<img src="img\landing-page\w3.png" alt="">
-<img src="img\landing-page\w4.png" alt="">
+<img src="img\landing-page\w1.png" alt="Landing 1">
+<img src="img\landing-page\w2.png" alt="Landing 2">
+<img src="img\landing-page\w3.png" alt="Landing 3">
+<img src="img\landing-page\w4.png" alt="Landing 4">
 
 ### 6.3.2. Landing Page Mock-up
-<img src="img\landing-page\m1.png" alt="">
-<img src="img\landing-page\m2.png" alt="">
-<img src="img\landing-page\m3.png" alt="">
+<img src="img\landing-page\m1.png" alt="Landing 5">
+<img src="img\landing-page\m2.png" alt="Landing 6">
+<img src="img\landing-page\m3.png" alt="Landing 7">
 
 ## 6.4. Applications UX/UI Design
 ### 6.4.1. Applications Wireframes
@@ -2846,7 +2783,6 @@ Este sistema de navegación asegura fluidez en la experiencia del usuario, evita
 
 #### Sign Up Wireflow:
 <img src="img\Mobile Wireflow\SignUp.png" alt="SignUp Wireflow">
-
 
 #### Reset Password Wireflow:
 <img src="img\Mobile Wireflow\ResetPassword.png" alt="Reset Password Wireflow">
@@ -2898,14 +2834,31 @@ Este sistema de navegación asegura fluidez en la experiencia del usuario, evita
 ## Conclusiones y Recomendaciones
 
 ### TB1
-
 Para esta primera entrega, se desarrollaron los primeros 4 capítulos. Se logró validar la idea inicial y notamos que nuestra solución es bastante original, ya que lo más cercano a lo que estamos proponiendo son videojuegos para dispositivos móviles que permiten modificar estéticamente un auto. En las siguiente entregas, se espera continuar aún más con el proyecto para terminar solucionando este problema tan recurrente
+### Trabajo Parcial
+Para esta entrega, se desarrollaron los capítulo 5 y 6. Se logró completar el diseño de la arquitectura de software que se utilizará para el desarrollo de la aplicación, así como mejorar y afinar la idea inicial. En la siguiente entrega se planea iniciar con el desarrollo de la aplicación.
 
 
 ## Video About-the-Team
 
 ## Bibliografía
+Grupo Audiovisual. (s.f.). *Automoción VR: Realidad aumentada en coches*. https://grupoaudiovisual.com/sector-automocion-realidad-virtual/
+Grupo Audiovisual
 
+ACK. (2024). *Realidad aumentada y virtual en la industria automotriz.* https://ack.es/revolucion-visual-realidad-aumentada-y-virtual-en-la-industria-automotriz
+ack.es
+
+Torner, J., Roca, N., & Rodríguez, S. (2016). *Realidad aumentada aplicada al concepto del Connected Car* [Trabajo de fin de grado, Universitat Politècnica de Catalunya]. https://upcommons.upc.edu/bitstream/handle/2117/99604/gps_connected_car.pdf
+UpCommons
+
+Ordoñez-Ordoñez, P. F. (2014). *Aplicación móvil con realidad aumentada y geolocalización en la Universidad Nacional de Loja*. Revista Científica, (3), 1–10. https://www.researchgate.net/publication/283513617_Aplicacion_Movil_con_Realidad_Aumentada_y_Geolocalizacion_en_la_Universidad_Nacional_de_Loja
+ResearchGate
+
+Cao, J., Lam, K.-Y., Lee, L.-H., Liu, X., Hui, P., & Su, X. (2021). *Mobile augmented reality: User interfaces, frameworks, and intelligence.* https://arxiv.org/abs/2106.08710
+arXiv
+
+Prochazka, D., Stencl, M., Popelka, O., & Stastny, J. (2011). *Mobile augmented reality applications.* https://arxiv.org/abs/1106.5571
+arXiv
 ## Anexos
 
 Video de entrevistas: [Enlace a Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201923446_upc_edu_pe/Efw5ULYE-MlMn_y-rldV8Y4B6dtTOz5Gx4KubDzzzry1IQ?e=K7NAgA&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
