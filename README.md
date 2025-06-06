@@ -316,12 +316,23 @@
         <p>Realicé la presentación oral del trabajo parcial</p>
         <h5>Roca Huapaya, Orlando Arturo</h5>
         <p>Realicé la presentación oral del trabajo parcial</p>
+        <h4>TB2</h4>
+        <h5>Garayar Mori, Oscar Nathaniel</h5>
+        <p>Desarrollé entrevistas para la validación final del proyecto</p>
+        <h5>Mendoza Pimentel, Piero</h5>
+        <p>Desarrollé entrevistas para la validación final del proyecto</p>
+        <h5>Neyra Santa Cruz, Marcelo Sebastian</h5>
+        <p>Desarrollé entrevistas para la validación final del proyecto</p>
+        <h5>Roca Huapaya, Orlando Arturo</h5>
+        <p>Desarrollé entrevistas para la validación final del proyecto</p>
       </td>
       <td>
         <h4>TB1</h4>
         <p>Para esta primera entrega, se realizó una investigación detallada para poder cumplir con las expectativas del público. Para ello, se realizaron algunas entrevistas para validar la definición y pronto desarrollo del producto AutoFX</p>
         <h4>Trabajo Parcial</h4>
         <p>Para la entrega del trabajo parcial, se realizó una investigación detallada para poder cumplir las expectativas del público. Debido a ello, se investigó acerca de la correcta manera de definir los bounded context, los application wireframes y application mockups</p>
+        <h4>TB2</h4>
+        <p>Para la entrega de la TB2, se realizó una extensa investigación sobre las diferentes tecnologías que se podían utilizar para el desarrollo de nuestra solución y para poder cumplir conlas expectativas del público</p>
       </td>
     </tr>
     <tr>
@@ -338,19 +349,30 @@
         <p>Desarrollé el lean ux, stratefic-level attribute-driven design y el diseño de las entrevistas</p>
         <h4>Trabajo Parcial</h4>
         <h5>Garayar Mori, Oscar Nathaniel</h5>
-        <p>Desarrollé los Style Guidelines y los Mobile Style Guidelines y Mockups</p>
+        <p>Desarrollé los Style Guidelines y los Mobile Style Guidelines</p>
         <h5>Mendoza Pimentel, Piero</h5>
         <p>Desarrollé la definición y ejecución del Security Bounded Context</p>
         <h5>Neyra Santa Cruz, Marcelo Sebastian</h5>
         <p>Desarrollé la definición y ejecución del Filter Bounded Context</p>
         <h5>Roca Huapaya, Orlando Arturo</h5>
         <p>Desarrollé el Information Arquitecture y Landing Page Style Guidelines y Mockups</p>
+        <h4>TB2</h4>
+        <h5>Garayar Mori, Oscar Nathaniel</h5>
+        <p>Desarrollé el Sprint 1, los Mobile Mockups, el frontend móvil y el algoritmo de aplicación de filtros</p>
+        <h5>Mendoza Pimentel, Piero</h5>
+        <p>Desarrollé el Sprint 1, el algoritmo de detección de objetos con Machine Learining y el algoritmo de aplicación de filtros</p>
+        <h5>Neyra Santa Cruz, Marcelo Sebastian</h5>
+        <p>Desarrollé el Sprint 1, el backend móvil, el frontend móvil y el algoritmo de aplicación de filtros</p>
+        <h5>Roca Huapaya, Orlando Arturo</h5>
+        <p>Desarrollé el Sprint 1, la landing page, el backend móvil y el algoritmo de detección de objetos con Machine Learning</p>
       </td>
       <td>
         <h4>TB1</h4>
         <p>Para esta primera entrega, se realizó una árdua investigación y documentación de diversos puntos principales de la validación del proyecto, como la situación actual con el AS IS Mapping, las historias de usuario y product backlog, los diagramas C4 y los drivers a cumplir</p>
         <h4>Trabajo Parcial</h4>
         <p>Para la entrega del trabajo parcial, se realizó el detalle de la arquitectura que se utilizará para el desarrollo de la aplicación, tanto la arquitectura visual como la de código</p>
+        <h4>TB2</h4>
+        <p>Para la entrega de la TB2, se desarrolló un algoritmo de detección de objectos, específicamente autos, utilizando Machine Learning, un algoritmo de aplicación de filtros, utilizando Unity AR Foundation, un backend móvil hecho con Spring Boot Java y un frontend móvil hecho con Kotlin</p>
       </td>
     </tr>
   </tbody>
