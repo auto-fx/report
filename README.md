@@ -2925,7 +2925,7 @@ El primer sprint se desarrolló de la siguiente manera:
   </tr>
   <tr>
     <th>Sum of Story Points</th>
-    <td>70</td>
+    <td>73</td>
   </tr>
   </tr>
 </table>
