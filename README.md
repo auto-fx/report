@@ -2921,11 +2921,11 @@ El primer sprint se desarrolló de la siguiente manera:
   </tr>
   <tr>
     <th>Sprint 1 Velocity</th>
-    <td>40</td>
+    <td>70</td>
   </tr>
   <tr>
     <th>Sum of Story Points</th>
-    <td>40</td>
+    <td>70</td>
   </tr>
   </tr>
 </table>
