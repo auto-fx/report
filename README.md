@@ -70,7 +70,7 @@
   <tr>
       <th>TB1</th>
       <td>08/04/2025</td>
-      <td rowspan="2">
+      <td rowspan="3">
         <ul>
           <li>Garayar Mori, Oscar Nathaniel</li>
           <li>Mendoza Pimentel, Piero</li>
@@ -96,6 +96,18 @@
         <ul>
           <li>Capítulo 5</li>
           <li>Capítulo 6</li>
+        </ul>
+      </td>
+    </td>
+  </tr>
+  <tr>
+    <th>TB2</th>
+    <td>03/06/2025</td>
+    <td>
+      Se han agregado los siguientes capítulos
+        <ul>
+          <li>Capítulo 6</li>
+          <li>Capítulo 7</li>
         </ul>
       </td>
     </td>
@@ -127,6 +139,23 @@
       <p> Para la entrega del Trabajo Parcial, se realizaron los capítulos 5 y 6, que incluyen los prototipos de las aplicaciones Landing Page y Móvil</p>
       <p> El informe se realizó en el siguiente repositorio:</p>
       <p>Reporte: <a href="https://github.com/auto-fx/report">Documento Trabajo Parcial</a></p>
+    </td>
+    <td>
+      <img src="img/insights-tp1.png">
+      <img src="img/commits-tp1.png">
+    </td>
+  <tr>
+    <th colspan="2">Entrega TB2</th>
+  </tr>
+  <td>
+      <p> Para la entrega de la TB2, se completó el capítulo 6 y se agregó el capítulo 7. Respecto a las aplicaciones, se desarrolló la landing page, se implementó el algoritmo de identificación de autos utilizando Machine Learning, se desarrolló el algoritmo de aplicación de filtros utilizando Unity Ar Fundation y se desarrolló la primera versión de la aplicación mobile</p>
+      <p>El presente trabajo se realizó en los siguientes repositorios:</p>
+      <p>Reporte: <a href="https://github.com/auto-fx/report">Documento TB2</a></p>
+      <p>Landing Page: <a href="https://github.com/auto-fx/landing-page">Landing Page</a></p>
+      <p>Aplicación Frontend: <a href="https://github.com/auto-fx/frontend">Frontend</a></p>
+      <p>Aplicación backend: <a href="https://github.com/auto-fx/backend">Backend</a></p>
+      <p>Modelo de entrenamiento: <a href="https://github.com/auto-fx/ModelTrainingAutoFix">Algoritmo de Machine Learning</a></p>
+      <p>Pruebas provisionales: <a href="https://github.com/auto-fx/AutoFXPrototype">Prueba del funcionamiento de detección de autos</a></p>
     </td>
     <td>
       <img src="img/insights-tp1.png">
@@ -2379,7 +2408,7 @@ El contexto de Security se encarga de gestionar la identidad de los usuarios que
 
 #### Bounded Context: Filter
 
-El contexto de Filter representa el núcleo funcional y de valor diferencial de la aplicación, ya que permite al usuario visualizar en tiempo real cómo quedarían instaladas diferentes partes de auto (como llantas, parachoques o alerones) directamente sobre su vehículo mediante la cámara del celular. Este contexto se activa tras la autenticación y comprende funcionalidades como la detección del auto, selección de piezas, superposición de modelos 3D y captura de imágenes comparativas. Su diseño está orientado a brindar una experiencia visual fluida e intuitiva, integrando tecnologías de AR como ARCore y considerando reglas de negocio específicas para la detección y posicionamiento de los elementos.
+El contexto de Filter representa el núcleo funcional y de valor diferencial de la aplicación, ya que permite al usuario visualizar en tiempo real cómo quedarían instaladas diferentes partes de auto (como llantas, parachoques o alerones) directamente sobre su vehículo mediante la cámara del celular. Este contexto se activa tras la autenticación y comprende funcionalidades como la detección del auto, selección de piezas, superposición de modelos 3D y captura de imágenes comparativas. Su diseño está orientado a brindar una experiencia visual fluida e intuitiva, integrando tecnologías de AR como Unity Ar Fundation y considerando reglas de negocio específicas para la detección y posicionamiento de los elementos.
 
 <img src="img/Bounded Context Realidad Aumentada.png" alt="Bounded Context: Filter">
 
@@ -2813,16 +2842,220 @@ Este sistema de navegación asegura fluidez en la experiencia del usuario, evita
 ### 7.1.4. Deployment Configuration
 
 ## 7.2. Implementation
-### 7.2.X. Sprint n
-#### 7.2.X.1. Sprint Planning n
-#### 7.2.X.2. Aspect Leaders and Collaborators
-#### 7.2.X.3. Sprint Backlog n
-#### 7.2.X.4. Development Evidence
-#### 7.2.X.5. Testing Suite Evidence
-#### 7.2.X.6. Execution Evidence
-#### 7.2.X.7. Services Documentation
-#### 7.2.X.8. Deployment Evidence
-#### 7.2.X.9. Collaboration Insights
+### 7.2.1. Sprint 1
+#### 7.2.1.1. Sprint Planning 1
+
+El primer sprint se desarrolló de la siguiente manera:
+
+
+
+<table>
+  <tr>
+    <th>Sprint #</th>
+    <td>Sprint 1</td>
+  </tr>
+  <tr>
+    <th colspan="2"><strong>Sprint Planning Background</strong></th>
+  </tr>
+  <tr>
+    <th>Date</th>
+    <td>03/06/2025</td>
+  </tr>
+  <tr>
+    <th>Time</th>
+    <td>10:00 PM</td>
+  </tr>
+  <tr>
+    <th>Location</th>
+    <td>Presencial (En la universidad)</td>
+  </tr>
+  <tr>
+    <th>Prepared by</th>
+    <td>Neyra Santa Cruz, Marcelo Sebastian</td>
+  </tr>
+  <tr>
+    <th>Attendees (to planning meeting)</th>
+    <td>
+      <p>Garayar Mori, Oscar Nathaniel</p>
+      <p>Mendoza Pimentel, Piero</p>
+      <p>Neyra Santa Cruz, Marcelo Sebastian</p>
+      <p>Roca Huapaya, Orlando Arturo</p>
+    </td>
+  </tr>
+  <tr>
+    <th>Sprint 1 Review Summary</th>
+    <td>Para la implementación de la aplicación mobile, se ha desarrollado un algoritmo de detección de autos utilizando <b>Machine Learning</b>, un algortimo de aplicación de filtros utilizando <b>Unity Ar Fundation</b>, un backend hecho con <b>Spring Boot Java</b> y un frontend hecho con <b>Kotlin</b>. También, se desarrolló la landing page</td>
+  </tr>
+  <tr>
+    <th>Sprint Retrospective Summary</th>
+    <td>Por ser el primer sprint, no aplica</td>
+  </tr>
+  <tr>
+    <th colspan="2"><strong>Sprint Goal & User Stories</strong></th>
+  </tr>
+  <tr>
+    <th>Sprint 1 Goal</th>
+    <td>Desarrollar la landing page, el algoritmo de detección de autos, el algoritmo de aplicación de filtros, el frontend y el backend</td>
+  </tr>
+  <tr>
+    <th>Sprint 1 Velocity</th>
+    <td>40</td>
+  </tr>
+  <tr>
+    <th>Sum of Story Points</th>
+    <td>40</td>
+  </tr>
+  </tr>
+</table>
+
+#### 7.2.1.2. Aspect Leaders and Collaborators
+#### 7.2.1.3. Sprint Backlog 1
+Para este sprint, hemos abarcado la mayoría de las tareas propuestas. Nos enfocamos principalmente en el desarrollo del algoritmo de detección de autos con Machine Learning, el algoritmo de aplicación de filtros con Unity Ar Fundation, el frontend y backend de la aplicación móvil y por último, pero no menos importante, la landing page.
+
+![Sprint Backlog 1](img/sprint-backlog-1.png)
+
+<table>
+<tr><th colspan="2">Sprint 1</th><th colspan="6">Sprint 1</th></tr>
+<tr><td colspan="2">User Story</td><td colspan="6">Work-Item / Task</td></tr>
+<tr>
+  <td>Id</td><td>Title</td>
+  <td>Id</td><td>Title</td><td>Description</td>
+  <td>Estimation (Hours)</td><td>Assigned To</td><td>Status (To-Do / In-Process / Review / Done)</td>
+</tr>
+<!-- US01 -->
+<tr>
+  <td>US01</td><td>Implementación de Barra de navegación</td>
+  <td>T01</td><td>Diseñar barra de navegación</td><td>Diseño visual y estructura HTML/CSS</td>
+  <td>0.2</td><td>Orlando Roca</td><td>Done</td>
+</tr>
+<!-- US02 -->
+<tr>
+  <td>US02</td><td>Visualizar logo y descripción</td>
+  <td>T02</td><td>Agregar logo y descripción</td><td>Insertar logo de empresa y texto representativo</td>
+  <td>0.2</td><td>Orlando Roca</td><td>Done</td>
+</tr>
+<!-- US03 -->
+<tr>
+  <td>US03</td><td>Detalles y Servicios de la empresa</td>
+  <td>T03</td><td>Diseñar sección de servicios</td><td>Presentar beneficios y características del sistema</td>
+  <td>0.2</td><td>Orlando Roca</td><td>Done</td>
+</tr>
+<!-- US04 -->
+<tr>
+  <td>US04</td><td>Clientes de la empresa</td>
+  <td>T04</td><td>Testimonios de clientes</td><td>Agregar opiniones reales o ficticias de usuarios</td>
+  <td>0.2</td><td>Orlando Roca</td><td>Done</td>
+</tr>
+<!-- US05 -->
+<tr>
+  <td>US05</td><td>Acerca de nosotros</td>
+  <td>T05</td><td>Diseñar sección misión/visión</td><td>Mostrar propósito y valores de la empresa</td>
+  <td>0.2</td><td>Orlando Roca</td><td>Done</td>
+</tr>
+<!-- US06 -->
+<tr>
+  <td>US06</td><td>Implementación de un Footer</td>
+  <td>T06</td><td>Agregar Footer</td><td>Diseño con links y redes sociales</td>
+  <td>0.2</td><td>Orlando Roca</td><td>Done</td>
+</tr>
+<!-- US07 -->
+<tr>
+  <td>US07</td><td>Translación a la aplicación web</td>
+  <td>T07</td><td>Botón de acceso web</td><td>Enlace directo a aplicación web desde la landing</td>
+  <td>0.2</td><td>Orlando Roca</td><td>Done</td>
+</tr>
+<!-- US10 -->
+<tr>
+  <td>US10</td><td>Detección de tipo de auto</td>
+  <td>T08</td><td>Detectar un auto</td><td>Detección de un tipo de auto utilizando Machine Learning y la cámara frontal del dispositivo del usuario</td>
+  <td>8</td><td>Piero Mendoza</td><td>Done</td>
+</tr>
+<!-- US13 -->
+<tr>
+  <td>US13</td><td>Agregado de un filtro a un auto</td>
+  <td>T09</td><td>Agregar filtros al auto</td><td>Agregar diferentes tipos de filtros (cambio de color, pegatinas, etc.) a los autos utilizando Realidad Aumentada</td>
+  <td>6</td><td>Marcelo Neyra</td><td>To Review</td>
+</tr>
+<!-- US14 -->
+<tr>
+  <td>US14</td><td>Cambio de color de un auto</td>
+  <td>T10</td><td>Cambiar el color del auto</td><td>Agregar un filtro que permita el cambio de color del auto, utilizando Realidad Aumentada</td>
+  <td>6</td><td>Marcelo Neyra</td><td>To Review</td>
+</tr>
+<!-- US15 -->
+<tr>
+  <td>US15</td><td>Agregado de accesorios externos</td>
+  <td>T11</td><td>Agregar filtro de accesorio externo al auto</td><td>Agregar un filtro que se asemeje a un accesorio real externo (alerones, antenas, etc.) al auto, utilizando Realidad Aumentada</td>
+  <td>6</td><td>Marcelo Neyra</td><td>In Process</td>
+</tr>
+<!-- US12 -->
+<tr>
+  <td>US12</td><td>Detección en tiempo real del vehículo</td>
+  <td>T12</td><td>Detectar un auto en tiempo real</td><td>Detección en tiempo real de un auto utilizando Machine Learning y la cámara frontal del dispositivo del usuario</td>
+  <td>8</td><td>Piero Mendoza</td><td>To Review</td>
+</tr>
+<!-- US11 -->
+<tr>
+  <td>US11</td><td>Detección de ángulo de toma de foto</td>
+  <td>T13</td><td>Detección de ángulo de toma de foto</td><td>Detectar en tiempo real el ángulo de la toma de la foto, para ajustar correctamente el filtro</td>
+  <td>8</td><td>Piero Mendoza</td><td>To Review</td>
+</tr>
+<!-- US08 -->
+<tr>
+  <td>US08</td><td>Permisos para uso de la cámara</td>
+  <td>T14</td><td>Administrar el uso de la cámara</td><td>Permitir que la aplicación utilice la cámara frontal del dispositivo del usuario</td>
+  <td>1</td><td>Marcelo Neyra</td><td>Done</td>
+</tr>
+<!-- US16 -->
+<tr>
+  <td>US16</td><td>Comparación de auto antes y después</td>
+  <td>T15</td><td>Fotos de comparación de autos con y sin filtros</td><td>Tomar una foto y mostrar una captura del auto con y sin filtro</td>
+  <td>3</td><td>Oscar Garayar</td><td>In Process</td>
+</tr>
+<!-- US17 -->
+<tr>
+  <td>US17</td><td>Guardado foto y filtros aplicados</td>
+  <td>T16</td><td>Guardar la foto del auto con y sin filtros</td><td>Guardar la captura de la foto del carro con y sin filtros</td>
+  <td>2</td><td>Oscar Garayar</td><td>In Process</td>
+</tr>
+<!-- US18 -->
+<tr>
+  <td>US18</td><td>Registro de Usuarios</td>
+  <td>T17</td><td>Registro de Usuarios</td><td>Permitir el registro de usuarios</td>
+  <td>3</td><td>Orlando Roca</td><td>Done</td>
+</tr>
+<!-- US19 -->
+<tr>
+  <td>US19</td><td>Acceso de Usuarios</td>
+  <td>T18</td><td>Acceso de Usuarios</td><td>Permitir el acceso de usuarios autenticados</td>
+  <td>3</td><td>Orlando Roca</td><td>Done</td>
+</tr>
+<!-- US09 -->
+<tr>
+  <td>US09</td><td>Tutorial de Uso</td>
+  <td>T19</td><td>Tutorial de Uso de la Aplicación</td><td>Contar con un tutorial de las funcionalidades principales de la aplicación</td>
+  <td>3</td><td>Oscar Garayar</td><td>To Do</td>
+</tr>
+<!-- US20 -->
+<tr>
+  <td>US20</td><td>Actualización de Contraseña</td>
+  <td>T20</td><td>Actualización de Contraseña</td><td>Contar con un método de actualización de contraseña</td>
+  <td>2</td><td>Orlando Roca</td><td>Done</td>
+</tr>
+<!-- US21 -->
+<tr>
+  <td>US21</td><td>Recuperación de Contraseña</td>
+  <td>T21</td><td>Recuperación de Contraseña</td><td>Contar con un método de recuperación de contraseña</td>
+  <td>3</td><td>Marcelo Neyra</td><td>Done</td>
+</tr>
+</table>
+
+#### 7.2.1.4. Development Evidence
+#### 7.2.1.5. Testing Suite Evidence
+#### 7.2.1.6. Execution Evidence
+#### 7.2.1.7. Services Documentation
+#### 7.2.1.8. Deployment Evidence
+#### 7.2.1.9. Collaboration Insights
 
 ## 7.3. Validation Interviews
 ### 7.3.1. Diseño de Entrevistas
