@@ -3092,7 +3092,8 @@ Para este sprint, hemos abarcado la mayoría de las tareas propuestas. Nos enfoc
 Para esta primera entrega, se desarrollaron los primeros 4 capítulos. Se logró validar la idea inicial y notamos que nuestra solución es bastante original, ya que lo más cercano a lo que estamos proponiendo son videojuegos para dispositivos móviles que permiten modificar estéticamente un auto. En las siguiente entregas, se espera continuar aún más con el proyecto para terminar solucionando este problema tan recurrente
 ### Trabajo Parcial
 Para esta entrega, se desarrollaron los capítulo 5 y 6. Se logró completar el diseño de la arquitectura de software que se utilizará para el desarrollo de la aplicación, así como mejorar y afinar la idea inicial. En la siguiente entrega se planea iniciar con el desarrollo de la aplicación.
-
+### TB2
+Para esta entrega, se desarrollaron los capítulos 6 y 7, así como los artefactos necesarios para la implementación de la aplicación. Debido a que se trabajó con tecnologías que el equipo no suele utilizar a menudo, fue un arduo trabajo encontrar la información y documentación necesaria para el desarrollo de la aplicación. No obstante, el equipo logró perseverar para concluir con todas las funcionalidades principales de la aplicación y lograr un buen entregable.
 
 ## Video About-the-Team
 
