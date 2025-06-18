@@ -3080,7 +3080,53 @@ Para este sprint, hemos abarcado la mayoría de las tareas propuestas. Nos enfoc
 #### 7.2.1.9. Collaboration Insights
 
 ## 7.3. Validation Interviews
+
 ### 7.3.1. Diseño de Entrevistas
+
+Con el objetivo de validar tempranamente la propuesta de valor y la experiencia de usuario de la aplicación AutoFX, se llevaron a cabo entrevistas con usuarios pertenecientes a los segmentos objetivo. Estas entrevistas se centraron en la interacción con dos componentes clave: el Landing Page y un prototipo funcional básico que permite visualizar una única parte automotriz (llanta o alerón) utilizando realidad aumentada (AR).
+
+### Preguntas de Datos Personales
+
+1. ¿Podría decirme su nombre completo?
+
+2. ¿Qué edad tiene actualmente?
+
+3. ¿Cuál es su lugar de residencia actual?
+
+4. ¿Qué tipo de vehículo tiene?
+
+### Preguntas sobre la Landing Page
+
+1. ¿Cuál crees que es el objetivo de esta aplicación?
+
+2. ¿Qué te llamó más la atención del landing page?
+
+3. ¿Sientes que la propuesta está dirigida a alguien como tú?
+
+4. ¿Qué mejorarías del diseño o contenido del landing page?
+
+### Preguntas sobre el prototipo de la aplicación
+
+1. ¿Te resultó fácil entender lo que hace la app desde el prototipo?
+
+2. ¿Cómo describirías la experiencia de ver el modelo en AR?
+
+3. ¿Te pareció clara la forma en la que aparece la parte sobre el auto?
+
+4. ¿Se siente realista o útil la visualización de la parte?
+
+5. ¿Qué esperabas que pasara al enfocar con la cámara?
+
+6. ¿Te gustaría cambiar el modelo de la parte? (aunque aún no se pueda)
+
+7. ¿Te resultó intuitivo el enfocar tu camara a los qr para su funcionamiento?
+
+8. ¿Agregarías alguna opción o botón para hacer más cosas desde esta pantalla?
+
+9. ¿Te parece que esta visualización ayuda a tomar decisiones de compra?
+
+10. ¿Recomendarías esta app a alguien interesado en personalizar su auto?
+
 ### 7.3.2. Registro de Entrevistas
 ### 7.3.3. Evaluaciones según heurísticas
 
