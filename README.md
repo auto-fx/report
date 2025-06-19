@@ -3073,6 +3073,22 @@ Para este sprint, hemos abarcado la mayoría de las tareas propuestas. Nos enfoc
 </table>
 
 #### 7.2.1.4. Development Evidence
+
+| Repository    | Branch | Commit ID                              | Commit Message                                                                 | Commit Date           |
+|---------------|--------|-----------------------------------------|---------------------------------------------------------------------------------|------------------------|
+| ModelTrainingAutoFiX   | /main  | 9944699f2835ebdd1fb418099bd75eadbce7e640     | primer commit                    | May 28, 2025    |
+| AutoFXUnity   | /main  | 0497ef04-4c81-4090-8458-649885400c84     | Add packages and project settings to Unity Version Control.                    | 14/06/2025 13:59:56    |
+| AutoFXUnity   | /main  | a04d6c60-4109-4771-8c30-9ec1b3e4f4c      | proyecto base configurado                                                       | 14/06/2025 14:00:40    |
+| AutoFXUnity   | /main  | 52dc44df-5dcf-4619-b89b-9e1dbf0aeed6     | AR Tracked Image Manager añadido                                               | 14/06/2025 14:49:15    |
+| AutoFXUnity   | /main  | e6c27353-fad7-46dc-95ca-f97329b1edae     | Qr añadido                                                                      | 14/06/2025 15:04:31    |
+| AutoFXUnity   | /main  | 3da96022-310d-4749-a152-8193fa2ffc2e     | primera prueba ar                                                               | 14/06/2025 15:04:57    |
+| AutoFXUnity   | /main  | b9087103-da00-46e9-8634-9f2f593d9fca     | ra                                                                              | 14/06/2025 15:26:33    |
+| AutoFXUnity   | /main  | 893fdc77-01ef-4052-82a6-a04c01fb3502     | modelos 3d de prueba añadidos                                                  | 14/06/2025 15:27:40    |
+| AutoFXUnity   | /main  | 653a9bb9-7a6c-4b32-131a-4917ca889421     | multiples qr tracking object funcionando                                        | 14/06/2025 17:09:05    |
+| AutoFXUnity   | /main  | 31bc5481-c86e-47d5-9cbf-8e44d370218d     | se añadió la modificación de escala y posición de los prefabs respecto al qr   | 16/06/2025 04:11:27    |
+| AutoFXUnity   | /main  | 2d847fac-88c0-4e80-aeb9-1549076e6a08     |                                                                                 | 16/06/2025 10:23:12    |
+| AutoFXUnity   | /main  | 26f28f0f-bae5-4d90-b274-91d0959aad3f     | se ajusto la deteccion y posicionamiento de los modelos 3d hasta un punto estable | 18/06/2025 17:06:18    |
+
 #### 7.2.1.5. Testing Suite Evidence
 #### 7.2.1.6. Execution Evidence
 #### 7.2.1.7. Services Documentation
