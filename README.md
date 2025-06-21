@@ -3383,6 +3383,12 @@ public class MenuUIController : MonoBehaviour
 }
 ```
 #### 7.2.1.8. Deployment Evidence
+##### Aplicación Mobile
+Para el despliegue de la aplicación Mobile, se utilizó el generador de APKs de Android Studio
+
+![Deployment](img/sprint-deployment-1.png)
+
+##### Aplicación Backend
 #### 7.2.1.9. Collaboration Insights
 
 ## 7.3. Validation Interviews
