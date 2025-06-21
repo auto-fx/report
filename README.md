@@ -3090,6 +3090,42 @@ Para este sprint, hemos abarcado la mayoría de las tareas propuestas. Nos enfoc
 | AutoFXUnity   | /main  | 26f28f0f-bae5-4d90-b274-91d0959aad3f     | se ajusto la deteccion y posicionamiento de los modelos 3d hasta un punto estable | 18/06/2025 17:06:18    |
 
 #### 7.2.1.5. Testing Suite Evidence
+##### Backend
+
+##### Frontend
+
+##### Unity AR
+Se realizó un test a la clase `ARAutoPlacementTests`
+
+```bash
+using System.Collections;
+using NUnit.Framework;
+using UnityEngine;
+using UnityEngine.TestTools;
+
+public class ARAutoPlacementTests
+{
+    [UnityTest]
+    public IEnumerator ARAutoPlacement_Applies_Offset_And_Scale()
+    {
+        var go = new GameObject("ARObject");
+        var autoPlacement = go.AddComponent<ARAutoPlacement>();
+
+        autoPlacement.scale = new Vector3(1.5f, 1.5f, 1.5f);
+        autoPlacement.positionOffset = new Vector3(1, 2, 3);
+        autoPlacement.rotationOffset = new Vector3(10, 20, 30);
+
+        yield return null;
+
+        Assert.AreEqual(new Vector3(1.5f, 1.5f, 1.5f), go.transform.localScale);
+        Assert.AreEqual(new Vector3(1, 2, 3), go.transform.localPosition);
+        Assert.AreEqual(new Vector3(10, 20, 30), go.transform.localEulerAngles);
+
+        Object.Destroy(go);
+    }
+}
+```
+
 #### 7.2.1.6. Execution Evidence
 #### 7.2.1.7. Services Documentation
 ##### Backend
