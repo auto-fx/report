@@ -3092,6 +3092,260 @@ Para este sprint, hemos abarcado la mayoría de las tareas propuestas. Nos enfoc
 #### 7.2.1.5. Testing Suite Evidence
 #### 7.2.1.6. Execution Evidence
 #### 7.2.1.7. Services Documentation
+##### Backend
+En el backend, se desarrollaron los siguientes controladores:
+###### Controlador de Usuarios
+
+![Usuarios](img/sprint-services-1.png)
+
+###### 1. `POST api/authentication-autofx/v1/users/sign-up`
+**Descripción:** Permite crear un nuevo usuario en la base de datos
+**Devuelve:** User Resource
+``` bash
+"User Resource"
+{
+  "name": {
+    "firstName": "string",
+    "lastName": "string"
+    },
+    "emailAddress": {
+      "address": "string"
+    },
+    "phoneNumber": {
+      "countryCode": "string",
+      "number": 0
+    },
+    "password": "string",
+    "roles": [
+      "string"
+    ]
+}
+```
+
+###### 2. `GET api/authentication-autofx/v1/users/sign-in`
+**Descripción:** Permite ingresar a un usuario a la aplicación
+**Devuelve:** Authenticated User Resource
+``` bash
+"Authenticated User Resource"
+{
+  "id": 0,
+  "email": "string",
+  "token": "string"
+}
+```
+###### 3. `GET api/authentication-autofx/v1/users/get-user-by-jwt`
+**Descripción:** Devuelve al usuario actualmente autenticado
+**Devuelve:** User Resource
+``` bash
+"User Resource"
+{
+  "name": {
+    "firstName": "string",
+    "lastName": "string"
+    },
+    "emailAddress": {
+      "address": "string"
+    },
+    "phoneNumber": {
+      "countryCode": "string",
+      "number": 0
+    },
+    "password": "string",
+    "roles": [
+      "string"
+    ]
+}
+```
+###### 4. `PUT api/authentication-autofx/v1/users/update-user-data`
+**Descripción:** Permite el cambio de los datos del usuario
+**Devuelve:** String
+``` bash
+"User updated successfully"
+```
+###### 5. `PUT api/authentication-autofx/v1/users/update-password`
+**Descripción:** Permite el cambio de la contraseña del usuario
+**Devuelve:** String
+``` bash
+"Password updated successfully"
+```
+###### Controlador de Roles
+
+![Usuarios](img/sprint-services-2.png)
+
+###### 1. `GET api/authentication-autofx/v1/roles`
+**Descripción:** Devuelve todos los roles de los usuarios
+**Devuelve:** List < Role >
+``` bash
+"List <Role>"
+[
+  {
+    "id": 0,
+    "name": "string"
+  }
+]
+```
+##### Unity AR
+Utilizando las características de la solución Unity AR, se desarrollaron las siguientes funcionalides:
+###### 1. AR Auto Placement
+**Descripción:** Se encarga de posicionar en la pantalla los modelos 3D de las partes de los autos, como alerones, llantas y motores sobresalientes
+``` bash
+public class ARAutoPlacement : MonoBehaviour
+{
+    [Header("Ajustes locales respecto al marcador")]
+    public Vector3 positionOffset = Vector3.zero;
+    public Vector3 rotationOffset = Vector3.zero;
+    public Vector3 scale = Vector3.one;
+
+    void Start()
+    {
+        transform.localScale = scale;
+    }
+
+    void LateUpdate()
+    {
+        transform.localPosition = positionOffset;
+        transform.localEulerAngles = rotationOffset;
+    }
+}
+```
+###### 2. AR Multi Instance Image Tracking
+**Descripción:** Este algoritmo permite detectar múltiples imágenes mediante AR y posiciona los modelos 3D específicos,como llantas y alerones, sobre ellos. Usando el componente ARTrackedImageManager, supervisa los objectos que están siendo rastreados y, según el nombre de la imagen detectada, muestra en pantalla el objeto en la posición indicada. Si el rastreo se pierde, el objeto 3D desaparece de la pantalla, pero permanece en su última posición.
+``` bash
+public class ARMultiInstanceImageTracking : MonoBehaviour
+{
+    [SerializeField] private ARTrackedImageManager trackedImageManager;
+
+    [Header("Prefabs para cada marcador")]
+    public GameObject llantaFrontalIzquierdaPrefab;
+    public GameObject llantaFrontalDerechaPrefab;
+    public GameObject llantaTraseraIzquierdaPrefab;
+    public GameObject llantaTraseraDerechaPrefab;
+    public GameObject aleronPrefab;
+    public GameObject frentePrefab;
+
+    [Header("Offset, escala y rotación global para todas las llantas")]
+    public Vector3 llantaOffset = new Vector3(0, 0.03f, 0);
+    public Vector3 llantaScale = new Vector3(0.12f, 0.12f, 0.12f);
+    public Vector3 llantaRotation = Vector3.zero; // <--- Aquí puedes cambiar la rotación desde el Inspector
+
+    [Header("Offset, escala y rotación para el alerón")]
+    public Vector3 aleronOffset = new Vector3(0, 0.04f, 0);
+    public Vector3 aleronScale = new Vector3(0.15f, 0.15f, 0.15f);
+    public Vector3 aleronRotation = Vector3.zero;
+
+    [Header("Offset, escala y rotación para frente")]
+    public Vector3 frenteOffset = new Vector3(0, 0.01f, 0);
+    public Vector3 frenteScale = new Vector3(0.15f, 0.15f, 0.15f);
+    public Vector3 frenteRotation = Vector3.zero;
+
+    private Dictionary<TrackableId, GameObject> spawnedPrefabs = new();
+    private Dictionary<TrackableId, bool> isAnchored = new();
+
+    void Update()
+    {
+        foreach (var trackedImage in trackedImageManager.trackables)
+        {
+            string imageName = trackedImage.referenceImage.name;
+            GameObject prefabToSpawn = null;
+            Vector3 offset = Vector3.zero;
+            Vector3 escala = Vector3.one;
+            Vector3 rotacion = Vector3.zero;
+
+            switch (imageName)
+            {
+                case "qr_llanta1":
+                case "qr_llanta2":
+                case "qr_llanta3":
+                case "qr_llanta4":
+                    prefabToSpawn = imageName switch
+                    {
+                        "qr_llanta1" => llantaFrontalIzquierdaPrefab,
+                        "qr_llanta2" => llantaFrontalDerechaPrefab,
+                        "qr_llanta3" => llantaTraseraIzquierdaPrefab,
+                        "qr_llanta4" => llantaTraseraDerechaPrefab,
+                        _ => null
+                    };
+                    offset = llantaOffset;
+                    escala = llantaScale;
+                    rotacion = llantaRotation;
+                    break;
+                case "qr_aleron":
+                    prefabToSpawn = aleronPrefab;
+                    offset = aleronOffset;
+                    escala = aleronScale;
+                    rotacion = aleronRotation;
+                    break;
+                case "qr_frente":
+                    prefabToSpawn = frentePrefab;
+                    offset = frenteOffset;
+                    escala = frenteScale;
+                    rotacion = frenteRotation;
+                    break;
+                default:
+                    Debug.LogWarning($"No hay prefab asignado para el marcador: {imageName}");
+                    break;
+            }
+
+            if (trackedImage.trackingState == TrackingState.Tracking)
+            {
+                if (!spawnedPrefabs.ContainsKey(trackedImage.trackableId) && prefabToSpawn != null)
+                {
+                    GameObject spawned = Instantiate(prefabToSpawn, trackedImage.transform);
+                    spawned.transform.localPosition = offset;
+                    spawned.transform.localScale = escala;
+                    spawned.transform.localRotation = Quaternion.Euler(rotacion);
+                    spawnedPrefabs[trackedImage.trackableId] = spawned;
+                    isAnchored[trackedImage.trackableId] = true;
+                }
+                else if (spawnedPrefabs.ContainsKey(trackedImage.trackableId))
+                {
+                    var instance = spawnedPrefabs[trackedImage.trackableId];
+                    if (!isAnchored[trackedImage.trackableId])
+                    {
+                        instance.transform.SetParent(trackedImage.transform, true);
+                        isAnchored[trackedImage.trackableId] = true;
+                    }
+                    instance.SetActive(true);
+                    instance.transform.localPosition = offset;
+                    instance.transform.localScale = escala;
+                    instance.transform.localRotation = Quaternion.Euler(rotacion);
+                }
+            }
+            else
+            {
+                if (spawnedPrefabs.ContainsKey(trackedImage.trackableId) && isAnchored[trackedImage.trackableId])
+                {
+                    var instance = spawnedPrefabs[trackedImage.trackableId];
+                    instance.transform.SetParent(null, true);
+                    isAnchored[trackedImage.trackableId] = false;
+                }
+            }
+        }
+    }
+}
+```
+###### 3. Menu Controller
+**Descripción:** Interfaz básica que permite recorrer cada una de las escenas (pantallas) disponibles
+``` bash
+public class MenuUIController : MonoBehaviour
+{
+    [Header("Referencias a los Canvas/UI Panels")]
+    public GameObject mainMenuCanvas;
+    public GameObject modelosLlantasUI;
+
+    public void MostrarLlantas()
+    {
+        mainMenuCanvas.SetActive(false);
+        modelosLlantasUI.SetActive(true);
+    }
+
+    public void VolverAlMenu()
+    {
+        modelosLlantasUI.SetActive(false);
+        mainMenuCanvas.SetActive(true);
+    }
+}
+```
 #### 7.2.1.8. Deployment Evidence
 #### 7.2.1.9. Collaboration Insights
 
