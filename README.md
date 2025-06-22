@@ -3232,13 +3232,52 @@ Para este sprint, hemos abarcado la mayoría de las tareas propuestas. Nos enfoc
 | AutoFXUnity   | /main  | 31bc5481-c86e-47d5-9cbf-8e44d370218d     | se añadió la modificación de escala y posición de los prefabs respecto al qr   | 16/06/2025 04:11:27    |
 | AutoFXUnity   | /main  | 2d847fac-88c0-4e80-aeb9-1549076e6a08     |                                                                                 | 16/06/2025 10:23:12    |
 | AutoFXUnity   | /main  | 26f28f0f-bae5-4d90-b274-91d0959aad3f     | se ajusto la deteccion y posicionamiento de los modelos 3d hasta un punto estable | 18/06/2025 17:06:18    |
+| frontend | main | 57f708c57922198c31e83621d8c04332c14a65aa | authentication services online | 17/06/2025 |
+| landing-page | main | de5029885a4744f4dbd0ef58699dec37efef90c8 | landing page | 20/06/2025 |
 
 #### 7.2.1.4. Testing Suite Evidence
 ##### Backend
-
 ![Usuarios](img/Test%20backend.png)
 
 ##### Frontend
+Para el frontend (Authentication) se realizaron algunas pruebas en las funciones de un viewmodel perteneciente a la pantalla de splash. 
+
+```bash
+@Test
+    fun `uiState es Authenticated cuando keepSignedIn es true y token no está vacío`() = runTest {
+        // 1) Creamos un repo falso que emite keepSignedIn = true y token = "abc"
+        val fakeRepo = object : IAMRepository {
+            override val keepSignedIn: Flow<Boolean> = flowOf(true)
+            override val token: Flow<String?>       = flowOf("abc")
+
+            // El resto de métodos no se usan en SplashViewModel, así que los stubbeamos
+            override suspend fun signIn(email: String, password: String): SignInResponse =
+                throw NotImplementedError()
+            override suspend fun signUp(
+                name: Name,
+                emailAddress: EmailAddress,
+                phoneNumber: PhoneNumber,
+                password: String,
+                roles: List<String>
+            ): SignUpResponse = throw NotImplementedError()
+
+            override suspend fun saveToken(token: String)       = Unit
+            override suspend fun clearToken()                   = Unit
+            override suspend fun saveKeepSignedIn(keep: Boolean) = Unit
+        }
+
+        // 2) Instanciamos el ViewModel
+        val vm = SplashViewModel(fakeRepo)
+
+        // 3) Avanzamos la cola de coroutines para que se ejecute el init { ... }
+        advanceUntilIdle()
+
+        // 4) Comprobamos que el estado final sea Authenticated
+        assertEquals(SessionState.Authenticated, vm.uiState.value)
+    }
+```
+
+
 
 ##### Unity AR
 Se realizó un test a la clase `ARAutoPlacementTests`
@@ -3273,6 +3312,13 @@ public class ARAutoPlacementTests
 ```
 
 #### 7.2.1.5. Execution Evidence
+
+##### Android Studio Authentication execution
+![Usuarios](img/testingFrontAuth1.png)
+![Usuarios](img/testingFrontAuth2.png)
+![Usuarios](img/testingFrontAuth3.png)
+
+
 #### 7.2.1.6. Services Documentation
 ##### Backend
 En el backend, se desarrollaron los siguientes controladores:
@@ -3535,8 +3581,10 @@ Para el despliegue de la aplicación Mobile, se utilizó el generador de APKs de
 ![Deployment](img/sprint-deployment-1.png)
 
 ##### Aplicación Backend
+Los microservicios del backend han sido desplegados en la plataforma **Railway**, utilizando contenedores Docker definidos en el archivo `docker-compose.yml` ubicado en el repositorio `auto-fx/backend`.
 
 ![Deployment](img/Backend%20desplegado.png)
+
 
 #### 7.2.1.8. Collaboration Insights
 Durante el desarrollo del sprint, el equipo mantuvo una comunicación efectiva para completar correctamente el entregable. Se utilizó WhatsApp como método de comunicación principal y Discord para las reuniones sincrónicas.
@@ -3619,7 +3667,7 @@ Con el objetivo de validar tempranamente la propuesta de valor y la experiencia 
 
 ### 7.3.2. Registro de Entrevistas
 
-Enlace de video de las entrevistas: 
+Enlace de video de las entrevistas: https://upcedupe-my.sharepoint.com/:v:/g/personal/u201923446_upc_edu_pe/EWSwrzKxtqlOu1Z2k789hhMBwFyNrSCMOfYTtQTI8pvG-A?e=Ghmthj&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
 
 
 #### Entrevista 1
@@ -3647,7 +3695,16 @@ Adrian Liñan, propietario de un Toyota Corolla 2018, percibe que la aplicación
 - Distrito: Lima, Santiago de Surco
 - Duracion: 06:59
 
-Renzo Ramos, un joven de 21 años que reside en Santiago de Surco, Lima, fue entrevistado para evaluar la aplicación AutoFix, diseñada para personalizar vehículos mediante realidad aumentada. Renzo, quien posee un SUV, consideró que la propuesta está bien dirigida a personas interesadas en la personalización automotriz. Le llamó la atención la landing page, especialmente las imágenes del taller y equipamiento, aunque sugirió incluir una galería tipo slider. Respecto al prototipo en Unity, mencionó que el uso del QR para visualizar partes del vehículo como las llantas le resultó claro y familiar. Destacó que la realidad aumentada ofrecía una buena retroalimentación visual, aunque recomendó mejorar el nivel de detalle, mostrando información como el modelo o tipo de llanta. Consideró que la visualización ayuda a tomar decisiones de compra de manera más directa y efectiva, y afirmó que sí recomendaría la aplicación a otras personas interesadas en personalizar su auto.
+Renzo Ramos, un joven de 21 años que reside en Santiago de Surco, Lima, fue entrevistado para evaluar la aplicación AutoFX, diseñada para personalizar vehículos mediante realidad aumentada. Renzo, quien posee un SUV, consideró que la propuesta está bien dirigida a personas interesadas en la personalización automotriz. Le llamó la atención la landing page, especialmente las imágenes del taller y equipamiento, aunque sugirió incluir una galería tipo slider. Respecto al prototipo en Unity, mencionó que el uso del QR para visualizar partes del vehículo como las llantas le resultó claro y familiar. Destacó que la realidad aumentada ofrecía una buena retroalimentación visual, aunque recomendó mejorar el nivel de detalle, mostrando información como el modelo o tipo de llanta. Consideró que la visualización ayuda a tomar decisiones de compra de manera más directa y efectiva, y afirmó que sí recomendaría la aplicación a otras personas interesadas en personalizar su auto.
+
+#### Entrevista 4
+![Entrevista Giancarlo Paredes](img/Entrevista%20Giancarlo%20Paredes.png)
+- Nombre: Giancarlo Paredes
+- Distrito: San Borja, Lima
+- Duracion: 05:52
+
+Giancarlo Paredes es un estudiante de 21 años que es un aficionado por la personalización de autos. En su entrevista, nos comentó que le agradó el diseño de la landing page, especialmente agregando detalles como la posición exacta del taller en donde podrá realizar sus personalizaciones. En cuanto al prototipo móvil, mencionó que, aunque aún está en una etapa bastante preliminar, considera que en el futuro la aplicación tomará mucha más forma y podrá prevalecer sobre las otras similares.
+Un punto de mejora importante que menciona es la utilización de modelos más detallados para una visualización más acertada de los cambios que le podría hacer a su auto
 
 ### 7.3.3. Evaluaciones según heurísticas
 
