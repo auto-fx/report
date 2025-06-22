@@ -3664,7 +3664,7 @@ Con el objetivo de validar tempranamente la propuesta de valor y la experiencia 
 
 ### 7.3.2. Registro de Entrevistas
 
-Enlace de video de las entrevistas: 
+Enlace de video de las entrevistas: https://upcedupe-my.sharepoint.com/:v:/g/personal/u201923446_upc_edu_pe/EWSwrzKxtqlOu1Z2k789hhMBwFyNrSCMOfYTtQTI8pvG-A?e=Ghmthj&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
 
 
 #### Entrevista 1
