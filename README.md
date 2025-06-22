@@ -3499,6 +3499,13 @@ El Abel Montoya, propietario de un Toyota Corolla, percibe que la aplicación ti
 
 #### Entrevista 2
 
+![Entrevista Adrian Liñan](<img/Entrevista Adrian Liñan 2.png>)
+- Nombre: Adrian Liñan
+- Distrito: Lima, Lima
+- Duracion: 03:21
+
+Adrian Liñan, propietario de un Toyota Corolla 2018, percibe que la aplicación busca facilitar la personalización vehicular al permitir previsualizar en realidad aumentada las modificaciones antes de instalarlas. Valoró el diseño claro y atractivo del landing page (“¡Personalízalo ahora con AutoFX!” y el botón “INICIAR”), se sintió identificado con la propuesta y sugirió añadir ejemplos reales, un demo interactivo y testimonios. Sobre el prototipo, lo encontró muy fácil de entender y usar; la experiencia AR le resultó inmersiva y realista, con un anclaje preciso y respuesta inmediata al escanear el QR. Considera útil esta visualización para tomar decisiones de compra, y propone incluir opciones para cambiar modelos de pieza, modificar el color del auto y compartir o guardar imágenes con los cambios aplicados. Finalmente, afirmó que recomendaría la app a otros entusiastas de la personalización vehicular.
+
 #### Entrevista 3
 
 
