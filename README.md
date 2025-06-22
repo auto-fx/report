@@ -2875,7 +2875,7 @@ Este sistema de navegación asegura fluidez en la experiencia del usuario, evita
 ## 7.1. Software Configuration Management
 ### 7.1.1. Development Environment Configuration
 
-A continuación, se detallan las herramientas y entornos utilizados por el equipo de desarrollo de SafeMed para colaborar eficientemente en todas las fases del ciclo de vida del sistema:
+A continuación, se detallan las herramientas y entornos utilizados por el equipo de desarrollo de AutoFX para colaborar eficientemente en todas las fases del ciclo de vida del sistema:
 
 | Actividad                     | Herramienta / Producto               | Propósito                                                         | Tipo              |
 |------------------------------|--------------------------------------|-------------------------------------------------------------------|-------------------|
