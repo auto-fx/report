@@ -270,14 +270,13 @@
 - [7.2. Implementation](#72-implementation)  
   - [7.2.X. Sprint n](#72x-sprint-n)  
     - [7.2.X.1. Sprint Planning n](#72x1-sprint-planning-n)  
-    - [7.2.X.2. Aspect Leaders and Collaborators](#72x2-aspect-leaders-and-collaborators)  
-    - [7.2.X.3. Sprint Backlog n](#72x3-sprint-backlog-n)  
-    - [7.2.X.4. Development Evidence](#72x4-development-evidence)  
-    - [7.2.X.5. Testing Suite Evidence](#72x5-testing-suite-evidence)  
-    - [7.2.X.6. Execution Evidence](#72x6-execution-evidence)  
-    - [7.2.X.7. Services Documentation](#72x7-services-documentation)  
-    - [7.2.X.8. Deployment Evidence](#72x8-deployment-evidence)  
-    - [7.2.X.9. Collaboration Insights](#72x9-collaboration-insights)  
+    - [7.2.X.2. Sprint Backlog n](#72x3-sprint-backlog-n)  
+    - [7.2.X.3. Development Evidence](#72x4-development-evidence)  
+    - [7.2.X.4. Testing Suite Evidence](#72x5-testing-suite-evidence)  
+    - [7.2.X.5. Execution Evidence](#72x6-execution-evidence)  
+    - [7.2.X.6. Services Documentation](#72x7-services-documentation)  
+    - [7.2.X.7. Deployment Evidence](#72x8-deployment-evidence)  
+    - [7.2.X.8. Collaboration Insights](#72x9-collaboration-insights)  
 - [7.3. Validation Interviews](#73-validation-interviews)  
   - [7.3.1. Diseño de Entrevistas](#731-diseño-de-entrevistas)  
   - [7.3.2. Registro de Entrevistas](#732-registro-de-entrevistas)  
@@ -3076,8 +3075,7 @@ El primer sprint se desarrolló de la siguiente manera:
   </tr>
 </table>
 
-#### 7.2.1.2. Aspect Leaders and Collaborators
-#### 7.2.1.3. Sprint Backlog 1
+#### 7.2.1.2. Sprint Backlog 1
 Para este sprint, hemos abarcado la mayoría de las tareas propuestas. Nos enfocamos principalmente en el desarrollo del algoritmo de detección de autos con Machine Learning, el algoritmo de aplicación de filtros con Unity Ar Fundation, el frontend y backend de la aplicación móvil y por último, pero no menos importante, la landing page.
 
 ![Sprint Backlog 1](img/sprint-backlog-1.png)
@@ -3218,7 +3216,7 @@ Para este sprint, hemos abarcado la mayoría de las tareas propuestas. Nos enfoc
 </tr>
 </table>
 
-#### 7.2.1.4. Development Evidence
+#### 7.2.1.3. Development Evidence
 
 | Repository    | Branch | Commit ID                              | Commit Message                                                                 | Commit Date           |
 |---------------|--------|-----------------------------------------|---------------------------------------------------------------------------------|------------------------|
@@ -3235,7 +3233,7 @@ Para este sprint, hemos abarcado la mayoría de las tareas propuestas. Nos enfoc
 | AutoFXUnity   | /main  | 2d847fac-88c0-4e80-aeb9-1549076e6a08     |                                                                                 | 16/06/2025 10:23:12    |
 | AutoFXUnity   | /main  | 26f28f0f-bae5-4d90-b274-91d0959aad3f     | se ajusto la deteccion y posicionamiento de los modelos 3d hasta un punto estable | 18/06/2025 17:06:18    |
 
-#### 7.2.1.5. Testing Suite Evidence
+#### 7.2.1.4. Testing Suite Evidence
 ##### Backend
 
 ##### Frontend
@@ -3272,8 +3270,8 @@ public class ARAutoPlacementTests
 }
 ```
 
-#### 7.2.1.6. Execution Evidence
-#### 7.2.1.7. Services Documentation
+#### 7.2.1.5. Execution Evidence
+#### 7.2.1.6. Services Documentation
 ##### Backend
 En el backend, se desarrollaron los siguientes controladores:
 ###### Controlador de Usuarios
@@ -3528,14 +3526,14 @@ public class MenuUIController : MonoBehaviour
     }
 }
 ```
-#### 7.2.1.8. Deployment Evidence
+#### 7.2.1.7. Deployment Evidence
 ##### Aplicación Mobile
 Para el despliegue de la aplicación Mobile, se utilizó el generador de APKs de Android Studio
 
 ![Deployment](img/sprint-deployment-1.png)
 
 ##### Aplicación Backend
-#### 7.2.1.9. Collaboration Insights
+#### 7.2.1.8. Collaboration Insights
 Durante el desarrollo del sprint, el equipo mantuvo una comunicación efectiva para completar correctamente el entregable. Se utilizó WhatsApp como método de comunicación principal y Discord para las reuniones sincrónicas.
 
 En cuanto a la gestión del código, se trabajó de forma diferenciada según el tipo de repositorio:
