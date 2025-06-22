@@ -3730,13 +3730,13 @@ Un punto de mejora importante que menciona es la utilización de modelos más de
 ### 7.3.3. Evaluaciones según heurísticas
 
 **SITE o APP A EVALUAR:**  
-Aplicación Móvil – Módulo de Realidad Aumentada (AR) para personalización de vehículos.
+Auto FX (Aplicación Mobile)
 
 **Tareas a evaluar:**  
 - Escanear un marcador (por ejemplo, QR o superficie plana).  
 - Cargar y mostrar un modelo 3D (ej. llanta o alerón).  
 - Cambiar entre modelos 3D.  
-- Visualizar el modelo sobre el vehículo en tiempo real.  
+- Visualizar el modelo sobre el vehículo en tiempo real.
 
 **ESCALA DE SEVERIDAD:**  
 
@@ -3774,6 +3774,8 @@ Para esta entrega, se desarrollaron los capítulo 5 y 6. Se logró completar el 
 Para esta entrega, se desarrollaron los capítulos 6 y 7, así como los artefactos necesarios para la implementación de la aplicación. Debido a que se trabajó con tecnologías que el equipo no suele utilizar a menudo, fue un arduo trabajo encontrar la información y documentación necesaria para el desarrollo de la aplicación. No obstante, el equipo logró perseverar para concluir con todas las funcionalidades principales de la aplicación y lograr un buen entregable.
 
 ## Video About-the-Team
+Enlace al video en Youtube: [Enlace](https://youtu.be/12yyx4OYHwg)
+Enlace al video en Microsoft Stream: [Enlace](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202217241_upc_edu_pe/EcrB5_st_URBiq5ysiVml8sB8nvumZtWPMBTMFVoqBRxbA?e=JzRoMr&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
 ## Bibliografía
 Grupo Audiovisual. (s.f.). *Automoción VR: Realidad aumentada en coches*. https://grupoaudiovisual.com/sector-automocion-realidad-virtual/
