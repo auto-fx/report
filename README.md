@@ -3579,6 +3579,10 @@ Para el despliegue de la aplicación Mobile, se utilizó el generador de APKs de
 ![Deployment](img/sprint-deployment-1.png)
 
 ##### Aplicación Backend
+Los microservicios del backend han sido desplegados en la plataforma **Railway**, utilizando contenedores Docker definidos en el archivo `docker-compose.yml` ubicado en el repositorio `auto-fx/backend`.
+
+![Deployment](img/sprint-deployment-2.png)
+
 #### 7.2.1.8. Collaboration Insights
 Durante el desarrollo del sprint, el equipo mantuvo una comunicación efectiva para completar correctamente el entregable. Se utilizó WhatsApp como método de comunicación principal y Discord para las reuniones sincrónicas.
 
