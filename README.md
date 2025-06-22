@@ -3232,6 +3232,8 @@ Para este sprint, hemos abarcado la mayoría de las tareas propuestas. Nos enfoc
 | AutoFXUnity   | /main  | 31bc5481-c86e-47d5-9cbf-8e44d370218d     | se añadió la modificación de escala y posición de los prefabs respecto al qr   | 16/06/2025 04:11:27    |
 | AutoFXUnity   | /main  | 2d847fac-88c0-4e80-aeb9-1549076e6a08     |                                                                                 | 16/06/2025 10:23:12    |
 | AutoFXUnity   | /main  | 26f28f0f-bae5-4d90-b274-91d0959aad3f     | se ajusto la deteccion y posicionamiento de los modelos 3d hasta un punto estable | 18/06/2025 17:06:18    |
+| frontend | main | 57f708c57922198c31e83621d8c04332c14a65aa | authentication services online | 17/06/2025 |
+| landing-page | main | de5029885a4744f4dbd0ef58699dec37efef90c8 | landing page | 20/06/2025 |
 
 #### 7.2.1.4. Testing Suite Evidence
 ##### Backend
