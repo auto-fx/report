@@ -3240,6 +3240,47 @@ Para este sprint, hemos abarcado la mayoría de las tareas propuestas. Nos enfoc
 
 ##### Frontend
 
+
+
+Para el frontend (Authentication) se realizaron algunas pruebas en las funciones de un viewmodel perteneciente a la pantalla de splash. 
+
+```bash
+@Test
+    fun `uiState es Authenticated cuando keepSignedIn es true y token no está vacío`() = runTest {
+        // 1) Creamos un repo falso que emite keepSignedIn = true y token = "abc"
+        val fakeRepo = object : IAMRepository {
+            override val keepSignedIn: Flow<Boolean> = flowOf(true)
+            override val token: Flow<String?>       = flowOf("abc")
+
+            // El resto de métodos no se usan en SplashViewModel, así que los stubbeamos
+            override suspend fun signIn(email: String, password: String): SignInResponse =
+                throw NotImplementedError()
+            override suspend fun signUp(
+                name: Name,
+                emailAddress: EmailAddress,
+                phoneNumber: PhoneNumber,
+                password: String,
+                roles: List<String>
+            ): SignUpResponse = throw NotImplementedError()
+
+            override suspend fun saveToken(token: String)       = Unit
+            override suspend fun clearToken()                   = Unit
+            override suspend fun saveKeepSignedIn(keep: Boolean) = Unit
+        }
+
+        // 2) Instanciamos el ViewModel
+        val vm = SplashViewModel(fakeRepo)
+
+        // 3) Avanzamos la cola de coroutines para que se ejecute el init { ... }
+        advanceUntilIdle()
+
+        // 4) Comprobamos que el estado final sea Authenticated
+        assertEquals(SessionState.Authenticated, vm.uiState.value)
+    }
+```
+
+
+
 ##### Unity AR
 Se realizó un test a la clase `ARAutoPlacementTests`
 
@@ -3273,6 +3314,13 @@ public class ARAutoPlacementTests
 ```
 
 #### 7.2.1.5. Execution Evidence
+
+##### Android Studio Authentication execution
+![Usuarios](img/testingFrontAuth1.png)
+![Usuarios](img/testingFrontAuth2.png)
+![Usuarios](img/testingFrontAuth3.png)
+
+
 #### 7.2.1.6. Services Documentation
 ##### Backend
 En el backend, se desarrollaron los siguientes controladores:
