@@ -3708,6 +3708,37 @@ Un punto de mejora importante que menciona es la utilización de modelos más de
 
 ### 7.3.3. Evaluaciones según heurísticas
 
+**SITE o APP A EVALUAR:**  
+Aplicación Móvil – Módulo de Realidad Aumentada (AR) para personalización de vehículos.
+
+**Tareas a evaluar:**  
+- Escanear un marcador (por ejemplo, QR o superficie plana).  
+- Cargar y mostrar un modelo 3D (ej. llanta o alerón).  
+- Cambiar entre modelos 3D.  
+- Visualizar el modelo sobre el vehículo en tiempo real.  
+
+**ESCALA DE SEVERIDAD:**  
+
+| Nivel | Severidad        | Descripción                                      |
+|-------|------------------|--------------------------------------------------|
+| 0     | No es un problema | No afecta la usabilidad                         |
+| 1     | Menor            | Problema cosmético, no necesita solución urgente |
+| 2     | Moderado         | Problema menor, debe solucionarse               |
+| 3     | Mayor            | Problema serio, interfiere con la experiencia   |
+| 4     | Crítico          | Problema grave, impide el uso del sistema       |
+
+---
+
+### 📊 TABLA DE RESUMEN – Evaluación Heurística del Módulo AR
+
+| # | Heurística Nielsen                   | Componente Evaluado             | Descripción del Problema                                                                 | Severidad | Recomendación                                                                 |
+|---|--------------------------------------|----------------------------------|------------------------------------------------------------------------------------------|-----------|----------------------------------------------------------------------------------|
+| 1 | Visibilidad del estado del sistema   | Detección de superficie/QR       | El usuario no sabe si el sistema está buscando un marcador o ya lo detectó               | 3         | Mostrar un mensaje claro: “Buscando marcador…” o un ícono de carga animado      |
+| 2 | Consistencia y estándares            | Botón de cambio de modelo        | El ícono es ambiguo y no representa el modelo a cambiar (ej. llanta, alerón)             | 2         | Usar íconos específicos según el tipo de accesorio                               |
+| 3 | Estética y diseño minimalista        | Visualización del modelo 3D      | El modelo 3D puede cubrir demasiado la superficie real, dificultando su comparación      | 2         | Ajustar la escala inicial del modelo y permitir redimensionamiento manual        |
+| 4 | Prevención de errores                | Botón activo sin detección previa| Se puede cambiar el modelo incluso si no se detectó una superficie                       | 4         | Desactivar el botón hasta detectar una superficie válida                         |
+| 5 | Ayuda y documentación                | Inicio de la funcionalidad AR    | No se brindan instrucciones para escanear correctamente                                 | 3         | Incluir un tutorial corto o instrucciones flotantes al iniciar el modo AR        |
+
 ## 7.4. Video About-the-Product
 
 Link del video: https://upcedupe-my.sharepoint.com/:v:/g/personal/u201923446_upc_edu_pe/Ee9XdQmwKXZPpNmBnulnX88Bw2o2OIoEvCNZD9ZdrNQ3DA?e=YoEDdM&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
