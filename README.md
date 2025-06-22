@@ -158,8 +158,14 @@
       <p>Pruebas provisionales: <a href="https://github.com/auto-fx/AutoFXPrototype">Prueba del funcionamiento de detección de autos</a></p>
     </td>
     <td>
-      <img src="img/insights-tp1.png">
-      <img src="img/commits-tp1.png">
+      <p>Landing Page</p>
+      <img src="img/sprint-insights-1.png">
+      <p>Mobile Application</p>
+      <img src="img/sprint-insights-2.png">
+      <p>Backend Application</p>
+      <img src="img/sprint-insights-3.png">
+      <p>Unity AR Application</p>
+      <img src="img/sprint-insights-4.png">
     </td>
 </table>
 
@@ -3390,6 +3396,35 @@ Para el despliegue de la aplicación Mobile, se utilizó el generador de APKs de
 
 ##### Aplicación Backend
 #### 7.2.1.9. Collaboration Insights
+Durante el desarrollo del sprint, el equipo mantuvo una comunicación efectiva para completar correctamente el entregable. Se utilizó WhatsApp como método de comunicación principal y Discord para las reuniones sincrónicas.
+
+En cuanto a la gestión del código, se trabajó de forma diferenciada según el tipo de repositorio:
+
+- Repositorio del reporte: Todo el trabajo se realizó directamente en la rama `main`, permitiendo un control centralizado del contenido del informe sin la necesidad de múltiples ramas, lo que facilitó un flujo más directo de edición y seguimiento.
+
+- Repositorio de la landing page: Se desarrolló completamente en la rama `main`, ya que se trataba de un componente más estático y enfocado en presentación, lo cual no requirió una estructura compleja de ramas.
+
+- Repositorios de frontend y backend: Se implementó un flujo de trabajo basado en ramas, también conocido como Gitflow, utilizando una rama `develop` como base de desarrollo, ramas específicas con el prefijo `/feature` para el desarrollo de funcionalidades individuales y la rama `hotfix` para cambios rápidos. Esto permitió un control más organizado, facilitando pruebas, revisiones y eventual integración al entorno principal.
+
+- Repositorios AutoFXPrototypeUnity y ModelTrainingAutoFix: Ambos repositorios fueron realizados como prueba y se desarrolló todo en la rama `main`, ya que no fueron hechos con el motivo de tener un gran desarrollo
+
+- Repositorio AutoFXUnity: A diferencia de los anteriores repositorios, este fue desarrollado directamente desde la interfaz de Unity. Esto facilitó el desarrollo de las aplicaciones
+
+Este enfoque mixto permitió mantener un equilibrio entre agilidad y control del desarrollo. Gracias a la colaboración constante del equipo y a una adecuada distribución de tareas, se cumplieron exitosamente los objetivos del Sprint 1, asegurando un progreso sólido y bien documentado en este reporte.
+
+###### Landing Page 
+![Landing Page](img/sprint-insights-1.png)
+
+###### Mobile Application
+![Mobile](img/sprint-insights-2.png)
+
+###### Backend Application
+![Backend](img/sprint-insights-3.png)
+
+##### Unity AR
+Unity no cuenta con una vista similar a la de Github, por lo que se muestran los colaboradores de los commits de la siguiente manera
+
+![Unity](img/sprint-insights-4.png)
 
 ## 7.3. Validation Interviews
 
