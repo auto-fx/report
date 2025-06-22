@@ -3740,25 +3740,85 @@ Auto FX (Aplicación Mobile)
 
 **ESCALA DE SEVERIDAD:**  
 
-| Nivel | Severidad        | Descripción                                      |
-|-------|------------------|--------------------------------------------------|
-| 0     | No es un problema | No afecta la usabilidad                         |
-| 1     | Menor            | Problema cosmético, no necesita solución urgente |
-| 2     | Moderado         | Problema menor, debe solucionarse               |
-| 3     | Mayor            | Problema serio, interfiere con la experiencia   |
-| 4     | Crítico          | Problema grave, impide el uso del sistema       |
+| Nivel | Descripción |
+|-------|-------------|
+| 1 | Problema superficial: puede ser fácilmente superador por el usuario ó ocurre con muy poco frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo. | 
+| 2 | Problema menor: puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja resolverlo de cara al siguiente release |
+| 3 | Problema mayor: ocurre frecuentemente o los usuarios no son capaces de resolverlos. Es importante que sean corregidos y se les debe asignar una prioridad alta. |
+| 4 | Problema muy grave: un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento. |
 
 ---
 
-### 📊 TABLA DE RESUMEN – Evaluación Heurística del Módulo AR
+### Tabla de Resumen
 
-| # | Heurística Nielsen                   | Componente Evaluado             | Descripción del Problema                                                                 | Severidad | Recomendación                                                                 |
-|---|--------------------------------------|----------------------------------|------------------------------------------------------------------------------------------|-----------|----------------------------------------------------------------------------------|
-| 1 | Visibilidad del estado del sistema   | Detección de superficie/QR       | El usuario no sabe si el sistema está buscando un marcador o ya lo detectó               | 3         | Mostrar un mensaje claro: “Buscando marcador…” o un ícono de carga animado      |
-| 2 | Consistencia y estándares            | Botón de cambio de modelo        | El ícono es ambiguo y no representa el modelo a cambiar (ej. llanta, alerón)             | 2         | Usar íconos específicos según el tipo de accesorio                               |
-| 3 | Estética y diseño minimalista        | Visualización del modelo 3D      | El modelo 3D puede cubrir demasiado la superficie real, dificultando su comparación      | 2         | Ajustar la escala inicial del modelo y permitir redimensionamiento manual        |
-| 4 | Prevención de errores                | Botón activo sin detección previa| Se puede cambiar el modelo incluso si no se detectó una superficie                       | 4         | Desactivar el botón hasta detectar una superficie válida                         |
-| 5 | Ayuda y documentación                | Inicio de la funcionalidad AR    | No se brindan instrucciones para escanear correctamente                                 | 3         | Incluir un tutorial corto o instrucciones flotantes al iniciar el modo AR        |
+| # | Problema | Escala de Severidad | Heurística/Principio violado |
+| - | --- | --- | --- |
+| 1 | El sistema no brinda feedback claro al escanear un marcador (QR o superficie plana) | 3 | Is it communicative? |
+| 2 | El ícono del botón para cambiar modelo es ambiguo y no representa el tipo de accesorio | 2 | Is it credible? / Is it clear? |
+| 3 | El modelo 3D cubre demasiado la superficie real, dificultando la comparación visual | 2 | Is it delightful? / Is it clear? |
+| 4 | El botón para cambiar el modelo está activo incluso si no se detectó una superficie válida | 4 | Is it usable? / Is it controllable? |
+| 5 | No se brindan instrucciones o guía al usuario sobre cómo escanear correctamente al iniciar el modo AR | 3 | Is it learnable? / Is it accessible? |
+
+##### PROBLEMA #1: Falta de feedback visual al escanear un marcador (QR o superficie plana)
+- ***Severidad:** 3
+- **Heurística violada:** Visibilidad del estado del sistema
+- **Pregunta asociada:** Is it communicative?
+- **Problema:**
+Cuando el usuario intenta escanear un marcador para visualizar un modelo 3D, no hay una señal visual o auditiva clara que indique si la superficie fue correctamente detectada o si el escaneo falló. Esto genera incertidumbre en el usuario, quien podría pensar que la aplicación no está funcionando, aún si el marcador es válido.
+
+![Heuristics](img/sprint-heuristics-1.png)
+
+- **Recomendación:**
+Mostrar una animación, vibración o mensaje textual que indique el estado de detección ("Marcador detectado", "Buscando marcador", "Error de escaneo", etc.), de forma clara y visible sobre la pantalla AR.
+
+##### PROBLEMA #2: Botón de cambio de modelo con icono ambiguo
+- ***Severidad:** 2
+- **Heurística violada:** Consistencia y estándares
+- **Pregunta asociada:** Is it clear? / Is it credible?
+- **Problema:**
+El botón que permite cambiar entre distintos modelos (como llantas o alerones) no tiene un ícono representativo de la acción ni del objeto que se está por visualizar. Esto puede generar confusión, ya que el usuario no tiene una referencia clara del resultado que obtendrá al hacer clic, rompiendo con los estándares esperados de claridad e intuición.
+
+![Heuristics](img/sprint-execution-1.png)
+
+- **Recomendación:**
+Utilizar íconos personalizados o etiquetas visuales para cada tipo de accesorio (por ejemplo, un ícono de llanta o de alerón), y mantener esa representación de forma consistente en toda la app.
+
+##### PROBLEMA #3: El modelo 3D cubre demasiado la superficie real, dificultando la comparación visual
+- ***Severidad:** 2
+- **Heurística violada:** Estética y diseño minimalista
+- **Pregunta asociada:** Is it clear? / Is it delightful?
+- **Problema:**
+Al proyectar el modelo 3D sobre la superficie escaneada, este aparece con una escala inicial muy grande que cubre completamente el contexto visual del usuario (como parte del vehículo). Esto impide comparar el modelo digital con el objeto real y afecta la claridad visual esperada en una aplicación de AR.
+
+![Heuristics](img/sprint-heuristics-1.png)
+
+- **Recomendación:**
+Ajustar la escala inicial de los modelos 3D a una proporción más moderada, y permitir que el usuario pueda escalar el modelo manualmente mediante gestos multitáctiles (pinch-to-zoom).
+
+##### PROBLEMA #4: El botón para cambiar el modelo está activo antes de detectar una superficie válida
+- ***Severidad:** 4
+- **Heurística violada:** Prevención de errores
+- **Pregunta asociada:** Is it usable? / Is it controllable?
+- **Problema:**
+El botón para cambiar el modelo 3D está activo desde el inicio, incluso cuando todavía no se ha detectado ningún marcador o superficie. Esto lleva a situaciones en las que el usuario presiona el botón y no ocurre nada, o genera errores de carga, creando una experiencia frustrante.
+
+- **Recomendación:**
+Desactivar el botón hasta que se haya detectado un marcador válido y se haya colocado un modelo en el entorno. También se podría incluir un mensaje como "Escanea una superficie primero para activar esta opción".
+
+![Heuristics](img/sprint-execution-1.png)
+
+##### PROBLEMA #5: Falta de guía o instrucciones al iniciar el modo AR
+- ***Severidad:** 3
+- **Heurística violada:** Ayuda y documentación
+- **Pregunta asociada:** Is it learnable? / Is it accessible?
+- **Problema:**
+Al entrar por primera vez en el modo AR, no se brindan instrucciones sobre cómo escanear correctamente una superficie, qué condiciones de iluminación o distancia se requieren, o cómo se puede interactuar con los modelos. Esto puede llevar a que usuarios nuevos abandonen la funcionalidad por no comprender cómo iniciar.
+
+![Heuristics](img/sprint-heuristics-2.png)
+
+- **Recomendación:**
+Incluir un pequeño tutorial visual al iniciar el modo AR por primera vez, o mostrar mensajes flotantes contextuales que guíen paso a paso al usuario durante el proceso de escaneo y visualización.
+
 
 ## 7.4. Video About-the-Product
 
