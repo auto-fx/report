@@ -2871,9 +2871,140 @@ Este sistema de navegación asegura fluidez en la experiencia del usuario, evita
 
 ## 7.1. Software Configuration Management
 ### 7.1.1. Development Environment Configuration
+
+A continuación, se detallan las herramientas y entornos utilizados por el equipo de desarrollo de SafeMed para colaborar eficientemente en todas las fases del ciclo de vida del sistema:
+
+| Actividad                     | Herramienta / Producto               | Propósito                                                         | Tipo              |
+|------------------------------|--------------------------------------|-------------------------------------------------------------------|-------------------|
+| Project Management           | Trello                               | Gestión ágil de tareas y seguimiento de backlog                   | SaaS              |
+| Requirements Management      | Google Docs / Markdown (GitHub)     | Documentación de requerimientos funcionales y no funcionales      | SaaS / Repositorio|
+| Product Design               | Figma                                | Prototipado de interfaces y experiencia de usuario                | SaaS              |
+| Software Development         | IntelliJ IDEA, Spring Boot, Docker  | IDE y framework para desarrollo backend, contenedorización        | Local             |
+| Software Testing             | Postman, Swagger UI           |Exploración de endpoints      | Local / Web       |
+| Software Deployment          | Railway, Docker Hub                  | Despliegue automático y gestión de contenedores                   | SaaS              |
+| Software Documentation       | Markdown en GitHub                   | Documentación técnica y de código del sistema                     | SaaS              |
+
 ### 7.1.2. Source Code Management
+
+Para el control de versiones del sistema **AutoFX**, se ha utilizado GitHub como plataforma central. Cada módulo cuenta con su propio repositorio público, organizado en la organización [auto-fx](https://github.com/auto-fx).
+
+### Repositorios del proyecto
+
+| **Repositorio**           | **Descripción**                                                                                          | **Lenguaje Principal** | **URL** |
+|---------------------------|----------------------------------------------------------------------------------------------------------|-------------------------|---------|
+| `report`                  | Documentación y reportes del proyecto                                                                    | Markdown / Variado      | [Ver](https://github.com/auto-fx/report) |
+| `landing-page`            | Página de aterrizaje estática con diseño en CSS                                                          | CSS                     | [Ver](https://github.com/auto-fx/landing-page) |
+| `frontend`                | Interfaz de usuario HTML del sistema                                                                     | HTML                    | [Ver](https://github.com/auto-fx/frontend) |
+| `AutoFXPrototypeUnity`    | Prototipo 3D desarrollado en Unity para personalización de autos                                         | C#                      | [Ver](https://github.com/auto-fx/AutoFXPrototypeUnity) |
+| `ModelTrainingAutoFix`    | Scripts para entrenamiento de modelos de IA y lógica de recomendación                                   | Python                  | [Ver](https://github.com/auto-fx/ModelTrainingAutoFix) |
+| `backend`                 | Backend del sistema con API REST desarrollada en Spring Boot                                             | Java                    | [Ver](https://github.com/auto-fx/backend) |
+| `AutoFXPrototype`         | Aplicación móvil nativa para personalización de autos                                                    | Kotlin                  | [Ver](https://github.com/auto-fx/AutoFXPrototype) |
+
+---
+
+### Modelo de Ramas – GitFlow
+
+Se utiliza la estrategia **GitFlow**, basada en [A successful Git branching model](https://nvie.com/posts/a-successful-git-branching-model/) de Vincent Driessen.
+
+- `main`: Rama principal, contiene versiones estables en producción.
+- `develop`: Rama de integración de nuevas funcionalidades.
+- `feature/*`: Funcionalidades nuevas (ej. `feature/login-facebook`).
+- `release/*`: Preparación de versiones (ej. `release/1.0.0`).
+- `hotfix/*`: Correcciones urgentes (ej. `hotfix/1.0.1`).
+
+---
+
+### Convenciones de Commits
+
+Se usa el estándar [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) para los mensajes de commits:
+
+- `feat:` Nueva funcionalidad.
+- `fix:` Corrección de errores.
+- `docs:` Documentación.
+- `refactor:` Refactorización del código sin cambio funcional.
+
+---
 ### 7.1.3. Style Guide & Conventions
+
+Para garantizar la calidad, escalabilidad y mantenibilidad del sistema **AutoFX**, se han aplicado guías de estilo por lenguaje, convenciones de codificación, y principios arquitectónicos modernos como **Domain-Driven Design (DDD)** y **Arquitectura Limpia**.
+
+---
+
+#### Arquitectura del Proyecto
+
+El sistema está diseñado siguiendo los principios de:
+
+- **Domain-Driven Design (DDD)**: el código se organiza alrededor del dominio del negocio. Separamos claramente las capas de dominio, aplicación, infraestructura y presentación.
+- **Arquitectura Limpia**: cada módulo respeta los principios de separación de responsabilidades, inversión de dependencias y alta cohesión. La lógica del negocio es independiente del framework o tecnología.
+
+La estructura típica incluye:
+
+/src
+
+domain/ Entidades, interfaces, reglas de negocio
+
+application/ Casos de uso (services, commands, queries)
+
+infrastructure/ Adaptadores externos (BD, APIs, persistencia)
+
+presentation/ Controladores, vistas, endpoints HTTP
+
+---
+#### Backend (Java – Spring Boot)
+
+- Uso de anotaciones de Spring (`@Service`, `@Repository`, `@RestController`) respetando las capas de arquitectura limpia.
+- Inyección de dependencias por constructor.
+- Clases nombradas con responsabilidad clara.
+
+#### Frontend (HTML, CSS, JS)
+
+- Guía W3C y principios de accesibilidad (WCAG 2.1).
+- Código estructurado por componentes y responsabilidad funcional.
+- Separación entre lógica de negocio y presentación en archivos distintos.
+
+---
+
+#### Móvil (Kotlin – Android)
+
+- Se aplica la [Kotlin Style Guide](https://developer.android.com/kotlin/style-guide)
+- Uso de `LiveData`, `ViewModel`, y `Repository` respetando separación de capas.
+- Nombres claros y consistentes para clases y archivos.
+
 ### 7.1.4. Deployment Configuration
+
+El despliegue del ecosistema de **AutoFX** contempla actualmente tres frentes:
+
+- Backend en Railway (contenedorizado con Docker)
+- Frontend Web (landing page) en Netlify
+- Aplicación Móvil Android (versión inicial en APK)
+
+#### Backend (Railway)
+
+Los microservicios del backend han sido desplegados en la plataforma **Railway**, utilizando contenedores Docker definidos en el archivo `docker-compose.yml` ubicado en el repositorio `auto-fx/backend`.
+
+**Proceso de despliegue:**
+
+1. Cada módulo (API Gateway, Authentication, Discovery Server) contiene su propio `Dockerfile`.
+2. Railway se conecta al repositorio de GitHub y genera las imágenes automáticamente.
+3. Las variables de entorno se configuran desde el panel de Railway.
+4. El `discovery-server` permite el registro dinámico de servicios (Eureka).
+5. El `api-gateway` enruta las peticiones según el path correspondiente.
+6. Railway expone endpoints públicos para cada servicio desplegado.
+
+#### Frontend Web (Netlify)
+
+La landing page de AutoFX está publicada en **Netlify**, con despliegue automático desde GitHub.
+
+**Proceso de despliegue:**
+
+1. El repositorio frontend está enlazado con Netlify.
+2. Cada vez que se realiza un push en la rama `main`, se genera automáticamente un nuevo build.
+3. Netlify publica los archivos estáticos y expone la página web públicamente.
+
+#### Aplicación Móvil
+
+La aplicación móvil de AutoFX, en su versión inicial, ha sido empaquetada como un archivo **APK**.
+
 
 ## 7.2. Implementation
 ### 7.2.1. Sprint 1
