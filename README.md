@@ -2867,6 +2867,9 @@ Este sistema de navegación asegura fluidez en la experiencia del usuario, evita
 
 ## 6.5. Applications Prototyping
 
+<img src="img\prototyping.png" alt="prototyping">
+
+
 # Capítulo VII: Product Implementation, Validation & Deployment
 
 ## 7.1. Software Configuration Management
@@ -3626,6 +3629,13 @@ Enlace de video de las entrevistas:
 El Abel Montoya, propietario de un Toyota Corolla, percibe que la aplicación tiene como objetivo facilitar la personalización del auto y ofrecer una idea visual clara al usuario. Destacó el diseño minimalista del landing page, indicando que no lo sobrecarga de información y se siente identificado con la propuesta, ya que le interesa personalizar su vehículo. Sobre el prototipo, mencionó que fue muy fácil de entender y usar, y que la experiencia en realidad aumentada fue cómoda y prometedora, destacando que algunos modelos, como las banderas, se ven bastante realistas. Considera útil la visualización para tomar decisiones de compra y le gustaría contar con funciones como cambiar el modelo de la parte, modificar el color total del auto o compartir imágenes con los cambios aplicados. Finalmente, se mostró gratamente sorprendido de que el sistema funcionara al escanear el QR y afirmó que recomendaría la aplicación a otros interesados en la personalización vehicular.
 
 #### Entrevista 2
+
+![Entrevista Adrian Liñan](<img/Entrevista Adrian Liñan 2.png>)
+- Nombre: Adrian Liñan
+- Distrito: Lima, Lima
+- Duracion: 03:21
+
+Adrian Liñan, propietario de un Toyota Corolla 2018, percibe que la aplicación busca facilitar la personalización vehicular al permitir previsualizar en realidad aumentada las modificaciones antes de instalarlas. Valoró el diseño claro y atractivo del landing page (“¡Personalízalo ahora con AutoFX!” y el botón “INICIAR”), se sintió identificado con la propuesta y sugirió añadir ejemplos reales, un demo interactivo y testimonios. Sobre el prototipo, lo encontró muy fácil de entender y usar; la experiencia AR le resultó inmersiva y realista, con un anclaje preciso y respuesta inmediata al escanear el QR. Considera útil esta visualización para tomar decisiones de compra, y propone incluir opciones para cambiar modelos de pieza, modificar el color del auto y compartir o guardar imágenes con los cambios aplicados. Finalmente, afirmó que recomendaría la app a otros entusiastas de la personalización vehicular.
 
 #### Entrevista 3
 
