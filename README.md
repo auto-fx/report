@@ -3639,6 +3639,12 @@ Adrian Liñan, propietario de un Toyota Corolla 2018, percibe que la aplicación
 
 #### Entrevista 3
 
+![Entrevista Renzo Ramos](<img/Entrevista Renzo Ramos.png>)
+- Nombre: Renzo Ramos
+- Distrito: Lima, Santiago de Surco
+- Duracion: 06:59
+
+Renzo Ramos, un joven de 21 años que reside en Santiago de Surco, Lima, fue entrevistado para evaluar la aplicación AutoFix, diseñada para personalizar vehículos mediante realidad aumentada. Renzo, quien posee un SUV, consideró que la propuesta está bien dirigida a personas interesadas en la personalización automotriz. Le llamó la atención la landing page, especialmente las imágenes del taller y equipamiento, aunque sugirió incluir una galería tipo slider. Respecto al prototipo en Unity, mencionó que el uso del QR para visualizar partes del vehículo como las llantas le resultó claro y familiar. Destacó que la realidad aumentada ofrecía una buena retroalimentación visual, aunque recomendó mejorar el nivel de detalle, mostrando información como el modelo o tipo de llanta. Consideró que la visualización ayuda a tomar decisiones de compra de manera más directa y efectiva, y afirmó que sí recomendaría la aplicación a otras personas interesadas en personalizar su auto.
 
 ### 7.3.3. Evaluaciones según heurísticas
 
