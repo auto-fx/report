@@ -3475,9 +3475,29 @@ Con el objetivo de validar tempranamente la propuesta de valor y la experiencia 
 10. ¿Recomendarías esta app a alguien interesado en personalizar su auto?
 
 ### 7.3.2. Registro de Entrevistas
+
+Enlace de video de las entrevistas: 
+
+
+#### Entrevista 1
+
+![Entrevista Abel Montoya](<img/Entrevista Abel Montoya.png>)
+- Nombre: Abel Rodrigo Montoya
+- Distrito: San Miguel
+- Duracion: 03:21
+
+El Abel Montoya, propietario de un Toyota Corolla, percibe que la aplicación tiene como objetivo facilitar la personalización del auto y ofrecer una idea visual clara al usuario. Destacó el diseño minimalista del landing page, indicando que no lo sobrecarga de información y se siente identificado con la propuesta, ya que le interesa personalizar su vehículo. Sobre el prototipo, mencionó que fue muy fácil de entender y usar, y que la experiencia en realidad aumentada fue cómoda y prometedora, destacando que algunos modelos, como las banderas, se ven bastante realistas. Considera útil la visualización para tomar decisiones de compra y le gustaría contar con funciones como cambiar el modelo de la parte, modificar el color total del auto o compartir imágenes con los cambios aplicados. Finalmente, se mostró gratamente sorprendido de que el sistema funcionara al escanear el QR y afirmó que recomendaría la aplicación a otros interesados en la personalización vehicular.
+
+#### Entrevista 2
+
+#### Entrevista 3
+
+
 ### 7.3.3. Evaluaciones según heurísticas
 
 ## 7.4. Video About-the-Product
+
+Link del video: https://upcedupe-my.sharepoint.com/:v:/g/personal/u201923446_upc_edu_pe/Ee9XdQmwKXZPpNmBnulnX88Bw2o2OIoEvCNZD9ZdrNQ3DA?e=YoEDdM&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
 
 ## Conclusiones y Recomendaciones
 
