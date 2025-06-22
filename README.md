@@ -3236,6 +3236,8 @@ Para este sprint, hemos abarcado la mayoría de las tareas propuestas. Nos enfoc
 #### 7.2.1.4. Testing Suite Evidence
 ##### Backend
 
+![Usuarios](img/Test%20backend.png)
+
 ##### Frontend
 
 ##### Unity AR
