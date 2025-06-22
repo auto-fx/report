@@ -2851,7 +2851,13 @@ Este sistema de navegación asegura fluidez en la experiencia del usuario, evita
 <img src="img\Mobile Wireflow\Account.png" alt="Account Wireflow">
 
 ### 6.4.3. Applications Mock-ups
+
+<img src="img\mockup1.png" alt="User Flow Diagrams">
+<img src="img\mockup2.png" alt="User Flow Diagrams">
+
 ### 6.4.4. Applications User Flow Diagrams
+
+<img src="img\Arqui. Wireflow.jpg" alt="User Flow Diagrams">
 
 ## 6.5. Applications Prototyping
 
