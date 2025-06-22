@@ -3235,13 +3235,9 @@ Para este sprint, hemos abarcado la mayoría de las tareas propuestas. Nos enfoc
 
 #### 7.2.1.4. Testing Suite Evidence
 ##### Backend
-
 ![Usuarios](img/Test%20backend.png)
 
 ##### Frontend
-
-
-
 Para el frontend (Authentication) se realizaron algunas pruebas en las funciones de un viewmodel perteneciente a la pantalla de splash. 
 
 ```bash
@@ -3692,7 +3688,16 @@ Adrian Liñan, propietario de un Toyota Corolla 2018, percibe que la aplicación
 - Distrito: Lima, Santiago de Surco
 - Duracion: 06:59
 
-Renzo Ramos, un joven de 21 años que reside en Santiago de Surco, Lima, fue entrevistado para evaluar la aplicación AutoFix, diseñada para personalizar vehículos mediante realidad aumentada. Renzo, quien posee un SUV, consideró que la propuesta está bien dirigida a personas interesadas en la personalización automotriz. Le llamó la atención la landing page, especialmente las imágenes del taller y equipamiento, aunque sugirió incluir una galería tipo slider. Respecto al prototipo en Unity, mencionó que el uso del QR para visualizar partes del vehículo como las llantas le resultó claro y familiar. Destacó que la realidad aumentada ofrecía una buena retroalimentación visual, aunque recomendó mejorar el nivel de detalle, mostrando información como el modelo o tipo de llanta. Consideró que la visualización ayuda a tomar decisiones de compra de manera más directa y efectiva, y afirmó que sí recomendaría la aplicación a otras personas interesadas en personalizar su auto.
+Renzo Ramos, un joven de 21 años que reside en Santiago de Surco, Lima, fue entrevistado para evaluar la aplicación AutoFX, diseñada para personalizar vehículos mediante realidad aumentada. Renzo, quien posee un SUV, consideró que la propuesta está bien dirigida a personas interesadas en la personalización automotriz. Le llamó la atención la landing page, especialmente las imágenes del taller y equipamiento, aunque sugirió incluir una galería tipo slider. Respecto al prototipo en Unity, mencionó que el uso del QR para visualizar partes del vehículo como las llantas le resultó claro y familiar. Destacó que la realidad aumentada ofrecía una buena retroalimentación visual, aunque recomendó mejorar el nivel de detalle, mostrando información como el modelo o tipo de llanta. Consideró que la visualización ayuda a tomar decisiones de compra de manera más directa y efectiva, y afirmó que sí recomendaría la aplicación a otras personas interesadas en personalizar su auto.
+
+#### Entrevista 4
+![Entrevista Giancarlo Paredes](img/Entrevista%20Giancarlo%20Paredes.png)
+- Nombre: Giancarlo Paredes
+- Distrito: San Borja, Lima
+- Duracion: 05:52
+
+Giancarlo Paredes es un estudiante de 21 años que es un aficionado por la personalización de autos. En su entrevista, nos comentó que le agradó el diseño de la landing page, especialmente agregando detalles como la posición exacta del taller en donde podrá realizar sus personalizaciones. En cuanto al prototipo móvil, mencionó que, aunque aún está en una etapa bastante preliminar, considera que en el futuro la aplicación tomará mucha más forma y podrá prevalecer sobre las otras similares.
+Un punto de mejora importante que menciona es la utilización de modelos más detallados para una visualización más acertada de los cambios que le podría hacer a su auto
 
 ### 7.3.3. Evaluaciones según heurísticas
 
