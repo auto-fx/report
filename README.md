@@ -3312,10 +3312,31 @@ public class ARAutoPlacementTests
 ```
 
 #### 7.2.1.5. Execution Evidence
+##### Filter Service
+La parte de la aplicación que se encarga de aplicar filtros a través de realidad aumentada fue desarrollado en Unity en una aplicación aparte. Para este sprint, se ha priorizado la funcionalidad sobre la interfaz de usuario.
+
+Enlace del video de ejecución: **[Video](https://youtube.com/shorts/6ztqcQK9Zbs)**
+
+###### Vista preliminar de elección de filtros 
+Esta vista se encarga de mostrar todos los filtros en una columna
+
+![Filter](img/sprint-execution-1.png)
 
 ##### Android Studio Authentication execution
+
+###### Vista Sign In
+Esta vista muestra los campos a completar para iniciar sesión
+
 ![Usuarios](img/testingFrontAuth1.png)
+
+###### Vista Sign Up
+Esta vista muestra los campos necesarios para crear un nuevo usuario
+
 ![Usuarios](img/testingFrontAuth2.png)
+
+###### Vista Principal (Preliminar)
+Esta es una vista preliminar. En la aplicación final, se reemplazará con la vista de aplicación de filtros
+
 ![Usuarios](img/testingFrontAuth3.png)
 
 
