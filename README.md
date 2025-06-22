@@ -2459,10 +2459,6 @@ Context Mapping es un paso crucial dentro del Domain-Driven Design que se enfoca
 
 <img src="img\C4\Container-001.png" alt="Container Diagram">
 
-<img src="img\C4\Component-001.png" alt="Component Diagram 1">
-
-<img src="img\C4\Component-002.png" alt="Component Diagram 2">
-
 ### 4.3.4. Deployment Diagrams
 
 <img src="img\C4\Deployment diagram.png" alt="Deployment Diagram">
@@ -3688,7 +3684,7 @@ Con el objetivo de validar tempranamente la propuesta de valor y la experiencia 
 
 ### 7.3.2. Registro de Entrevistas
 
-Enlace de video de las entrevistas: https://upcedupe-my.sharepoint.com/:v:/g/personal/u201923446_upc_edu_pe/EWSwrzKxtqlOu1Z2k789hhMBwFyNrSCMOfYTtQTI8pvG-A?e=Ghmthj&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+Enlace de video de las entrevistas: [Entrevistas](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201923446_upc_edu_pe/EWSwrzKxtqlOu1Z2k789hhMBwFyNrSCMOfYTtQTI8pvG-A?e=Ghmthj&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
 
 #### Entrevista 1
@@ -3822,7 +3818,7 @@ Incluir un pequeño tutorial visual al iniciar el modo AR por primera vez, o mos
 
 ## 7.4. Video About-the-Product
 
-Link del video: https://upcedupe-my.sharepoint.com/:v:/g/personal/u201923446_upc_edu_pe/Ee9XdQmwKXZPpNmBnulnX88Bw2o2OIoEvCNZD9ZdrNQ3DA?e=YoEDdM&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+Link del video: **[Enlace](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201923446_upc_edu_pe/Ee9XdQmwKXZPpNmBnulnX88Bw2o2OIoEvCNZD9ZdrNQ3DA?e=YoEDdM&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)**
 
 ## Conclusiones y Recomendaciones
 
