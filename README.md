@@ -2867,6 +2867,9 @@ Este sistema de navegación asegura fluidez en la experiencia del usuario, evita
 
 ## 6.5. Applications Prototyping
 
+<img src="img\prototyping.png" alt="prototyping">
+
+
 # Capítulo VII: Product Implementation, Validation & Deployment
 
 ## 7.1. Software Configuration Management
