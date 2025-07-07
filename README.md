@@ -4168,7 +4168,7 @@ public class ScreenshotSharer : MonoBehaviour
 }
 ```
 
-#### 7.2.1.7. Deployment Evidence
+#### 7.2.2.7. Deployment Evidence
 ##### Aplicación Mobile
 Para el despliegue de la aplicación Mobile de Unity, se ha utilizado el método "Build Profile". Este compila el proyecto en formato APK y se puede descargar desde un dispositivo mobile:
 
@@ -4178,7 +4178,7 @@ Para el despliegue de la aplicación Mobile de Unity, se ha utilizado el método
 No se han hecho cambios al despliegue del backend
 
 
-#### 7.2.1.8. Collaboration Insights
+#### 7.2.2.8. Collaboration Insights
 Durante el desarrollo del sprint, el equipo mantuvo una comunicación efectiva para completar correctamente el entregable. Se utilizó WhatsApp como método de comunicación principal y Discord para las reuniones sincrónicas.
 
 En cuanto a la gestión del código, se trabajó de forma diferenciada según el tipo de repositorio:
