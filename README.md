@@ -97,7 +97,6 @@
           <li>Capítulo 5</li>
           <li>Capítulo 6</li>
         </ul>
-      </td>
     </td>
   </tr>
   <tr>
@@ -109,8 +108,12 @@
           <li>Capítulo 6</li>
           <li>Capítulo 7</li>
         </ul>
-      </td>
     </td>
+  </tr>
+  <tr>
+    <th>Trabajo Final</th>
+    <td>06/07/2025</td>
+    <td> Se ha añadido nueva información en el Capítulo 7 </td>
   </tr>
   </tbody>
 </table>
@@ -148,25 +151,37 @@
     <th colspan="2">Entrega TB2</th>
   </tr>
   <td>
-      <p> Para la entrega de la TB2, se completó el capítulo 6 y se agregó el capítulo 7. Respecto a las aplicaciones, se desarrolló la landing page, se implementó el algoritmo de identificación de autos utilizando Machine Learning, se desarrolló el algoritmo de aplicación de filtros utilizando Unity Ar Fundation y se desarrolló la primera versión de la aplicación mobile</p>
-      <p>El presente trabajo se realizó en los siguientes repositorios:</p>
-      <p>Reporte: <a href="https://github.com/auto-fx/report">Documento TB2</a></p>
-      <p>Landing Page: <a href="https://github.com/auto-fx/landing-page">Landing Page</a></p>
-      <p>Aplicación Frontend: <a href="https://github.com/auto-fx/frontend">Frontend</a></p>
-      <p>Aplicación backend: <a href="https://github.com/auto-fx/backend">Backend</a></p>
-      <p>Modelo de entrenamiento: <a href="https://github.com/auto-fx/ModelTrainingAutoFix">Algoritmo de Machine Learning</a></p>
-      <p>Pruebas provisionales: <a href="https://github.com/auto-fx/AutoFXPrototype">Prueba del funcionamiento de detección de autos</a></p>
-    </td>
-    <td>
-      <p>Landing Page</p>
-      <img src="img/sprint-insights-1.png">
-      <p>Mobile Application</p>
-      <img src="img/sprint-insights-2.png">
-      <p>Backend Application</p>
-      <img src="img/sprint-insights-3.png">
-      <p>Unity AR Application</p>
-      <img src="img/sprint-insights-4.png">
-    </td>
+    <p> Para la entrega de la TB2, se completó el capítulo 6 y se agregó el capítulo 7. Respecto a las aplicaciones, se desarrolló la landing page, se implementó el algoritmo de identificación de autos utilizando Machine Learning, se desarrolló el algoritmo de aplicación de filtros utilizando Unity Ar Fundation y se desarrolló la primera versión de la aplicación mobile</p>
+    <p>El presente trabajo se realizó en los siguientes repositorios:</p>
+    <p>Reporte: <a href="https://github.com/auto-fx/report">Documento TB2</a></p>
+    <p>Landing Page: <a href="https://github.com/auto-fx/landing-page">Landing Page</a></p>
+    <p>Aplicación Frontend: <a href="https://github.com/auto-fx/frontend">Frontend</a></p>
+    <p>Aplicación backend: <a href="https://github.com/auto-fx/backend">Backend</a></p>
+    <p>Modelo de entrenamiento: <a href="https://github.com/auto-fx/ModelTrainingAutoFix">Algoritmo de Machine Learning</a></p>
+    <p>Pruebas provisionales: <a href="https://github.com/auto-fx/AutoFXPrototype">Prueba del funcionamiento de detección de autos</a></p>
+  </td>
+  <td>
+    <p>Landing Page</p>
+    <img src="img/sprint-insights-1.png">
+    <p>Mobile Application</p>
+    <img src="img/sprint-insights-2.png">
+    <p>Backend Application</p>
+    <img src="img/sprint-insights-3.png">
+    <p>Unity AR Application</p>
+    <img src="img/sprint-insights-4.png">
+  </td>
+  <tr>
+    <th colspan="2">Entrega Trabajo Final</th>
+  </tr>
+  <td>
+    <p> Para la entrega del Trabajo Final, se ha llevado el proyecto completo a Unity con el motivo de agilizar y simplificar el desarrollo del modelo de detección y aplicación de los filtros de autos. En consecuencia, el resto de los módulos nuevos realizados en la TB2 quedaron en dehuso</p>
+    <p>El presente trabajo se realizó en los siguientes repositorios:</p>
+    <p>Reporte: <a href="https://github.com/auto-fx/report">Documento del Trabajo Parcial</a></p>
+  </td>
+  <td>
+    <p>Unity AR Application</p>
+    <img src="img/sprint-2-insights.png">
+  </td>
 </table>
 
 # Tabla de Contenidos
@@ -330,6 +345,15 @@
         <p>Desarrollé entrevistas para la validación final del proyecto</p>
         <h5>Roca Huapaya, Orlando Arturo</h5>
         <p>Desarrollé entrevistas para la validación final del proyecto</p>
+        <h4>Trabajo Final</h4>
+        <h5>Garayar Mori, Oscar Nathaniel</h5>
+        <p>Realicé la presentación oral del trabajo final</p>
+        <h5>Mendoza Pimentel, Piero</h5>
+        <p>Realicé la presentación oral del trabajo final</p>
+        <h5>Neyra Santa Cruz, Marcelo Sebastian</h5>
+        <p>Realicé la presentación oral del trabajo final</p>
+        <h5>Roca Huapaya, Orlando Arturo</h5>
+        <p>Realicé la presentación oral del trabajo final</p>
       </td>
       <td>
         <h4>TB1</h4>
@@ -338,6 +362,8 @@
         <p>Para la entrega del trabajo parcial, se realizó una investigación detallada para poder cumplir las expectativas del público. Debido a ello, se investigó acerca de la correcta manera de definir los bounded context, los application wireframes y application mockups</p>
         <h4>TB2</h4>
         <p>Para la entrega de la TB2, se realizó una extensa investigación sobre las diferentes tecnologías que se podían utilizar para el desarrollo de nuestra solución y para poder cumplir conlas expectativas del público</p>
+        <h4>Trabajo Final</h4>
+        <p>Para la entrega del trabajo final, se realizó una investigación extensa acerca de la tecnología Unity para la finalización de nuestro proyecto</p>
       </td>
     </tr>
     <tr>
@@ -370,6 +396,15 @@
         <p>Desarrollé el Sprint 1, el backend móvil, el frontend móvil y el algoritmo de aplicación de filtros</p>
         <h5>Roca Huapaya, Orlando Arturo</h5>
         <p>Desarrollé el Sprint 1, la landing page, el backend móvil y el algoritmo de detección de objetos con Machine Learning</p>
+        <h4>Trabajo Final</h4>
+        <h5>Garayar Mori, Oscar Nathaniel</h5>
+        <p>Desarrollé el Sprint 2, el frontend móvil</p>
+        <h5>Mendoza Pimentel, Piero</h5>
+        <p>Desarrollé el Sprint 2, el frontend móvil</p>
+        <h5>Neyra Santa Cruz, Marcelo Sebastian</h5>
+        <p>Desarrollé el Sprint 2, el frontend móvil</p>
+        <h5>Roca Huapaya, Orlando Arturo</h5>
+        <p>Desarrollé el Sprint 2, el frontend móvil</p>
       </td>
       <td>
         <h4>TB1</h4>
@@ -378,6 +413,8 @@
         <p>Para la entrega del trabajo parcial, se realizó el detalle de la arquitectura que se utilizará para el desarrollo de la aplicación, tanto la arquitectura visual como la de código</p>
         <h4>TB2</h4>
         <p>Para la entrega de la TB2, se desarrolló un algoritmo de detección de objectos, específicamente autos, utilizando Machine Learning, un algoritmo de aplicación de filtros, utilizando Unity AR Foundation, un backend móvil hecho con Spring Boot Java y un frontend móvil hecho con Kotlin</p>
+        <h4>Trabajo Final</h4>
+        <p>Para la entrega de la Trabajo Final, se cambió el enfoque de la aplicación y se pasó todo el frontend a Unity. Para ello, se tradujo lo que se había desarrollado en Android Jetpack Compose + Kotlin a Unity + C#</p>
       </td>
     </tr>
   </tbody>
@@ -2110,7 +2147,7 @@ Se utilizó la aplicación Trello para el desarrollo del product backlog [Trello
 | 6 | US14 | Cambiado de color de un auto | Como persona que quiere personalizar su auto quiero poder cambiar el color del auto desde la aplicación para visualizar cómo se vería con otro color antes de hacerlo en la realidad | 5 |
 | 7 | US15 | Agregado de accesorios externos | Como persona que quiere personalizar su auto quiero poder agregar accesorios visuales como alerones, vinilos o luces para evaluar cómo se vería mi auto con estos elementos | 5 |
 | 8 | US16 | Comparación de auto antes y después | Como persona interesada en personalizar su auto quiero poder comparar el auto original con la versión personalizada para decidir si me gusta el resultado final | 3 |
-| 9 | US16 | Guardado foto y filtros aplicados | Como persona interesada en guardar su personalización quiero poder guardar la foto del auto con los filtros aplicados para revisar o compartir mi diseño más tarde | 3 |
+| 9 | US17 | Guardado foto y filtros aplicados | Como persona interesada en guardar su personalización quiero poder guardar la foto del auto con los filtros aplicados para revisar o compartir mi diseño más tarde | 3 |
 | 10 | US09 | Tutorial de Uso | Como persona que quiere personalizar su auto quiero contar con un pequeño tutorial de uso para aprender cómo utilizar la aplicación | 3 |
 | 11 | US18 | Registro de usuarios | Como usuario de cualquiera de los segmentos objetivos sin una cuenta en el sistema quiero poder registrarme en la aplicación para acceder a todas sus funcionalidades | 3 |
 | 12 | US19 | Acceso de Usuarios | Como usuario de cualquiera de los segmentos objetivos sin una cuenta en el sistema quiero poder iniciar sesión en la aplicación utilizando mi dirección de correo electrónico y contraseña para acceder a mi cuenta y utilizar todas las funcionalidades de la aplicación | 3 |
@@ -3004,13 +3041,11 @@ La landing page de AutoFX está publicada en **Netlify**, con despliegue automá
 La aplicación móvil de AutoFX, en su versión inicial, ha sido empaquetada como un archivo **APK**.
 
 
-## 7.2. Implementation
+## 7.2 Implementation
 ### 7.2.1. Sprint 1
 #### 7.2.1.1. Sprint Planning 1
 
 El primer sprint se desarrolló de la siguiente manera:
-
-
 
 <table>
   <tr>
@@ -3306,6 +3341,641 @@ public class ARAutoPlacementTests
     }
 }
 ```
+
+#### 7.2.1.5. Execution Evidence
+##### Filter Service
+La parte de la aplicación que se encarga de aplicar filtros a través de realidad aumentada fue desarrollado en Unity en una aplicación aparte. Para este sprint, se ha priorizado la funcionalidad sobre la interfaz de usuario.
+
+Enlace del video de ejecución: **[Video](https://youtube.com/shorts/6ztqcQK9Zbs)**
+
+###### Vista preliminar de elección de filtros 
+Esta vista se encarga de mostrar todos los filtros en una columna
+
+![Filter](img/sprint-execution-1.png)
+
+##### Android Studio Authentication execution
+
+###### Vista Sign In
+Esta vista muestra los campos a completar para iniciar sesión
+
+![Usuarios](img/testingFrontAuth1.png)
+
+###### Vista Sign Up
+Esta vista muestra los campos necesarios para crear un nuevo usuario
+
+![Usuarios](img/testingFrontAuth2.png)
+
+###### Vista Principal (Preliminar)
+Esta es una vista preliminar. En la aplicación final, se reemplazará con la vista de aplicación de filtros
+
+![Usuarios](img/testingFrontAuth3.png)
+
+
+#### 7.2.1.6. Services Documentation
+##### Backend
+En el backend, se desarrollaron los siguientes controladores:
+###### Controlador de Usuarios
+
+![Usuarios](img/sprint-services-1.png)
+
+###### 1. `POST api/authentication-autofx/v1/users/sign-up`
+**Descripción:** Permite crear un nuevo usuario en la base de datos
+**Devuelve:** User Resource
+``` bash
+"User Resource"
+{
+  "name": {
+    "firstName": "string",
+    "lastName": "string"
+    },
+    "emailAddress": {
+      "address": "string"
+    },
+    "phoneNumber": {
+      "countryCode": "string",
+      "number": 0
+    },
+    "password": "string",
+    "roles": [
+      "string"
+    ]
+}
+```
+
+###### 2. `GET api/authentication-autofx/v1/users/sign-in`
+**Descripción:** Permite ingresar a un usuario a la aplicación
+**Devuelve:** Authenticated User Resource
+``` bash
+"Authenticated User Resource"
+{
+  "id": 0,
+  "email": "string",
+  "token": "string"
+}
+```
+###### 3. `GET api/authentication-autofx/v1/users/get-user-by-jwt`
+**Descripción:** Devuelve al usuario actualmente autenticado
+**Devuelve:** User Resource
+``` bash
+"User Resource"
+{
+  "name": {
+    "firstName": "string",
+    "lastName": "string"
+    },
+    "emailAddress": {
+      "address": "string"
+    },
+    "phoneNumber": {
+      "countryCode": "string",
+      "number": 0
+    },
+    "password": "string",
+    "roles": [
+      "string"
+    ]
+}
+```
+###### 4. `PUT api/authentication-autofx/v1/users/update-user-data`
+**Descripción:** Permite el cambio de los datos del usuario
+**Devuelve:** String
+``` bash
+"User updated successfully"
+```
+###### 5. `PUT api/authentication-autofx/v1/users/update-password`
+**Descripción:** Permite el cambio de la contraseña del usuario
+**Devuelve:** String
+``` bash
+"Password updated successfully"
+```
+###### Controlador de Roles
+
+![Usuarios](img/sprint-services-2.png)
+
+###### 1. `GET api/authentication-autofx/v1/roles`
+**Descripción:** Devuelve todos los roles de los usuarios
+**Devuelve:** List < Role >
+``` bash
+"List <Role>"
+[
+  {
+    "id": 0,
+    "name": "string"
+  }
+]
+```
+##### Unity AR
+Utilizando las características de la solución Unity AR, se desarrollaron las siguientes funcionalides:
+###### 1. AR Auto Placement
+**Descripción:** Se encarga de posicionar en la pantalla los modelos 3D de las partes de los autos, como alerones, llantas y motores sobresalientes
+``` bash
+public class ARAutoPlacement : MonoBehaviour
+{
+    [Header("Ajustes locales respecto al marcador")]
+    public Vector3 positionOffset = Vector3.zero;
+    public Vector3 rotationOffset = Vector3.zero;
+    public Vector3 scale = Vector3.one;
+
+    void Start()
+    {
+        transform.localScale = scale;
+    }
+
+    void LateUpdate()
+    {
+        transform.localPosition = positionOffset;
+        transform.localEulerAngles = rotationOffset;
+    }
+}
+```
+###### 2. AR Multi Instance Image Tracking
+**Descripción:** Este algoritmo permite detectar múltiples imágenes mediante AR y posiciona los modelos 3D específicos,como llantas y alerones, sobre ellos. Usando el componente ARTrackedImageManager, supervisa los objectos que están siendo rastreados y, según el nombre de la imagen detectada, muestra en pantalla el objeto en la posición indicada. Si el rastreo se pierde, el objeto 3D desaparece de la pantalla, pero permanece en su última posición.
+``` bash
+public class ARMultiInstanceImageTracking : MonoBehaviour
+{
+    [SerializeField] private ARTrackedImageManager trackedImageManager;
+
+    [Header("Prefabs para cada marcador")]
+    public GameObject llantaFrontalIzquierdaPrefab;
+    public GameObject llantaFrontalDerechaPrefab;
+    public GameObject llantaTraseraIzquierdaPrefab;
+    public GameObject llantaTraseraDerechaPrefab;
+    public GameObject aleronPrefab;
+    public GameObject frentePrefab;
+
+    [Header("Offset, escala y rotación global para todas las llantas")]
+    public Vector3 llantaOffset = new Vector3(0, 0.03f, 0);
+    public Vector3 llantaScale = new Vector3(0.12f, 0.12f, 0.12f);
+    public Vector3 llantaRotation = Vector3.zero; // <--- Aquí puedes cambiar la rotación desde el Inspector
+
+    [Header("Offset, escala y rotación para el alerón")]
+    public Vector3 aleronOffset = new Vector3(0, 0.04f, 0);
+    public Vector3 aleronScale = new Vector3(0.15f, 0.15f, 0.15f);
+    public Vector3 aleronRotation = Vector3.zero;
+
+    [Header("Offset, escala y rotación para frente")]
+    public Vector3 frenteOffset = new Vector3(0, 0.01f, 0);
+    public Vector3 frenteScale = new Vector3(0.15f, 0.15f, 0.15f);
+    public Vector3 frenteRotation = Vector3.zero;
+
+    private Dictionary<TrackableId, GameObject> spawnedPrefabs = new();
+    private Dictionary<TrackableId, bool> isAnchored = new();
+
+    void Update()
+    {
+        foreach (var trackedImage in trackedImageManager.trackables)
+        {
+            string imageName = trackedImage.referenceImage.name;
+            GameObject prefabToSpawn = null;
+            Vector3 offset = Vector3.zero;
+            Vector3 escala = Vector3.one;
+            Vector3 rotacion = Vector3.zero;
+
+            switch (imageName)
+            {
+                case "qr_llanta1":
+                case "qr_llanta2":
+                case "qr_llanta3":
+                case "qr_llanta4":
+                    prefabToSpawn = imageName switch
+                    {
+                        "qr_llanta1" => llantaFrontalIzquierdaPrefab,
+                        "qr_llanta2" => llantaFrontalDerechaPrefab,
+                        "qr_llanta3" => llantaTraseraIzquierdaPrefab,
+                        "qr_llanta4" => llantaTraseraDerechaPrefab,
+                        _ => null
+                    };
+                    offset = llantaOffset;
+                    escala = llantaScale;
+                    rotacion = llantaRotation;
+                    break;
+                case "qr_aleron":
+                    prefabToSpawn = aleronPrefab;
+                    offset = aleronOffset;
+                    escala = aleronScale;
+                    rotacion = aleronRotation;
+                    break;
+                case "qr_frente":
+                    prefabToSpawn = frentePrefab;
+                    offset = frenteOffset;
+                    escala = frenteScale;
+                    rotacion = frenteRotation;
+                    break;
+                default:
+                    Debug.LogWarning($"No hay prefab asignado para el marcador: {imageName}");
+                    break;
+            }
+
+            if (trackedImage.trackingState == TrackingState.Tracking)
+            {
+                if (!spawnedPrefabs.ContainsKey(trackedImage.trackableId) && prefabToSpawn != null)
+                {
+                    GameObject spawned = Instantiate(prefabToSpawn, trackedImage.transform);
+                    spawned.transform.localPosition = offset;
+                    spawned.transform.localScale = escala;
+                    spawned.transform.localRotation = Quaternion.Euler(rotacion);
+                    spawnedPrefabs[trackedImage.trackableId] = spawned;
+                    isAnchored[trackedImage.trackableId] = true;
+                }
+                else if (spawnedPrefabs.ContainsKey(trackedImage.trackableId))
+                {
+                    var instance = spawnedPrefabs[trackedImage.trackableId];
+                    if (!isAnchored[trackedImage.trackableId])
+                    {
+                        instance.transform.SetParent(trackedImage.transform, true);
+                        isAnchored[trackedImage.trackableId] = true;
+                    }
+                    instance.SetActive(true);
+                    instance.transform.localPosition = offset;
+                    instance.transform.localScale = escala;
+                    instance.transform.localRotation = Quaternion.Euler(rotacion);
+                }
+            }
+            else
+            {
+                if (spawnedPrefabs.ContainsKey(trackedImage.trackableId) && isAnchored[trackedImage.trackableId])
+                {
+                    var instance = spawnedPrefabs[trackedImage.trackableId];
+                    instance.transform.SetParent(null, true);
+                    isAnchored[trackedImage.trackableId] = false;
+                }
+            }
+        }
+    }
+}
+```
+###### 3. Menu Controller
+**Descripción:** Interfaz básica que permite recorrer cada una de las escenas (pantallas) disponibles
+``` bash
+public class MenuUIController : MonoBehaviour
+{
+    [Header("Referencias a los Canvas/UI Panels")]
+    public GameObject mainMenuCanvas;
+    public GameObject modelosLlantasUI;
+
+    public void MostrarLlantas()
+    {
+        mainMenuCanvas.SetActive(false);
+        modelosLlantasUI.SetActive(true);
+    }
+
+    public void VolverAlMenu()
+    {
+        modelosLlantasUI.SetActive(false);
+        mainMenuCanvas.SetActive(true);
+    }
+}
+```
+#### 7.2.1.7. Deployment Evidence
+##### Aplicación Mobile
+Para el despliegue de la aplicación Mobile, se utilizó el generador de APKs de Android Studio
+
+![Deployment](img/sprint-deployment-1.png)
+
+##### Aplicación Backend
+Los microservicios del backend han sido desplegados en la plataforma **Railway**, utilizando contenedores Docker definidos en el archivo `docker-compose.yml` ubicado en el repositorio `auto-fx/backend`.
+
+![Deployment](img/Backend%20desplegado.png)
+
+
+#### 7.2.1.8. Collaboration Insights
+Durante el desarrollo del sprint, el equipo mantuvo una comunicación efectiva para completar correctamente el entregable. Se utilizó WhatsApp como método de comunicación principal y Discord para las reuniones sincrónicas.
+
+En cuanto a la gestión del código, se trabajó de forma diferenciada según el tipo de repositorio:
+
+- Repositorio del reporte: Todo el trabajo se realizó directamente en la rama `main`, permitiendo un control centralizado del contenido del informe sin la necesidad de múltiples ramas, lo que facilitó un flujo más directo de edición y seguimiento.
+
+- Repositorio de la landing page: Se desarrolló completamente en la rama `main`, ya que se trataba de un componente más estático y enfocado en presentación, lo cual no requirió una estructura compleja de ramas.
+
+- Repositorios de frontend y backend: Se implementó un flujo de trabajo basado en ramas, también conocido como Gitflow, utilizando una rama `develop` como base de desarrollo, ramas específicas con el prefijo `/feature` para el desarrollo de funcionalidades individuales y la rama `hotfix` para cambios rápidos. Esto permitió un control más organizado, facilitando pruebas, revisiones y eventual integración al entorno principal.
+
+- Repositorios AutoFXPrototypeUnity y ModelTrainingAutoFix: Ambos repositorios fueron realizados como prueba y se desarrolló todo en la rama `main`, ya que no fueron hechos con el motivo de tener un gran desarrollo
+
+- Repositorio AutoFXUnity: A diferencia de los anteriores repositorios, este fue desarrollado directamente desde la interfaz de Unity. Esto facilitó el desarrollo de las aplicaciones
+
+Este enfoque mixto permitió mantener un equilibrio entre agilidad y control del desarrollo. Gracias a la colaboración constante del equipo y a una adecuada distribución de tareas, se cumplieron exitosamente los objetivos del Sprint 1, asegurando un progreso sólido y bien documentado en este reporte.
+
+###### Landing Page 
+![Landing Page](img/sprint-insights-1.png)
+
+###### Mobile Application
+![Mobile](img/sprint-insights-2.png)
+
+###### Backend Application
+![Backend](img/sprint-insights-3.png)
+
+##### Unity AR
+Unity no cuenta con una vista similar a la de Github, por lo que se muestran los colaboradores de los commits de la siguiente manera
+
+![Unity](img/sprint-insights-4.png)
+
+### 7.2.2. Sprint 2
+#### 7.2.2.1. Sprint Planning 2
+
+El primer sprint se desarrolló de la siguiente manera:
+
+<table>
+  <tr>
+    <th>Sprint #</th>
+    <td>Sprint 2</td>
+  </tr>
+  <tr>
+    <th colspan="2"><strong>Sprint Planning Background</strong></th>
+  </tr>
+  <tr>
+    <th>Date</th>
+    <td>06/07/2025</td>
+  </tr>
+  <tr>
+    <th>Time</th>
+    <td>07:00 PM</td>
+  </tr>
+  <tr>
+    <th>Location</th>
+    <td>Presencial (En la universidad)</td>
+  </tr>
+  <tr>
+    <th>Prepared by</th>
+    <td>Neyra Santa Cruz, Marcelo Sebastian</td>
+  </tr>
+  <tr>
+    <th>Attendees (to planning meeting)</th>
+    <td>
+      <p>Garayar Mori, Oscar Nathaniel</p>
+      <p>Mendoza Pimentel, Piero</p>
+      <p>Neyra Santa Cruz, Marcelo Sebastian</p>
+      <p>Roca Huapaya, Orlando Arturo</p>
+    </td>
+  </tr>
+  <tr>
+    <th>Sprint 2 Review Summary</th>
+    <td>Para la implementación de nuestra aplicación, se decidió pasar todo el código fuente del frontend a Unity</td>
+  </tr>
+  <tr>
+    <th>Sprint Retrospective Summary</th>
+    <td>Se decidió simplificar todo el enfoque del anterior sprint para solo incluir una tecnología emergente. Entre las 2 principales, Machine Learning y Realidad Aumentada, se eligió Realidad Aumentada. Con esta tecnología, fue posible desarrollar una versión estable y funcional de la aplicación</td>
+  </tr>
+  <tr>
+    <th colspan="2"><strong>Sprint Goal & User Stories</strong></th>
+  </tr>
+  <tr>
+    <th>Sprint 2 Goal</th>
+    <td>Terminar de desarrollar la aplicación móvile en Unity</td>
+  </tr>
+  <tr>
+    <th>Sprint 2 Velocity</th>
+    <td>24</td>
+  </tr>
+  <tr>
+    <th>Sum of Story Points</th>
+    <td>24</td>
+  </tr>
+  </tr>
+</table>
+
+#### 7.2.2.2. Sprint Backlog 2
+Para este sprint, hemos abarcado la mayoría de las tareas propuestas. Nos enfocamos principalmente en pasar todo el proyecto a Unity, así como agregar una mayo cantidad de modelos para los filtros de autos
+
+![Sprint Backlog 2](img/sprint-2-backlog.png)
+
+<table>
+<tr><th colspan="2">Sprint 1</th><th colspan="6">Sprint 1</th></tr>
+<tr><td colspan="2">User Story</td><td colspan="6">Work-Item / Task</td></tr>
+<tr>
+  <td>Id</td><td>Title</td>
+  <td>Id</td><td>Title</td><td>Description</td>
+  <td>Estimation (Hours)</td><td>Assigned To</td><td>Status (To-Do / In-Process / Review / Done)</td>
+</tr>
+<!-- US01 -->
+<tr>
+  <td>US01</td><td>Implementación de Barra de navegación</td>
+  <td>T01</td><td>Diseñar barra de navegación</td><td>Diseño visual y estructura HTML/CSS</td>
+  <td>0.2</td><td>Orlando Roca</td><td>Done</td>
+</tr>
+<!-- US02 -->
+<tr>
+  <td>US02</td><td>Visualizar logo y descripción</td>
+  <td>T02</td><td>Agregar logo y descripción</td><td>Insertar logo de empresa y texto representativo</td>
+  <td>0.2</td><td>Orlando Roca</td><td>Done</td>
+</tr>
+<!-- US03 -->
+<tr>
+  <td>US03</td><td>Detalles y Servicios de la empresa</td>
+  <td>T03</td><td>Diseñar sección de servicios</td><td>Presentar beneficios y características del sistema</td>
+  <td>0.2</td><td>Orlando Roca</td><td>Done</td>
+</tr>
+<!-- US04 -->
+<tr>
+  <td>US04</td><td>Clientes de la empresa</td>
+  <td>T04</td><td>Testimonios de clientes</td><td>Agregar opiniones reales o ficticias de usuarios</td>
+  <td>0.2</td><td>Orlando Roca</td><td>Done</td>
+</tr>
+<!-- US05 -->
+<tr>
+  <td>US05</td><td>Acerca de nosotros</td>
+  <td>T05</td><td>Diseñar sección misión/visión</td><td>Mostrar propósito y valores de la empresa</td>
+  <td>0.2</td><td>Orlando Roca</td><td>Done</td>
+</tr>
+<!-- US06 -->
+<tr>
+  <td>US06</td><td>Implementación de un Footer</td>
+  <td>T06</td><td>Agregar Footer</td><td>Diseño con links y redes sociales</td>
+  <td>0.2</td><td>Orlando Roca</td><td>Done</td>
+</tr>
+<!-- US07 -->
+<tr>
+  <td>US07</td><td>Translación a la aplicación web</td>
+  <td>T07</td><td>Botón de acceso web</td><td>Enlace directo a aplicación web desde la landing</td>
+  <td>0.2</td><td>Orlando Roca</td><td>Done</td>
+</tr>
+<!-- US10 -->
+<tr>
+  <td>US10</td><td>Detección de tipo de auto</td>
+  <td>T08</td><td>Detectar un auto</td><td>Detección de un tipo de auto utilizando Machine Learning y la cámara frontal del dispositivo del usuario</td>
+  <td>8</td><td>Piero Mendoza</td><td>Done</td>
+</tr>
+<!-- US13 -->
+<tr>
+  <td>US13</td><td>Agregado de un filtro a un auto</td>
+  <td>T09</td><td>Agregar filtros al auto</td><td>Agregar diferentes tipos de filtros (cambio de color, pegatinas, etc.) a los autos utilizando Realidad Aumentada</td>
+  <td>6</td><td>Marcelo Neyra</td><td>Done</td>
+</tr>
+<!-- US14 -->
+<tr>
+  <td>US14</td><td>Cambio de color de un auto</td>
+  <td>T10</td><td>Cambiar el color del auto</td><td>Agregar un filtro que permita el cambio de color del auto, utilizando Realidad Aumentada</td>
+  <td>6</td><td>Marcelo Neyra</td><td>To Review</td>
+</tr>
+<!-- US15 -->
+<tr>
+  <td>US15</td><td>Agregado de accesorios externos</td>
+  <td>T11</td><td>Agregar filtro de accesorio externo al auto</td><td>Agregar un filtro que se asemeje a un accesorio real externo (alerones, antenas, etc.) al auto, utilizando Realidad Aumentada</td>
+  <td>6</td><td>Marcelo Neyra</td><td>Done</td>
+</tr>
+<!-- US12 -->
+<tr>
+  <td>US12</td><td>Detección en tiempo real del vehículo</td>
+  <td>T12</td><td>Detectar un auto en tiempo real</td><td>Detección en tiempo real de un auto utilizando Machine Learning y la cámara frontal del dispositivo del usuario</td>
+  <td>8</td><td>Piero Mendoza</td><td>To Review</td>
+</tr>
+<!-- US11 -->
+<tr>
+  <td>US11</td><td>Detección de ángulo de toma de foto</td>
+  <td>T13</td><td>Detección de ángulo de toma de foto</td><td>Detectar en tiempo real el ángulo de la toma de la foto, para ajustar correctamente el filtro</td>
+  <td>8</td><td>Piero Mendoza</td><td>Done</td>
+</tr>
+<!-- US08 -->
+<tr>
+  <td>US08</td><td>Permisos para uso de la cámara</td>
+  <td>T14</td><td>Administrar el uso de la cámara</td><td>Permitir que la aplicación utilice la cámara frontal del dispositivo del usuario</td>
+  <td>1</td><td>Marcelo Neyra</td><td>Done</td>
+</tr>
+<!-- US16 -->
+<tr>
+  <td>US16</td><td>Comparación de auto antes y después</td>
+  <td>T15</td><td>Fotos de comparación de autos con y sin filtros</td><td>Tomar una foto y mostrar una captura del auto con y sin filtro</td>
+  <td>3</td><td>Oscar Garayar</td><td>In Process</td>
+</tr>
+<!-- US17 -->
+<tr>
+  <td>US17</td><td>Guardado foto y filtros aplicados</td>
+  <td>T16</td><td>Guardar la foto del auto con y sin filtros</td><td>Guardar la captura de la foto del carro con y sin filtros</td>
+  <td>2</td><td>Oscar Garayar</td><td>Done</td>
+</tr>
+<!-- US18 -->
+<tr>
+  <td>US18</td><td>Registro de Usuarios</td>
+  <td>T17</td><td>Registro de Usuarios</td><td>Permitir el registro de usuarios</td>
+  <td>3</td><td>Orlando Roca</td><td>Done</td>
+</tr>
+<!-- US19 -->
+<tr>
+  <td>US19</td><td>Acceso de Usuarios</td>
+  <td>T18</td><td>Acceso de Usuarios</td><td>Permitir el acceso de usuarios autenticados</td>
+  <td>3</td><td>Orlando Roca</td><td>Done</td>
+</tr>
+<!-- US09 -->
+<tr>
+  <td>US09</td><td>Tutorial de Uso</td>
+  <td>T19</td><td>Tutorial de Uso de la Aplicación</td><td>Contar con un tutorial de las funcionalidades principales de la aplicación</td>
+  <td>3</td><td>Oscar Garayar</td><td>To Do</td>
+</tr>
+<!-- US20 -->
+<tr>
+  <td>US20</td><td>Actualización de Contraseña</td>
+  <td>T20</td><td>Actualización de Contraseña</td><td>Contar con un método de actualización de contraseña</td>
+  <td>2</td><td>Orlando Roca</td><td>Done</td>
+</tr>
+<!-- US21 -->
+<tr>
+  <td>US21</td><td>Recuperación de Contraseña</td>
+  <td>T21</td><td>Recuperación de Contraseña</td><td>Contar con un método de recuperación de contraseña</td>
+  <td>3</td><td>Marcelo Neyra</td><td>Done</td>
+</tr>
+</table>
+
+#### 7.2.2.3. Development Evidence
+
+| Repository | Branch | Commit ID | Commit Message | Commit Date |
+|---|---|---|---|---|
+| AutoFXRepository | main | 2d847 | Se añadió la modificación de escala | 18/06/2025 |
+| AutoFXRepository | main | 26f28 | Se ajustó el posicionamiento de los modelos | 18/06/2025 |
+| AutoFXRepository | main | 7f28c | Interfaz AR prueba  | 20/06/2025 |
+| AutoFXRepository | main | 43d05 | Update | 20/06/2025 |
+| AutoFXRepository | main | a79bb | Se añadió la función para cambiar los modelos 3D | 21/06/2025 |
+| AutoFXRepository | main | 55b91 | Se añadió la función de compartir foto  | 01/07/2025 |
+| AutoFXRepository | main | cdc1d | Se añadió la función de guardar fotos en el dispositivo  | 01/07/2025 |
+| AutoFXRepository | main | 7d2d8 | style: improved interface and distribution | 01/07/2025 |
+| AutoFXRepository | main | 8fd40 | Modelos 3D actualizados | 02/07/2025 |
+| AutoFXRepository | main | 72b9d | Modelos 3D acomodados | 04/07/2025 |
+| AutoFXRepository | main | 17236 | style: updated the button styles | 05/07/2025 |
+| AutoFXRepository | main | ee565 | feat: updated the files | 05/07/2025 |
+| AutoFXRepository | main | 19b9a | feat: added security classes | 05/07/2025 |
+| AutoFXRepository | main | 19b4f | Interfaz Login y Register creadas | 05/07/2025 |
+| AutoFXRepository | main | a8e24 | feat: connected the backend with the frontend | 05/07/2025 |
+| AutoFXRepository | main | 9c1d0 | chore: deleted unused controllers | 06/07/2025 |
+
+#### 7.2.2.4. Testing Suite Evidence
+##### Backend
+No se han hecho test al backend debido a que no se han hecho cambios
+
+##### Frontend
+Para el frontend, se han hecho pruebas para la clase AuthService
+
+```bash
+public class AuthApiServiceTester : MonoBehaviour
+{
+    private AuthApiService api = new AuthApiService();
+
+    void Start()
+    {
+        StartCoroutine(TestSignUp());
+        StartCoroutine(TestSignIn());
+        StartCoroutine(TestUpdatePassword());
+    }
+
+    IEnumerator TestSignUp()
+    {
+        Debug.Log("Iniciando prueba de SignUp...");
+
+        SignUpRequest testUser = new SignUpRequest(
+            new Name("John", "Doe"),
+            new EmailAddress("john.doe@example.com"),
+            new PhoneNumber("+51", 999999999),
+            "testpassword123",
+            new string[] { "ROLE_USER" }
+        );
+
+        yield return api.SignUp(testUser, (success) =>
+        {
+            Debug.Log(success ? "SignUp exitoso" : "Fallo en SignUp");
+        });
+    }
+
+    IEnumerator TestSignIn()
+    {
+        Debug.Log("Iniciando prueba de SignIn...");
+
+        string email = "john.doe@example.com";
+        string password = "testpassword123";
+
+        yield return api.SignIn(email, password, (response) =>
+        {
+            if (response != null)
+            {
+                Debug.Log($"SignIn exitoso. Token: {response.token}");
+            }
+            else
+            {
+                Debug.Log("Fallo en SignIn");
+            }
+        });
+    }
+
+    IEnumerator TestUpdatePassword()
+    {
+        Debug.Log("Iniciando prueba de UpdatePassword...");
+
+        string currentPassword = "testpassword123";
+        string newPassword = "newpassword456";
+        string token = "AQUÍ_VA_EL_TOKEN_REAL"; // Reemplaza con token obtenido
+
+        yield return api.UpdatePassword(currentPassword, newPassword, token, (responseText) =>
+        {
+            if (!string.IsNullOrEmpty(responseText))
+            {
+                Debug.Log("Password actualizado correctamente");
+                Debug.Log("Respuesta del servidor: " + responseText);
+            }
+            else
+            {
+                Debug.Log("Fallo en actualización de contraseña");
+            }
+        });
+    }
+}
+```
+
 
 #### 7.2.1.5. Execution Evidence
 ##### Filter Service
