@@ -3977,300 +3977,205 @@ public class AuthApiServiceTester : MonoBehaviour
 ```
 
 
-#### 7.2.1.5. Execution Evidence
-##### Filter Service
-La parte de la aplicación que se encarga de aplicar filtros a través de realidad aumentada fue desarrollado en Unity en una aplicación aparte. Para este sprint, se ha priorizado la funcionalidad sobre la interfaz de usuario.
+#### 7.2.2.5. Execution Evidence
+Enlace del video de ejecución: **[Video](https://youtube.com/shorts/q8t5fw8OwvI)**
 
-Enlace del video de ejecución: **[Video](https://youtube.com/shorts/6ztqcQK9Zbs)**
+##### Authentication Service
+El servicio de autenticación se ha refactorizado para ahora funcionar en la aplicación de Unity.
 
-###### Vista preliminar de elección de filtros 
-Esta vista se encarga de mostrar todos los filtros en una columna
+###### Vista Register
+Esta vista se encarga de registrar los datos del usuario a la base de datos
 
-![Filter](img/sprint-execution-1.png)
+![Register](img/sprint-2-execution-1.png)
 
-##### Android Studio Authentication execution
-
-###### Vista Sign In
-Esta vista muestra los campos a completar para iniciar sesión
-
-![Usuarios](img/testingFrontAuth1.png)
-
-###### Vista Sign Up
-Esta vista muestra los campos necesarios para crear un nuevo usuario
-
-![Usuarios](img/testingFrontAuth2.png)
-
-###### Vista Principal (Preliminar)
-Esta es una vista preliminar. En la aplicación final, se reemplazará con la vista de aplicación de filtros
-
-![Usuarios](img/testingFrontAuth3.png)
+###### Vista Log In
+Esta vista permite al usuario ingresar a la aplicación
+![Login](img/sprint-2-execution-2.png)
 
 
-#### 7.2.1.6. Services Documentation
+###### Vista de elección de filtros
+Esta vista permite al usuario aplicar 4 tipos de filtros al carro: Llantas, alerones, motores y stickers.
+La vista que se ve por predeterminado es la siguiente:
+
+![Filter](img/sprint-2-execution-3.png)
+
+Al presionar cualquiera de los botones de arriba, aparecerá una barra lateral, junto con los posibles filtros que se pueden añadir
+
+![Filter](img/sprint-2-execution-4.png)
+
+Al presionar el botón circular que se encuentra en la parte inferior, se podrá tomar una foto:
+
+![Photo](img/sprint-2-execution-5.jpeg)
+
+Y también aparecerá la interfaz para compartir con otras personas la foto
+
+![Share](img/sprint-2-execution-6.jpeg)
+
+Por último, si es que se envía a una red social (como WhatsApp), aparecerá un mensaje por predeterminado:
+
+![Share](img/sprint-2-execution-7.png)
+
+#### 7.2.2.6. Services Documentation
 ##### Backend
-En el backend, se desarrollaron los siguientes controladores:
-###### Controlador de Usuarios
-
-![Usuarios](img/sprint-services-1.png)
-
-###### 1. `POST api/authentication-autofx/v1/users/sign-up`
-**Descripción:** Permite crear un nuevo usuario en la base de datos
-**Devuelve:** User Resource
-``` bash
-"User Resource"
-{
-  "name": {
-    "firstName": "string",
-    "lastName": "string"
-    },
-    "emailAddress": {
-      "address": "string"
-    },
-    "phoneNumber": {
-      "countryCode": "string",
-      "number": 0
-    },
-    "password": "string",
-    "roles": [
-      "string"
-    ]
-}
-```
-
-###### 2. `GET api/authentication-autofx/v1/users/sign-in`
-**Descripción:** Permite ingresar a un usuario a la aplicación
-**Devuelve:** Authenticated User Resource
-``` bash
-"Authenticated User Resource"
-{
-  "id": 0,
-  "email": "string",
-  "token": "string"
-}
-```
-###### 3. `GET api/authentication-autofx/v1/users/get-user-by-jwt`
-**Descripción:** Devuelve al usuario actualmente autenticado
-**Devuelve:** User Resource
-``` bash
-"User Resource"
-{
-  "name": {
-    "firstName": "string",
-    "lastName": "string"
-    },
-    "emailAddress": {
-      "address": "string"
-    },
-    "phoneNumber": {
-      "countryCode": "string",
-      "number": 0
-    },
-    "password": "string",
-    "roles": [
-      "string"
-    ]
-}
-```
-###### 4. `PUT api/authentication-autofx/v1/users/update-user-data`
-**Descripción:** Permite el cambio de los datos del usuario
-**Devuelve:** String
-``` bash
-"User updated successfully"
-```
-###### 5. `PUT api/authentication-autofx/v1/users/update-password`
-**Descripción:** Permite el cambio de la contraseña del usuario
-**Devuelve:** String
-``` bash
-"Password updated successfully"
-```
-###### Controlador de Roles
-
-![Usuarios](img/sprint-services-2.png)
-
-###### 1. `GET api/authentication-autofx/v1/roles`
-**Descripción:** Devuelve todos los roles de los usuarios
-**Devuelve:** List < Role >
-``` bash
-"List <Role>"
-[
-  {
-    "id": 0,
-    "name": "string"
-  }
-]
-```
+No se han hecho cambios al backend en este sprint
 ##### Unity AR
-Utilizando las características de la solución Unity AR, se desarrollaron las siguientes funcionalides:
-###### 1. AR Auto Placement
-**Descripción:** Se encarga de posicionar en la pantalla los modelos 3D de las partes de los autos, como alerones, llantas y motores sobresalientes
-``` bash
-public class ARAutoPlacement : MonoBehaviour
+Se han hecho diversos cambios a la estructuración del proyecto. Se incluyen las 2 funcionalidades más importantes realizadas
+###### 1. Authentication Service
+**Descripción:** La clase AuthAPIService tiene como propósito principal conectar el backend con el frontend.
+```bash
+public class AuthApiService
 {
-    [Header("Ajustes locales respecto al marcador")]
-    public Vector3 positionOffset = Vector3.zero;
-    public Vector3 rotationOffset = Vector3.zero;
-    public Vector3 scale = Vector3.one;
+    private const string BaseUrl = "https://api-gateway-server-production.up.railway.app";
 
-    void Start()
+    public IEnumerator SignUp(SignUpRequest request, System.Action<bool> callback)
     {
-        transform.localScale = scale;
+        string url = $"{BaseUrl}/api/authentication-autofx/v1/users/sign-up";
+        string json = JsonUtility.ToJson(request);
+
+        UnityWebRequest www = new UnityWebRequest(url, "POST");
+        byte[] bodyRaw = Encoding.UTF8.GetBytes(json);
+        www.uploadHandler = new UploadHandlerRaw(bodyRaw);
+        www.downloadHandler = new DownloadHandlerBuffer();
+        www.SetRequestHeader("Content-Type", "application/json");
+
+        yield return www.SendWebRequest();
+
+        callback(www.result == UnityWebRequest.Result.Success);
     }
 
-    void LateUpdate()
+    public IEnumerator SignIn(string email, string password, System.Action<SignInResponse> callback)
     {
-        transform.localPosition = positionOffset;
-        transform.localEulerAngles = rotationOffset;
-    }
-}
-```
-###### 2. AR Multi Instance Image Tracking
-**Descripción:** Este algoritmo permite detectar múltiples imágenes mediante AR y posiciona los modelos 3D específicos,como llantas y alerones, sobre ellos. Usando el componente ARTrackedImageManager, supervisa los objectos que están siendo rastreados y, según el nombre de la imagen detectada, muestra en pantalla el objeto en la posición indicada. Si el rastreo se pierde, el objeto 3D desaparece de la pantalla, pero permanece en su última posición.
-``` bash
-public class ARMultiInstanceImageTracking : MonoBehaviour
-{
-    [SerializeField] private ARTrackedImageManager trackedImageManager;
+        string url = $"{BaseUrl}/api/authentication-autofx/v1/users/sign-in?email={email}&password={password}";
 
-    [Header("Prefabs para cada marcador")]
-    public GameObject llantaFrontalIzquierdaPrefab;
-    public GameObject llantaFrontalDerechaPrefab;
-    public GameObject llantaTraseraIzquierdaPrefab;
-    public GameObject llantaTraseraDerechaPrefab;
-    public GameObject aleronPrefab;
-    public GameObject frentePrefab;
+        UnityWebRequest www = UnityWebRequest.Get(url);
+        www.SetRequestHeader("accept", "application/json");
+        www.downloadHandler = new DownloadHandlerBuffer();
 
-    [Header("Offset, escala y rotación global para todas las llantas")]
-    public Vector3 llantaOffset = new Vector3(0, 0.03f, 0);
-    public Vector3 llantaScale = new Vector3(0.12f, 0.12f, 0.12f);
-    public Vector3 llantaRotation = Vector3.zero; // <--- Aquí puedes cambiar la rotación desde el Inspector
+        yield return www.SendWebRequest();
 
-    [Header("Offset, escala y rotación para el alerón")]
-    public Vector3 aleronOffset = new Vector3(0, 0.04f, 0);
-    public Vector3 aleronScale = new Vector3(0.15f, 0.15f, 0.15f);
-    public Vector3 aleronRotation = Vector3.zero;
-
-    [Header("Offset, escala y rotación para frente")]
-    public Vector3 frenteOffset = new Vector3(0, 0.01f, 0);
-    public Vector3 frenteScale = new Vector3(0.15f, 0.15f, 0.15f);
-    public Vector3 frenteRotation = Vector3.zero;
-
-    private Dictionary<TrackableId, GameObject> spawnedPrefabs = new();
-    private Dictionary<TrackableId, bool> isAnchored = new();
-
-    void Update()
-    {
-        foreach (var trackedImage in trackedImageManager.trackables)
+        if (www.result == UnityWebRequest.Result.Success)
         {
-            string imageName = trackedImage.referenceImage.name;
-            GameObject prefabToSpawn = null;
-            Vector3 offset = Vector3.zero;
-            Vector3 escala = Vector3.one;
-            Vector3 rotacion = Vector3.zero;
+            SignInResponse response = JsonUtility.FromJson<SignInResponse>(www.downloadHandler.text);
+            callback(response);
+        }
+        else
+        {
+            callback(null);
+        }
+    }
 
-            switch (imageName)
-            {
-                case "qr_llanta1":
-                case "qr_llanta2":
-                case "qr_llanta3":
-                case "qr_llanta4":
-                    prefabToSpawn = imageName switch
-                    {
-                        "qr_llanta1" => llantaFrontalIzquierdaPrefab,
-                        "qr_llanta2" => llantaFrontalDerechaPrefab,
-                        "qr_llanta3" => llantaTraseraIzquierdaPrefab,
-                        "qr_llanta4" => llantaTraseraDerechaPrefab,
-                        _ => null
-                    };
-                    offset = llantaOffset;
-                    escala = llantaScale;
-                    rotacion = llantaRotation;
-                    break;
-                case "qr_aleron":
-                    prefabToSpawn = aleronPrefab;
-                    offset = aleronOffset;
-                    escala = aleronScale;
-                    rotacion = aleronRotation;
-                    break;
-                case "qr_frente":
-                    prefabToSpawn = frentePrefab;
-                    offset = frenteOffset;
-                    escala = frenteScale;
-                    rotacion = frenteRotation;
-                    break;
-                default:
-                    Debug.LogWarning($"No hay prefab asignado para el marcador: {imageName}");
-                    break;
-            }
+    public IEnumerator UpdatePassword(string currentPassword, string newPassword, string token, System.Action<string> callback)
+    {
+        string url = $"{BaseUrl}/api/authentication-autofx/v1/users/update-password";
 
-            if (trackedImage.trackingState == TrackingState.Tracking)
-            {
-                if (!spawnedPrefabs.ContainsKey(trackedImage.trackableId) && prefabToSpawn != null)
-                {
-                    GameObject spawned = Instantiate(prefabToSpawn, trackedImage.transform);
-                    spawned.transform.localPosition = offset;
-                    spawned.transform.localScale = escala;
-                    spawned.transform.localRotation = Quaternion.Euler(rotacion);
-                    spawnedPrefabs[trackedImage.trackableId] = spawned;
-                    isAnchored[trackedImage.trackableId] = true;
-                }
-                else if (spawnedPrefabs.ContainsKey(trackedImage.trackableId))
-                {
-                    var instance = spawnedPrefabs[trackedImage.trackableId];
-                    if (!isAnchored[trackedImage.trackableId])
-                    {
-                        instance.transform.SetParent(trackedImage.transform, true);
-                        isAnchored[trackedImage.trackableId] = true;
-                    }
-                    instance.SetActive(true);
-                    instance.transform.localPosition = offset;
-                    instance.transform.localScale = escala;
-                    instance.transform.localRotation = Quaternion.Euler(rotacion);
-                }
-            }
-            else
-            {
-                if (spawnedPrefabs.ContainsKey(trackedImage.trackableId) && isAnchored[trackedImage.trackableId])
-                {
-                    var instance = spawnedPrefabs[trackedImage.trackableId];
-                    instance.transform.SetParent(null, true);
-                    isAnchored[trackedImage.trackableId] = false;
-                }
-            }
+        UpdatePasswordRequest requestBody = new UpdatePasswordRequest(currentPassword, newPassword);
+        string jsonBody = JsonUtility.ToJson(requestBody);
+
+        UnityWebRequest www = new UnityWebRequest(url, "POST");
+        byte[] bodyRaw = System.Text.Encoding.UTF8.GetBytes(jsonBody);
+        www.uploadHandler = new UploadHandlerRaw(bodyRaw);
+        www.downloadHandler = new DownloadHandlerBuffer();
+        www.SetRequestHeader("Content-Type", "application/json");
+        www.SetRequestHeader("Accept", "application/json");
+
+        if (!string.IsNullOrEmpty(token))
+        {
+            www.SetRequestHeader("Authorization", "Bearer " + token);
+        }
+
+        yield return www.SendWebRequest();
+
+        if (www.result == UnityWebRequest.Result.Success)
+        {
+            string responseText = www.downloadHandler.text;
+            callback(responseText);
+        }
+        else
+        {
+            callback(null); // fallo
         }
     }
 }
 ```
-###### 3. Menu Controller
-**Descripción:** Interfaz básica que permite recorrer cada una de las escenas (pantallas) disponibles
-``` bash
-public class MenuUIController : MonoBehaviour
+###### 2. Compartir Fotos
+**Descripción:** La clase ScreenshotSharer tiene como propósito tomar una foto y permitir compartirla con otras personas. También, se incluye el mensaje "¡Así se ve mi auto en la app AutoFX!" que puede ser visualizado si es que se comparte a algún tipo de red social, como WhatsApp o Instagram.
+
+```bash
+public class ScreenshotSharer : MonoBehaviour
 {
-    [Header("Referencias a los Canvas/UI Panels")]
-    public GameObject mainMenuCanvas;
-    public GameObject modelosLlantasUI;
+    [Header("Canvases de UI a ocultar")]
+    public List<Canvas> canvasesUI;
 
-    public void MostrarLlantas()
+    public void TomarYCompartirFoto()
     {
-        mainMenuCanvas.SetActive(false);
-        modelosLlantasUI.SetActive(true);
+        StartCoroutine(CapturaYComparte());
     }
 
-    public void VolverAlMenu()
+    private IEnumerator CapturaYComparte()
     {
-        modelosLlantasUI.SetActive(false);
-        mainMenuCanvas.SetActive(true);
+        foreach (var c in canvasesUI) c.enabled = false;
+
+        yield return null;
+        yield return new WaitForEndOfFrame();
+
+        Texture2D screenImage = new Texture2D(Screen.width, Screen.height, TextureFormat.RGB24, false);
+        screenImage.ReadPixels(new Rect(0, 0, Screen.width, Screen.height), 0, 0);
+        screenImage.Apply();
+
+        string filePath = System.IO.Path.Combine(Application.temporaryCachePath, "screenshot.png");
+        System.IO.File.WriteAllBytes(filePath, screenImage.EncodeToPNG());
+        Destroy(screenImage);
+
+#if UNITY_ANDROID
+        string galleryPath = "/storage/emulated/0/DCIM/AutoFX";
+        if (!System.IO.Directory.Exists(galleryPath))
+            System.IO.Directory.CreateDirectory(galleryPath);
+
+        string destFile = System.IO.Path.Combine(galleryPath, "screenshot_" + System.DateTime.Now.ToString("yyyyMMdd_HHmmss") + ".png");
+        System.IO.File.Copy(filePath, destFile, true);
+
+        // Refresca la galería para que la imagen aparezca de inmediato
+        RefreshAndroidGallery(destFile);
+#endif
+
+        foreach (var c in canvasesUI) c.enabled = true;
+
+        new NativeShare()
+            .AddFile(filePath)
+            .SetSubject("¡Mira mi auto personalizado en AR!")
+            .SetText("¡Así se ve mi auto en la app AutoFX!")
+            .Share();
+
+        yield break;
     }
+
+#if UNITY_ANDROID
+    private void RefreshAndroidGallery(string path)
+    {
+        try
+        {
+            AndroidJavaClass mediaScanConn = new AndroidJavaClass("android.media.MediaScannerConnection");
+            AndroidJavaClass unityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
+            AndroidJavaObject activity = unityPlayer.GetStatic<AndroidJavaObject>("currentActivity");
+            mediaScanConn.CallStatic("scanFile", activity, new string[] { path }, null, null);
+        }
+        catch (System.Exception ex)
+        {
+            Debug.LogWarning("No se pudo refrescar la galería: " + ex.Message);
+        }
+    }
+#endif
 }
 ```
+
 #### 7.2.1.7. Deployment Evidence
 ##### Aplicación Mobile
-Para el despliegue de la aplicación Mobile, se utilizó el generador de APKs de Android Studio
+Para el despliegue de la aplicación Mobile de Unity, se ha utilizado el método "Build Profile". Este compila el proyecto en formato APK y se puede descargar desde un dispositivo mobile:
 
-![Deployment](img/sprint-deployment-1.png)
+![Unity APK](img/sprint-deployment-1.png)
 
 ##### Aplicación Backend
-Los microservicios del backend han sido desplegados en la plataforma **Railway**, utilizando contenedores Docker definidos en el archivo `docker-compose.yml` ubicado en el repositorio `auto-fx/backend`.
-
-![Deployment](img/Backend%20desplegado.png)
+No se han hecho cambios al despliegue del backend
 
 
 #### 7.2.1.8. Collaboration Insights
@@ -4280,29 +4185,29 @@ En cuanto a la gestión del código, se trabajó de forma diferenciada según el
 
 - Repositorio del reporte: Todo el trabajo se realizó directamente en la rama `main`, permitiendo un control centralizado del contenido del informe sin la necesidad de múltiples ramas, lo que facilitó un flujo más directo de edición y seguimiento.
 
-- Repositorio de la landing page: Se desarrolló completamente en la rama `main`, ya que se trataba de un componente más estático y enfocado en presentación, lo cual no requirió una estructura compleja de ramas.
+- Repositorio de la landing page: No se hicieron cambios
 
-- Repositorios de frontend y backend: Se implementó un flujo de trabajo basado en ramas, también conocido como Gitflow, utilizando una rama `develop` como base de desarrollo, ramas específicas con el prefijo `/feature` para el desarrollo de funcionalidades individuales y la rama `hotfix` para cambios rápidos. Esto permitió un control más organizado, facilitando pruebas, revisiones y eventual integración al entorno principal.
+- Repositorios de frontend y backend: No se hicieron cambios
 
-- Repositorios AutoFXPrototypeUnity y ModelTrainingAutoFix: Ambos repositorios fueron realizados como prueba y se desarrolló todo en la rama `main`, ya que no fueron hechos con el motivo de tener un gran desarrollo
+- Repositorios AutoFXPrototypeUnity y ModelTrainingAutoFix: No se hicieron cambios
 
-- Repositorio AutoFXUnity: A diferencia de los anteriores repositorios, este fue desarrollado directamente desde la interfaz de Unity. Esto facilitó el desarrollo de las aplicaciones
+- Repositorio AutoFXUnity: Se trabajó a través del control de versiones de Unity. Dado que el grupo completo estaba trabajando de manera colaborativa y no cada uno por su cuenta, se desarrolló el proyecto completo en la rama `main`
 
-Este enfoque mixto permitió mantener un equilibrio entre agilidad y control del desarrollo. Gracias a la colaboración constante del equipo y a una adecuada distribución de tareas, se cumplieron exitosamente los objetivos del Sprint 1, asegurando un progreso sólido y bien documentado en este reporte.
+Los enfoques aplicados para este Sprint 2 nos permitió encontrar los métodos más eficacez para concluir con el desarrollo de la aplicación para la presentación del Trabajo Final. Se cumplieron exitosamente los puntos propuestos para desarrollar del Sprint 2, lo que aseguró un progreso sólido y bien documentado para este reporte
 
 ###### Landing Page 
-![Landing Page](img/sprint-insights-1.png)
+No se han hecho cambios
 
 ###### Mobile Application
-![Mobile](img/sprint-insights-2.png)
+No se han hecho cambios
 
 ###### Backend Application
-![Backend](img/sprint-insights-3.png)
+No se han hecho cambios
 
 ##### Unity AR
 Unity no cuenta con una vista similar a la de Github, por lo que se muestran los colaboradores de los commits de la siguiente manera
 
-![Unity](img/sprint-insights-4.png)
+![Unity](img/sprint-2-insights.png)
 
 ## 7.3. Validation Interviews
 
